@@ -125,7 +125,7 @@ def dur(s):
 def tip_li(t, s, card_home):
     is_vid = s["type"] == "video" and t.get("video_timestamp")
     if is_vid and canonical(t["source_url"]).startswith("yt-"):
-        lead = f'<a class="ts" href="{e(t["source_url"])}" rel="noopener" title="Watch from {e(t["video_timestamp"])}">▶ {e(t["video_timestamp"])}</a> '
+        lead = f'<a class="ts" href="{e(t["source_url"])}" target="_blank" rel="noopener" title="Watch from {e(t["video_timestamp"])}">▶ {e(t["video_timestamp"])}</a> '
     elif is_vid:
         lead = f'<span class="ts" title="Timestamp in the video">▶ {e(t["video_timestamp"])}</span> '
     else: lead = ""
@@ -136,8 +136,8 @@ def tip_li(t, s, card_home):
         badges += f' <a class="xsub" href="#sc-{slug(t["topic"])}-{slug(t["subcategory"])}">{e(t["topic"])} › {e(t["subcategory"])}</a>'
     credit = f' <span class="credit">{e(t["credit"])}</span>' if t.get("credit") else ""
     own = "" if canonical(t["source_url"]) in (s["id"], canonical(s.get("url")), canonical(s.get("posted_in"))) or (is_vid) \
-        else f' <a class="tsrc" href="{e(t["source_url"])}" rel="noopener">source ↗</a>'
-    rel = "".join(f' <a class="tsrc" href="{e(u)}" rel="noopener">related ↗</a>' for u in t.get("related_urls", []))
+        else f' <a class="tsrc" href="{e(t["source_url"])}" target="_blank" rel="noopener">source ↗</a>'
+    rel = "".join(f' <a class="tsrc" href="{e(u)}" target="_blank" rel="noopener">related ↗</a>' for u in t.get("related_urls", []))
     search = " ".join([t["title"], t["tip"], t["author"], t["topic"], t["subcategory"], " ".join(t.get("tags", [])), t.get("credit") or ""]).lower()
     return f"""<li class="t" id="{e(t['id'])}" data-topic="{e(t['topic'])}" data-subcat="{e(t['topic'] + '|' + t['subcategory'])}" data-edition="{e(t['edition'])}" data-author="{e(t['author'])}" data-search="{e(search)}">{lead}<strong>{e(t['title'])}.</strong> {e(t['tip'])}{badges}{credit}{own}{rel} <a class="perma" href="#{e(t['id'])}" aria-label="Link to this tip">#</a></li>"""
 
@@ -160,13 +160,13 @@ def card(s, place=None):
         else: summary = '<p class="sum"><span class="badge wait">Video summary coming</span></p>'
         if s.get("note") and st != "skipped": summary += f'<p class="note">{e(s["note"])}</p>'
     elif s.get("summary"): summary = f'<p class="sum">{e(s["summary"])}</p>'
-    shared = f' · <a href="{e(s["posted_in"])}" rel="noopener">shared in this post ↗</a>' if s.get("posted_in") and canonical(s["posted_in"]) != canonical(s["url"]) else ""
+    shared = f' · <a href="{e(s["posted_in"])}" target="_blank" rel="noopener">shared in this post ↗</a>' if s.get("posted_in") and canonical(s["posted_in"]) != canonical(s["url"]) else ""
     head_search = " ".join([title, s["author"], s.get("summary") or "", label, hm[0], hm[1]]).lower()
     ident = f'data-mirror="s-{e(s["id"])}"' if place else f'id="s-{e(s["id"])}"'
     attrs = (f'{ident} class="card{" compact" if compact else ""}{" mirror" if place else ""}" data-type="{e(typ)}" data-author="{e(s["author"])}" '
              f'data-edition="{e(s["edition"])}" data-topic="{e(hm[0])}" data-subcat="{e(hm[0] + "|" + hm[1])}" data-head="{e(head_search)}" data-n="{len(ts)}"')
     meta = f'<div class="meta"><span class="type {e(typ)}">{e(label)}</span> <span>@{e(s["author"])}</span> <time datetime="{e(date)}">{dlabel(date)}</time> <span class="badge ed" title="Edition that first added this">{e(dlabel(s["edition"], False))} edition</span></div>'
-    srcline = f'<p class="src"><a href="{e(s["url"])}" rel="noopener">{link_text} ↗</a>{shared}</p>'
+    srcline = f'<p class="src"><a href="{e(s["url"])}" target="_blank" rel="noopener">{link_text} ↗</a>{shared}</p>'
     if compact:
         t = ts[0]
         li = tip_li(t, s, hm)
@@ -182,7 +182,7 @@ def card(s, place=None):
     count = f'<span class="n">{len(ts)} tip{"s" if len(ts) != 1 else ""}</span>' if ts else ""
     return f"""<article {attrs}{' hidden' if place else ''}>
 {meta}
-<h3><a href="{e(s['url'])}" rel="noopener">{e(title)} ↗</a> {count}</h3>
+<h3><a href="{e(s['url'])}" target="_blank" rel="noopener">{e(title)} ↗</a> {count}</h3>
 {mirror_note}{summary if not place else ""}
 {ul}
 {srcline}
@@ -283,7 +283,7 @@ for t in tips:
     rows += (f'<tr data-search="{e((t["title"]+" "+t["tip"]+" "+t["author"]+" "+t["topic"]+" "+t["subcategory"]+" "+t["edition"]+" "+(s.get("title") or "")).lower())}">'
              f'<td><time>{e(t["date"])}</time></td><td>{e(t["edition"])}</td><td>@{e(t["author"])}</td><td>{e(t["topic"])}</td><td>{e(t["subcategory"])}</td>'
              f'<td><a href="../#{e(t["id"])}">{e(t["title"])}</a></td>'
-             f'<td><a href="{e(t["source_url"])}" rel="noopener">{TYPE_LABEL.get(s["type"], "source").lower()}{(" @ "+e(t["video_timestamp"])) if t.get("video_timestamp") else ""} ↗</a></td></tr>\n')
+             f'<td><a href="{e(t["source_url"])}" target="_blank" rel="noopener">{TYPE_LABEL.get(s["type"], "source").lower()}{(" @ "+e(t["video_timestamp"])) if t.get("video_timestamp") else ""} ↗</a></td></tr>\n')
 archive = head(f"Archive · {TITLE}", "Every tip, newest first.", "archive/", 1) + f"""
 <main id="main" class="wrap wide">
 <h1>Archive</h1>
@@ -297,7 +297,7 @@ archive = head(f"Archive · {TITLE}", "Every tip, newest first.", "archive/", 1)
 (ROOT / "archive").mkdir(exist_ok=True); (ROOT / "archive/index.html").write_text(archive)
 
 # ---------- about ----------
-accts = ", ".join(f'<a href="https://x.com/{a}" rel="noopener">@{a}</a>' for a in D["accounts"])
+accts = ", ".join(f'<a href="https://x.com/{a}" target="_blank" rel="noopener">@{a}</a>' for a in D["accounts"])
 about = head(f"About · {TITLE}", "What AI Tips Watch is and how it's made.", "about/", 1) + f"""
 <main id="main" class="wrap prose">
 <h1>About</h1>
