@@ -30,7 +30,9 @@ last_run_label = last_run.astimezone(DEN).strftime("%b %-d, %Y, %-I:%M %p") + " 
 def is_new(t):
     added = datetime.datetime.fromisoformat(t["added_at"])
     posted = datetime.datetime.fromisoformat(t["posted_at"].replace("Z", "+00:00"))
-    return abs((added - last_run).total_seconds()) < 6 * 3600 and (last_run - posted).total_seconds() < 48 * 3600
+    recent_run = (last_run - added).total_seconds() < 6 * 3600
+    # posts from the last two days, or anything newly mined from a video in this run
+    return recent_run and ((last_run - posted).total_seconds() < 48 * 3600 or t.get("source_type") == "video")
 new_tips = [t for t in tips if is_new(t)]
 
 css_v = hashlib.md5((ROOT / "assets/site.css").read_bytes()).hexdigest()[:8]
@@ -146,7 +148,7 @@ index = head(f"{TITLE}: {TAGLINE}", desc, "", 0) + f"""
 <section id="results" class="results" hidden><h2>Results</h2><div id="results-list"></div></section>
 <div id="browse">
 <section class="new" id="new"><h2>New today <span class="count">{len(new_tips)}</span></h2>
-<p class="hint">Tips added in the latest run from posts in the previous two days.</p>
+<p class="hint">Tips added in the latest run: posts from the previous two days, plus tips newly pulled from watched videos.</p>
 {new_html}
 </section>
 <nav class="toc" id="topics" aria-label="Topics"><h2>Topics</h2><ul>{toc}<li><a href="#videos">Videos</a> <span>{len(videos)}</span></li></ul></nav>

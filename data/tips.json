@@ -3,7 +3,7 @@
   "title": "AI Tips Watch",
   "base_url": "https://cfmayer.github.io/ai-tips-watch/"
  },
- "last_run": "2026-11-19T18:15:05-07:00",
+ "last_run": "2026-11-19T18:28:17-07:00",
  "window": {
   "start": "2026-11-12",
   "end": "2026-11-19"
@@ -32,6 +32,13 @@
    "window": "2026-11-12/2026-11-19",
    "tips_added": 69,
    "videos_added": 26
+  },
+  {
+   "at": "2026-11-19T18:28:17-07:00",
+   "window": "video summaries for 2026-11-12/2026-11-19",
+   "tips_added": 57,
+   "tips_removed_transcript": 6,
+   "video_summaries_updated": 25
   }
  ],
  "tips": [
@@ -1071,89 +1078,6 @@
    "added_at": "2026-11-19T18:15:05-07:00"
   },
   {
-   "id": "yt-O_zcc6Xl12g-132",
-   "date": "2026-11-14",
-   "posted_at": "2026-11-14T18:36:10.981000Z",
-   "author": "poteto",
-   "topic": "Code quality",
-   "tags": [
-    "guardrails",
-    "lint",
-    "from transcript",
-    "talk"
-   ],
-   "title": "Invest in deterministic guardrails first, prose last",
-   "tip": "Lauren's 'inverse pyramid' for an agent's environment: most effort goes to deterministic layers (API design, architecture, refactoring, lint rules, type systems, compilers, tests) that force agents to do the right thing by default; then runtime and formal verification; and only a thin layer of prose (rules, skills, AGENTS.md) for things that need judgment.",
-   "source_url": "https://www.youtube.com/watch?v=O_zcc6Xl12g&t=132s",
-   "source_type": "video-transcript",
-   "video_timestamp": "2:12",
-   "added_at": "2026-11-19T18:15:05-07:00",
-   "note": "From the talk's auto-generated transcript, not from watching the video."
-  },
-  {
-   "id": "yt-O_zcc6Xl12g-187",
-   "date": "2026-11-14",
-   "posted_at": "2026-11-14T18:36:10.981000Z",
-   "author": "poteto",
-   "topic": "Code quality",
-   "tags": [
-    "lint",
-    "AGENTS.md",
-    "patterns",
-    "from transcript",
-    "talk"
-   ],
-   "title": "Turn every agent correction into a deterministic check",
-   "tip": "Your codebase is one of the agent's biggest inputs. When you correct an agent, try to make it a lint rule, type or test rather than another line in your rules or AGENTS.md: it's reproducible and enforceable. Anti-patterns and tech debt get copied by the next agent, so keep the codebase as pristine as possible.",
-   "source_url": "https://www.youtube.com/watch?v=O_zcc6Xl12g&t=187s",
-   "source_type": "video-transcript",
-   "video_timestamp": "3:07",
-   "added_at": "2026-11-19T18:15:05-07:00",
-   "note": "From the talk's auto-generated transcript, not from watching the video."
-  },
-  {
-   "id": "yt-O_zcc6Xl12g-360",
-   "date": "2026-11-14",
-   "posted_at": "2026-11-14T18:36:10.981000Z",
-   "author": "poteto",
-   "topic": "Code quality",
-   "tags": [
-    "architecture",
-    "lint",
-    "electron",
-    "from transcript",
-    "talk"
-   ],
-   "title": "Encode context in directory structure and ban cross-imports",
-   "tip": "To stop agents importing Electron main-thread code into the renderer, the Grok Bot codebase uses two top-level directories (electron renderer and electron main) and bans imports between them with a dependency-graph analyzer and lint rules: simple to set up, and one less thing to review.",
-   "source_url": "https://www.youtube.com/watch?v=O_zcc6Xl12g&t=360s",
-   "source_type": "video-transcript",
-   "video_timestamp": "6:00",
-   "added_at": "2026-11-19T18:15:05-07:00",
-   "note": "From the talk's auto-generated transcript, not from watching the video."
-  },
-  {
-   "id": "yt-O_zcc6Xl12g-494",
-   "date": "2026-11-14",
-   "posted_at": "2026-11-14T18:36:10.981000Z",
-   "author": "poteto",
-   "topic": "Code quality",
-   "tags": [
-    "comments",
-    "lint",
-    "root cause",
-    "from transcript",
-    "talk"
-   ],
-   "title": "Ban most comments; make lint errors tell agents to fix the root cause",
-   "tip": "Agents use markdown and code comments to justify quick fixes (e.g. imperative timers patching over an architecture clash), and over-rotate on small corrections. The team banned ~99% of comments (they go stale and aren't enforceable) and writes lint rules whose error messages tell the agent to fix the root cause rather than patch around it.",
-   "source_url": "https://www.youtube.com/watch?v=O_zcc6Xl12g&t=494s",
-   "source_type": "video-transcript",
-   "video_timestamp": "8:14",
-   "added_at": "2026-11-19T18:15:05-07:00",
-   "note": "From the talk's auto-generated transcript, not from watching the video."
-  },
-  {
    "id": "yt-O_zcc6Xl12g-574",
    "date": "2026-11-14",
    "posted_at": "2026-11-14T18:36:10.981000Z",
@@ -1166,54 +1090,11 @@
     "from transcript",
     "talk"
    ],
-   "title": "Review verification artifacts, and give skills a feature map",
-   "tip": "Code review has shifted toward verification artifacts (videos, screenshots, diagrams, formal checks). Runtime-verification skills let agents run the app with tools like the Chrome DevTools Protocol, include a 'feature map' (a user-facing site map of features for shared vocabulary), and ship custom CLIs/drivers the agent reuses, saving tokens and staying testable.",
+   "title": "Give runtime-verification skills a feature map",
+   "tip": "Runtime-verification skills include a 'feature map': a user-facing site map of the app's features, giving agents and humans shared vocabulary (so 'the thingy in the left sidebar' is unambiguous), plus reusable custom CLIs/drivers that save tokens and are testable.",
    "source_url": "https://www.youtube.com/watch?v=O_zcc6Xl12g&t=574s",
    "source_type": "video-transcript",
    "video_timestamp": "9:34",
-   "added_at": "2026-11-19T18:15:05-07:00",
-   "note": "From the talk's auto-generated transcript, not from watching the video."
-  },
-  {
-   "id": "yt-O_zcc6Xl12g-654",
-   "date": "2026-11-14",
-   "posted_at": "2026-11-14T18:36:10.981000Z",
-   "author": "poteto",
-   "topic": "Testing & verification",
-   "tags": [
-    "tla+",
-    "lean",
-    "bombadil",
-    "formal methods",
-    "from transcript",
-    "talk"
-   ],
-   "title": "Add formal verification and property-based UI tests as extra layers",
-   "tip": "The team model-checks major user flows (e.g. multi-device notifications) with TLA+, proves certain algorithms with Lean (e.g. a custom virtualization library against flicker/jitter), and runs property-based UI testing with Bombadil. It has found real bugs, but it's treated as one more layer, not a silver bullet.",
-   "source_url": "https://www.youtube.com/watch?v=O_zcc6Xl12g&t=654s",
-   "source_type": "video-transcript",
-   "video_timestamp": "10:54",
-   "added_at": "2026-11-19T18:15:05-07:00",
-   "note": "From the talk's auto-generated transcript, not from watching the video."
-  },
-  {
-   "id": "yt-O_zcc6Xl12g-759",
-   "date": "2026-11-14",
-   "posted_at": "2026-11-14T18:36:10.981000Z",
-   "author": "poteto",
-   "topic": "Agent skills & setup",
-   "tags": [
-    "skills",
-    "pstack",
-    "state machines",
-    "from transcript",
-    "talk"
-   ],
-   "title": "Use a statechart skill to review state machines from the user's view",
-   "tip": "Lauren built a 'statechart' skill in her pstack plugin that visualizes state machines from the user's point of view, which she finds easier to review alongside videos and screenshots.",
-   "source_url": "https://www.youtube.com/watch?v=O_zcc6Xl12g&t=759s",
-   "source_type": "video-transcript",
-   "video_timestamp": "12:39",
    "added_at": "2026-11-19T18:15:05-07:00",
    "note": "From the talk's auto-generated transcript, not from watching the video."
   },
@@ -1230,13 +1111,1068 @@
     "from transcript",
     "talk"
    ],
-   "title": "Use Grok Bot as the outer loop: auto-fuzz every release",
-   "tip": "Once foundations are solid, Grok Bot (connectors, routines that kick off Cursor cloud agents, projects) can orchestrate the outer loop. Example: on each new release, Grok Bot spins up a Cursor project that fuzzes the build like a real user, opens fix PRs for bugs found, and auto-merges them.",
+   "title": "Example outer loop: auto-fuzz every release with Grok Bot",
+   "tip": "Example from the talk: on each new release, Grok Bot spins up a Cursor project that fuzzes the build like a real user, opens fix PRs for bugs it finds, and auto-merges them.",
    "source_url": "https://www.youtube.com/watch?v=O_zcc6Xl12g&t=975s",
    "source_type": "video-transcript",
    "video_timestamp": "16:15",
    "added_at": "2026-11-19T18:15:05-07:00",
    "note": "From the talk's auto-generated transcript, not from watching the video."
+  },
+  {
+   "date": "2026-11-14",
+   "posted_at": "2026-11-14T18:36:10.981000Z",
+   "author": "poteto",
+   "topic": "Code quality",
+   "tags": [
+    "guardrails",
+    "lint",
+    "video"
+   ],
+   "title": "Guide agents with an inverted pyramid: deterministic first, prose last",
+   "tip": "Rely most on deterministic codebase design and static analysis (API design, architecture, lint rules, types, tests), then verification, and least on prose instructions (rules, skills, AGENTS.md) and human review.",
+   "source_type": "video",
+   "added_at": "2026-11-19T18:28:17-07:00",
+   "video_timestamp": "2:02",
+   "source_url": "https://www.youtube.com/watch?v=O_zcc6Xl12g&t=122s",
+   "id": "yt-O_zcc6Xl12g-122"
+  },
+  {
+   "date": "2026-11-14",
+   "posted_at": "2026-11-14T18:36:10.981000Z",
+   "author": "poteto",
+   "topic": "Code quality",
+   "tags": [
+    "lint",
+    "AGENTS.md",
+    "review",
+    "video"
+   ],
+   "title": "Turn every agent correction into a deterministic check",
+   "tip": "When you correct an agent, or catch something in review, make the fix a lint rule or other deterministic check in the codebase rather than new text in an instructions markdown file. Agents copy the patterns they see, so keep bad patterns out of the code.",
+   "source_type": "video",
+   "added_at": "2026-11-19T18:28:17-07:00",
+   "video_timestamp": "3:09",
+   "source_url": "https://www.youtube.com/watch?v=O_zcc6Xl12g&t=189s",
+   "id": "yt-O_zcc6Xl12g-189",
+   "related_urls": [
+    "https://www.youtube.com/watch?v=O_zcc6Xl12g&t=549s"
+   ]
+  },
+  {
+   "date": "2026-11-14",
+   "posted_at": "2026-11-14T18:36:10.981000Z",
+   "author": "poteto",
+   "topic": "Code quality",
+   "tags": [
+    "architecture",
+    "lint",
+    "electron",
+    "video"
+   ],
+   "title": "Enforce architecture with directory-based import bans",
+   "tip": "Encode boundaries in the directory structure and ban imports across them, e.g. code in electron-renderer can't import from electron-main.",
+   "source_type": "video",
+   "added_at": "2026-11-19T18:28:17-07:00",
+   "video_timestamp": "4:57",
+   "source_url": "https://www.youtube.com/watch?v=O_zcc6Xl12g&t=297s",
+   "id": "yt-O_zcc6Xl12g-297"
+  },
+  {
+   "date": "2026-11-14",
+   "posted_at": "2026-11-14T18:36:10.981000Z",
+   "author": "poteto",
+   "topic": "Code quality",
+   "tags": [
+    "api design",
+    "react",
+    "video"
+   ],
+   "title": "Design foolproof APIs; ban nuanced ones like useEffect",
+   "tip": "APIs that need nuance to use well lead to slop. Design foolproof APIs and ban nuanced ones, such as React's useEffect in product code.",
+   "source_type": "video",
+   "added_at": "2026-11-19T18:28:17-07:00",
+   "video_timestamp": "5:25",
+   "source_url": "https://www.youtube.com/watch?v=O_zcc6Xl12g&t=325s",
+   "id": "yt-O_zcc6Xl12g-325"
+  },
+  {
+   "date": "2026-11-14",
+   "posted_at": "2026-11-14T18:36:10.981000Z",
+   "author": "poteto",
+   "topic": "Code quality",
+   "tags": [
+    "markdown",
+    "docs",
+    "video"
+   ],
+   "title": "Stop agents writing unsolicited markdown docs",
+   "tip": "Agents use markdown and docs they weren't asked for to justify wrong implementations; stop them writing it.",
+   "source_type": "video",
+   "added_at": "2026-11-19T18:28:17-07:00",
+   "video_timestamp": "6:55",
+   "source_url": "https://www.youtube.com/watch?v=O_zcc6Xl12g&t=415s",
+   "id": "yt-O_zcc6Xl12g-415"
+  },
+  {
+   "date": "2026-11-14",
+   "posted_at": "2026-11-14T18:36:10.981000Z",
+   "author": "poteto",
+   "topic": "Code quality",
+   "tags": [
+    "root cause",
+    "patterns",
+    "video"
+   ],
+   "title": "Ban imperative quick fixes like setTimeout and requestAnimationFrame",
+   "tip": "Quick fixes spread: in the example shown, one agent's timer hack grew to 183 timers. Ban imperative timer-based patches such as setTimeout/requestAnimationFrame.",
+   "source_type": "video",
+   "added_at": "2026-11-19T18:28:17-07:00",
+   "video_timestamp": "7:22",
+   "source_url": "https://www.youtube.com/watch?v=O_zcc6Xl12g&t=442s",
+   "id": "yt-O_zcc6Xl12g-442"
+  },
+  {
+   "date": "2026-11-14",
+   "posted_at": "2026-11-14T18:36:10.981000Z",
+   "author": "poteto",
+   "topic": "Code quality",
+   "tags": [
+    "comments",
+    "lint",
+    "video"
+   ],
+   "title": "Treat code comments as liabilities",
+   "tip": "Comments aren't enforceable and agents use them to justify workarounds, so delete them. The team cut comments from 65,824 to 1,227 while growing to 169 lint rules.",
+   "source_type": "video",
+   "added_at": "2026-11-19T18:28:17-07:00",
+   "video_timestamp": "8:19",
+   "source_url": "https://www.youtube.com/watch?v=O_zcc6Xl12g&t=499s",
+   "id": "yt-O_zcc6Xl12g-499"
+  },
+  {
+   "date": "2026-11-14",
+   "posted_at": "2026-11-14T18:36:10.981000Z",
+   "author": "poteto",
+   "topic": "Testing & verification",
+   "tags": [
+    "runtime verification",
+    "cli",
+    "video"
+   ],
+   "title": "Spend most agent tokens on verification, with an app CLI to drive the app",
+   "tip": "Put roughly 70% of agent token spend into verification. Give agents a CLI to drive and screenshot your app so they check their own work before human review, e.g. `app aria:click --accessible-name \"Settings\"`, `app snapshot`, `app screenshot proof.png`.",
+   "source_type": "video",
+   "added_at": "2026-11-19T18:28:17-07:00",
+   "video_timestamp": "10:01",
+   "source_url": "https://www.youtube.com/watch?v=O_zcc6Xl12g&t=601s",
+   "id": "yt-O_zcc6Xl12g-601"
+  },
+  {
+   "date": "2026-11-14",
+   "posted_at": "2026-11-14T18:36:10.981000Z",
+   "author": "poteto",
+   "topic": "Testing & verification",
+   "tags": [
+    "tla+",
+    "lean",
+    "formal methods",
+    "video"
+   ],
+   "title": "Model state machines with TLA+ and prove algorithms with Lean",
+   "tip": "Add formal verification as another layer: TLA+ to model state machines and Lean to prove algorithms.",
+   "source_type": "video",
+   "added_at": "2026-11-19T18:28:17-07:00",
+   "video_timestamp": "10:49",
+   "source_url": "https://www.youtube.com/watch?v=O_zcc6Xl12g&t=649s",
+   "id": "yt-O_zcc6Xl12g-649"
+  },
+  {
+   "date": "2026-11-14",
+   "posted_at": "2026-11-14T18:36:10.981000Z",
+   "author": "poteto",
+   "topic": "Testing & verification",
+   "tags": [
+    "bombadil",
+    "property-based testing",
+    "video"
+   ],
+   "title": "Fuzz your UI with property-based testing (Bombadil)",
+   "tip": "Use property-based UI testing to fuzz the UI; the Grok Bot team uses Bombadil (github.com/antithesishq/bombadil).",
+   "source_type": "video",
+   "added_at": "2026-11-19T18:28:17-07:00",
+   "video_timestamp": "11:34",
+   "source_url": "https://www.youtube.com/watch?v=O_zcc6Xl12g&t=694s",
+   "id": "yt-O_zcc6Xl12g-694",
+   "related_urls": [
+    "https://github.com/antithesishq/bombadil"
+   ]
+  },
+  {
+   "date": "2026-11-14",
+   "posted_at": "2026-11-14T18:36:10.981000Z",
+   "author": "poteto",
+   "topic": "Agent skills & setup",
+   "tags": [
+    "skills",
+    "pstack",
+    "review",
+    "video"
+   ],
+   "title": "Generate statecharts and other visual artifacts for reviewers",
+   "tip": "Have agents produce visual artifacts such as statecharts so reviewers can check behavior quickly. The statechart skill is part of pstack (github.com/cursor/plugins/tree/main/pstack).",
+   "source_type": "video",
+   "added_at": "2026-11-19T18:28:17-07:00",
+   "video_timestamp": "12:54",
+   "source_url": "https://www.youtube.com/watch?v=O_zcc6Xl12g&t=774s",
+   "id": "yt-O_zcc6Xl12g-774",
+   "related_urls": [
+    "https://github.com/cursor/plugins/tree/main/pstack"
+   ]
+  },
+  {
+   "date": "2026-11-14",
+   "posted_at": "2026-11-14T18:36:10.981000Z",
+   "author": "poteto",
+   "topic": "Workflows",
+   "tags": [
+    "automation",
+    "trust",
+    "video"
+   ],
+   "title": "Don't automate a low-trust loop",
+   "tip": "If your inner agent loop produces slop, automating it just produces more. Improve constraints and self-verification first.",
+   "source_type": "video",
+   "added_at": "2026-11-19T18:28:17-07:00",
+   "video_timestamp": "15:48",
+   "source_url": "https://www.youtube.com/watch?v=O_zcc6Xl12g&t=948s",
+   "id": "yt-O_zcc6Xl12g-948"
+  },
+  {
+   "date": "2026-11-14",
+   "posted_at": "2026-11-14T18:36:10.981000Z",
+   "author": "poteto",
+   "topic": "Workflows",
+   "tags": [
+    "automation",
+    "routines",
+    "triggers",
+    "video"
+   ],
+   "title": "Once the loop is high-trust, add an outer loop on triggers",
+   "tip": "With a trusted inner loop, add an outer loop that kicks off agents from Linear tickets, Slack messages, cron schedules, or Datadog/Sentry alerts.",
+   "source_type": "video",
+   "added_at": "2026-11-19T18:28:17-07:00",
+   "video_timestamp": "16:06",
+   "source_url": "https://www.youtube.com/watch?v=O_zcc6Xl12g&t=966s",
+   "id": "yt-O_zcc6Xl12g-966"
+  },
+  {
+   "date": "2026-11-16",
+   "posted_at": "2026-11-16T13:47:15.163000Z",
+   "author": "mattpocockuk",
+   "topic": "Prompting",
+   "tags": [
+    "domain language",
+    "video"
+   ],
+   "title": "Use a field's precise domain terms in prompts",
+   "tip": "Precise domain vocabulary pulls the relevant knowledge out of the model.",
+   "source_type": "video",
+   "added_at": "2026-11-19T18:28:17-07:00",
+   "video_timestamp": "7:35",
+   "source_url": "https://www.youtube.com/watch?v=ZBTegd8DUZM&t=455s",
+   "id": "yt-ZBTegd8DUZM-455",
+   "credit": "With @mitsuhiko and @badlogicgames"
+  },
+  {
+   "date": "2026-11-16",
+   "posted_at": "2026-11-16T13:47:15.163000Z",
+   "author": "mattpocockuk",
+   "topic": "Prompting",
+   "tags": [
+    "trade-offs",
+    "video"
+   ],
+   "title": "Tell the model which trade-offs matter",
+   "tip": "The model's first correct solution is rarely the best one; state the trade-offs that matter for your problem.",
+   "source_type": "video",
+   "added_at": "2026-11-19T18:28:17-07:00",
+   "video_timestamp": "8:12",
+   "source_url": "https://www.youtube.com/watch?v=ZBTegd8DUZM&t=492s",
+   "id": "yt-ZBTegd8DUZM-492",
+   "credit": "With @mitsuhiko and @badlogicgames"
+  },
+  {
+   "date": "2026-11-16",
+   "posted_at": "2026-11-16T13:47:15.163000Z",
+   "author": "mattpocockuk",
+   "topic": "Workflows",
+   "tags": [
+    "task design",
+    "video"
+   ],
+   "title": "Give agents straight-line tasks toward a verifiable goal",
+   "tip": "Agents are strong tactically but weak at ambiguous design work that needs judgment; hand them clear tasks with a verifiable goal.",
+   "source_type": "video",
+   "added_at": "2026-11-19T18:28:17-07:00",
+   "video_timestamp": "8:41",
+   "source_url": "https://www.youtube.com/watch?v=ZBTegd8DUZM&t=521s",
+   "id": "yt-ZBTegd8DUZM-521",
+   "credit": "With @mitsuhiko and @badlogicgames"
+  },
+  {
+   "date": "2026-11-16",
+   "posted_at": "2026-11-16T13:47:15.163000Z",
+   "author": "mattpocockuk",
+   "topic": "Code quality",
+   "tags": [
+    "api design",
+    "video"
+   ],
+   "title": "Avoid nuance in the APIs and codebases agents work in",
+   "tip": "Ambiguity leads agents to poor choices and slop.",
+   "source_type": "video",
+   "added_at": "2026-11-19T18:28:17-07:00",
+   "video_timestamp": "9:08",
+   "source_url": "https://www.youtube.com/watch?v=ZBTegd8DUZM&t=548s",
+   "id": "yt-ZBTegd8DUZM-548",
+   "credit": "With @mitsuhiko and @badlogicgames"
+  },
+  {
+   "date": "2026-11-16",
+   "posted_at": "2026-11-16T13:47:15.163000Z",
+   "author": "mattpocockuk",
+   "topic": "Workflows",
+   "tags": [
+    "quality",
+    "video"
+   ],
+   "title": "Spend the time agents save on quality",
+   "tip": "Use the time saved on drudgery to raise quality, not just to ship more features.",
+   "source_type": "video",
+   "added_at": "2026-11-19T18:28:17-07:00",
+   "video_timestamp": "12:20",
+   "source_url": "https://www.youtube.com/watch?v=ZBTegd8DUZM&t=740s",
+   "id": "yt-ZBTegd8DUZM-740",
+   "credit": "With @mitsuhiko and @badlogicgames"
+  },
+  {
+   "date": "2026-11-16",
+   "posted_at": "2026-11-16T13:47:15.163000Z",
+   "author": "mattpocockuk",
+   "topic": "Code quality",
+   "tags": [
+    "assumptions",
+    "scaling",
+    "video"
+   ],
+   "title": "Re-check agent code's assumptions as data grows",
+   "tip": "Trade-offs chosen early (e.g. for an empty database) can break as data grows; revisit them over time.",
+   "source_type": "video",
+   "added_at": "2026-11-19T18:28:17-07:00",
+   "video_timestamp": "28:30",
+   "source_url": "https://www.youtube.com/watch?v=ZBTegd8DUZM&t=1710s",
+   "id": "yt-ZBTegd8DUZM-1710",
+   "credit": "With @mitsuhiko and @badlogicgames"
+  },
+  {
+   "date": "2026-11-11",
+   "posted_at": "2026-11-12T00:34:57.118000Z",
+   "author": "zachlloydtweets",
+   "topic": "Testing & verification",
+   "tags": [
+    "code review",
+    "video"
+   ],
+   "title": "Build and own a custom review agent",
+   "tip": "Write a review agent that enforces your own architecture, PII handling and style rules rather than relying only on off-the-shelf reviewers.",
+   "source_type": "video",
+   "added_at": "2026-11-19T18:28:17-07:00",
+   "video_timestamp": "4:18",
+   "source_url": "https://www.youtube.com/watch?v=uPCH2axUpbc&t=258s",
+   "id": "yt-uPCH2axUpbc-258",
+   "credit": "Video by @BHolmesDev"
+  },
+  {
+   "date": "2026-11-11",
+   "posted_at": "2026-11-12T00:34:57.118000Z",
+   "author": "zachlloydtweets",
+   "topic": "Testing & verification",
+   "tags": [
+    "code review",
+    "subagents",
+    "video"
+   ],
+   "title": "Review in a fresh context, not self-review",
+   "tip": "Hand the diff to a separate reviewer sub-agent in a fresh context window. In the Warp benchmark shown, an independent reviewer averaged 71.1% correctness at $12.02 vs 68.6% at $4.82 for self-review.",
+   "source_type": "video",
+   "added_at": "2026-11-19T18:28:17-07:00",
+   "video_timestamp": "7:51",
+   "source_url": "https://www.youtube.com/watch?v=uPCH2axUpbc&t=471s",
+   "id": "yt-uPCH2axUpbc-471",
+   "credit": "Video by @BHolmesDev"
+  },
+  {
+   "date": "2026-11-11",
+   "posted_at": "2026-11-12T00:34:57.118000Z",
+   "author": "zachlloydtweets",
+   "topic": "Testing & verification",
+   "tags": [
+    "code review",
+    "structured output",
+    "video"
+   ],
+   "title": "Make the reviewer return structured JSON",
+   "tip": "Have the reviewer output a verdict (\"approved\" / \"needs changes\" / \"requires human input\") plus findings with line/blocks, a suggestion and severity (\"nit\" / \"important\" / \"critical\").",
+   "source_type": "video",
+   "added_at": "2026-11-19T18:28:17-07:00",
+   "video_timestamp": "9:07",
+   "source_url": "https://www.youtube.com/watch?v=uPCH2axUpbc&t=547s",
+   "id": "yt-uPCH2axUpbc-547",
+   "credit": "Video by @BHolmesDev"
+  },
+  {
+   "date": "2026-11-11",
+   "posted_at": "2026-11-12T00:34:57.118000Z",
+   "author": "zachlloydtweets",
+   "topic": "Testing & verification",
+   "tags": [
+    "code review",
+    "github",
+    "video"
+   ],
+   "title": "Run the agent review loop before opening the PR",
+   "tip": "Keep implement/review iterations inside your agent platform so GitHub isn't cluttered with bot comments.",
+   "source_type": "video",
+   "added_at": "2026-11-19T18:28:17-07:00",
+   "video_timestamp": "11:50",
+   "source_url": "https://www.youtube.com/watch?v=uPCH2axUpbc&t=710s",
+   "id": "yt-uPCH2axUpbc-710",
+   "credit": "Video by @BHolmesDev"
+  },
+  {
+   "date": "2026-11-11",
+   "posted_at": "2026-11-12T00:34:57.118000Z",
+   "author": "zachlloydtweets",
+   "topic": "Testing & verification",
+   "tags": [
+    "code review",
+    "loops",
+    "video"
+   ],
+   "title": "Cap implement/review rounds at about 3-5",
+   "tip": "Limit the agent implement-and-review loop to roughly 3-5 turns.",
+   "source_type": "video",
+   "added_at": "2026-11-19T18:28:17-07:00",
+   "video_timestamp": "12:16",
+   "source_url": "https://www.youtube.com/watch?v=uPCH2axUpbc&t=736s",
+   "id": "yt-uPCH2axUpbc-736",
+   "credit": "Video by @BHolmesDev"
+  },
+  {
+   "date": "2026-11-11",
+   "posted_at": "2026-11-12T00:34:57.118000Z",
+   "author": "zachlloydtweets",
+   "topic": "Testing & verification",
+   "tags": [
+    "e2e",
+    "sandbox",
+    "skills",
+    "video"
+   ],
+   "title": "Verify end to end in a sandbox via Chrome DevTools Protocol",
+   "tip": "A \"Test Desktop App\" skill boots the Electron app in a container (factory.yaml: os linux, arch x86_64, dockerImage warpdotdev/dev-base:latest) and drives it through the Chrome DevTools Protocol.",
+   "source_type": "video",
+   "added_at": "2026-11-19T18:28:17-07:00",
+   "video_timestamp": "20:30",
+   "source_url": "https://www.youtube.com/watch?v=uPCH2axUpbc&t=1230s",
+   "id": "yt-uPCH2axUpbc-1230",
+   "credit": "Video by @BHolmesDev"
+  },
+  {
+   "date": "2026-11-11",
+   "posted_at": "2026-11-12T00:34:57.118000Z",
+   "author": "zachlloydtweets",
+   "topic": "Testing & verification",
+   "tags": [
+    "verification artifacts",
+    "video"
+   ],
+   "title": "Have the agent record its test session as an MP4",
+   "tip": "Give reviewers a video of the agent's verification run.",
+   "source_type": "video",
+   "added_at": "2026-11-19T18:28:17-07:00",
+   "video_timestamp": "26:45",
+   "source_url": "https://www.youtube.com/watch?v=uPCH2axUpbc&t=1605s",
+   "id": "yt-uPCH2axUpbc-1605",
+   "credit": "Video by @BHolmesDev"
+  },
+  {
+   "date": "2026-11-11",
+   "posted_at": "2026-11-12T00:34:57.118000Z",
+   "author": "zachlloydtweets",
+   "topic": "Testing & verification",
+   "tags": [
+    "risk",
+    "skills",
+    "video"
+   ],
+   "title": "Add a merge-risk skill to every PR",
+   "tip": "Score the PR on Alignment, Impact, Verification, Rollback cost and Error detection, and append a low/medium/high risk rating to the PR description.",
+   "source_type": "video",
+   "added_at": "2026-11-19T18:28:17-07:00",
+   "video_timestamp": "28:35",
+   "source_url": "https://www.youtube.com/watch?v=uPCH2axUpbc&t=1715s",
+   "id": "yt-uPCH2axUpbc-1715",
+   "credit": "Video by @BHolmesDev"
+  },
+  {
+   "date": "2026-11-18",
+   "posted_at": "2026-11-18T16:57:38.657000Z",
+   "author": "mattpocockuk",
+   "topic": "Workflows",
+   "tags": [
+    "planning",
+    "video"
+   ],
+   "title": "Choose the approach by change size",
+   "tip": "One-shot tiny changes; for big features, start with an alignment phase on domain language.",
+   "source_type": "video",
+   "added_at": "2026-11-19T18:28:17-07:00",
+   "video_timestamp": "3:08",
+   "source_url": "https://x.com/mattpocockuk/status/2123098316867051991",
+   "id": "x-2123098316867051991-188"
+  },
+  {
+   "date": "2026-11-18",
+   "posted_at": "2026-11-18T16:57:38.657000Z",
+   "author": "mattpocockuk",
+   "topic": "Agent skills & setup",
+   "tags": [
+    "skills",
+    "alignment",
+    "video"
+   ],
+   "title": "Grill first: let the agent question you before coding",
+   "tip": "A command like /grill-with-docs makes the agent ask you questions before it writes any code.",
+   "source_type": "video",
+   "added_at": "2026-11-19T18:28:17-07:00",
+   "video_timestamp": "4:43",
+   "source_url": "https://x.com/mattpocockuk/status/2123098316867051991",
+   "id": "x-2123098316867051991-283"
+  },
+  {
+   "date": "2026-11-18",
+   "posted_at": "2026-11-18T16:57:38.657000Z",
+   "author": "mattpocockuk",
+   "topic": "Agent skills & setup",
+   "tags": [
+    "domain language",
+    "docs",
+    "video"
+   ],
+   "title": "Keep a GLOSSARY.md of project terms",
+   "tip": "Agents write better code when they know your domain's nouns and verbs.",
+   "source_type": "video",
+   "added_at": "2026-11-19T18:28:17-07:00",
+   "video_timestamp": "10:29",
+   "source_url": "https://x.com/mattpocockuk/status/2123098316867051991",
+   "id": "x-2123098316867051991-629"
+  },
+  {
+   "date": "2026-11-18",
+   "posted_at": "2026-11-18T16:57:38.657000Z",
+   "author": "mattpocockuk",
+   "topic": "Agent skills & setup",
+   "tags": [
+    "adr",
+    "docs",
+    "video"
+   ],
+   "title": "Record ADRs so agents don't undo past decisions",
+   "tip": "Architectural Decision Records tell the agent why past decisions were made.",
+   "source_type": "video",
+   "added_at": "2026-11-19T18:28:17-07:00",
+   "video_timestamp": "16:18",
+   "source_url": "https://x.com/mattpocockuk/status/2123098316867051991",
+   "id": "x-2123098316867051991-978"
+  },
+  {
+   "date": "2026-11-18",
+   "posted_at": "2026-11-18T16:57:38.657000Z",
+   "author": "mattpocockuk",
+   "topic": "Workflows",
+   "tags": [
+    "spec",
+    "context",
+    "video"
+   ],
+   "title": "Compact the planning chat into a spec and tickets",
+   "tip": "Before implementing, compact a long planning chat (/compact) into a clean spec and a list of tickets, then run /implement-spec.",
+   "source_type": "video",
+   "added_at": "2026-11-19T18:28:17-07:00",
+   "video_timestamp": "26:30",
+   "source_url": "https://x.com/mattpocockuk/status/2123098316867051991",
+   "id": "x-2123098316867051991-1590"
+  },
+  {
+   "date": "2026-11-18",
+   "posted_at": "2026-11-18T16:57:38.657000Z",
+   "author": "mattpocockuk",
+   "topic": "Agent skills & setup",
+   "tags": [
+    "skills",
+    "review",
+    "video"
+   ],
+   "title": "Run /retro after a big generation",
+   "tip": "The agent reviews its own code against your standards for rule violations, scope creep and excess complexity.",
+   "source_type": "video",
+   "added_at": "2026-11-19T18:28:17-07:00",
+   "video_timestamp": "58:33",
+   "source_url": "https://x.com/mattpocockuk/status/2123098316867051991",
+   "id": "x-2123098316867051991-3513"
+  },
+  {
+   "date": "2026-11-18",
+   "posted_at": "2026-11-18T16:57:38.657000Z",
+   "author": "mattpocockuk",
+   "topic": "Code quality",
+   "tags": [
+    "review",
+    "stacked prs",
+    "video"
+   ],
+   "title": "Split a huge PR into stacked PRs",
+   "tip": "Have the agent break a big PR into smaller stacked PRs (e.g. schema, backend, UI) and review them one by one.",
+   "source_type": "video",
+   "added_at": "2026-11-19T18:28:17-07:00",
+   "video_timestamp": "1:01:03",
+   "source_url": "https://x.com/mattpocockuk/status/2123098316867051991",
+   "id": "x-2123098316867051991-3663"
+  },
+  {
+   "date": "2026-11-18",
+   "posted_at": "2026-11-18T16:57:38.657000Z",
+   "author": "mattpocockuk",
+   "topic": "Code quality",
+   "tags": [
+    "data",
+    "migrations",
+    "video"
+   ],
+   "title": "Prefer soft deletes when replacing an old system",
+   "tip": "Use a soft delete (e.g. an archived flag) instead of hard-deleting data, so you can revert. (No reliable timestamp in the video.)",
+   "source_type": "video",
+   "added_at": "2026-11-19T18:28:17-07:00",
+   "source_url": "https://x.com/mattpocockuk/status/2123098316867051991",
+   "id": "x-2123098316867051991-softdelete"
+  },
+  {
+   "date": "2026-11-17",
+   "posted_at": "2026-11-17T18:19:26.644000Z",
+   "author": "dexhorthy",
+   "topic": "Models & evaluation",
+   "tags": [
+    "benchmarks",
+    "slopcodebench",
+    "video"
+   ],
+   "title": "Evaluate agents on multi-step iterative tasks",
+   "tip": "One-shot tests miss it: watch whether agents refactor and centralize code as requirements grow, or pile on workarounds.",
+   "source_type": "video",
+   "added_at": "2026-11-19T18:28:17-07:00",
+   "video_timestamp": "10:20",
+   "source_url": "https://x.com/i/broadcasts/2WXPoPRqBdVEPZ",
+   "id": "x-broadcast-2WXPoPRqBdVEPZ-620",
+   "credit": "AI That Works #81 with @GOrlanski and @vaibcode"
+  },
+  {
+   "date": "2026-11-17",
+   "posted_at": "2026-11-17T18:19:26.644000Z",
+   "author": "dexhorthy",
+   "topic": "Code quality",
+   "tags": [
+    "anti-patterns",
+    "video"
+   ],
+   "title": "Watch for library avoidance",
+   "tip": "Agents often rewrite provided libraries from scratch instead of using them.",
+   "source_type": "video",
+   "added_at": "2026-11-19T18:28:17-07:00",
+   "video_timestamp": "14:50",
+   "source_url": "https://x.com/i/broadcasts/2WXPoPRqBdVEPZ",
+   "id": "x-broadcast-2WXPoPRqBdVEPZ-890",
+   "credit": "AI That Works #81 with @GOrlanski and @vaibcode"
+  },
+  {
+   "date": "2026-11-17",
+   "posted_at": "2026-11-17T18:19:26.644000Z",
+   "author": "dexhorthy",
+   "topic": "Models & evaluation",
+   "tags": [
+    "api design",
+    "benchmarks",
+    "video"
+   ],
+   "title": "Judge an agent-designed API by whether other agents can use it",
+   "tip": "LibraryDesignBench finds agent-designed libraries are often hard for other agents to use.",
+   "source_type": "video",
+   "added_at": "2026-11-19T18:28:17-07:00",
+   "video_timestamp": "17:00",
+   "source_url": "https://x.com/i/broadcasts/2WXPoPRqBdVEPZ",
+   "id": "x-broadcast-2WXPoPRqBdVEPZ-1020",
+   "credit": "AI That Works #81 with @GOrlanski and @vaibcode"
+  },
+  {
+   "date": "2026-11-17",
+   "posted_at": "2026-11-17T18:19:26.644000Z",
+   "author": "dexhorthy",
+   "topic": "Code quality",
+   "tags": [
+    "python",
+    "anti-patterns",
+    "video"
+   ],
+   "title": "Python anti-patterns agents produce",
+   "tip": "Watch for Go-style (value, error) tuple returns in Python (21:20), catch-and-reraise at every layer instead of letting exceptions bubble up (22:20), and type(x) == T instead of isinstance() (24:25).",
+   "source_type": "video",
+   "added_at": "2026-11-19T18:28:17-07:00",
+   "video_timestamp": "21:20",
+   "source_url": "https://x.com/i/broadcasts/2WXPoPRqBdVEPZ",
+   "id": "x-broadcast-2WXPoPRqBdVEPZ-1280",
+   "credit": "AI That Works #81 with @GOrlanski and @vaibcode"
+  },
+  {
+   "date": "2026-11-17",
+   "posted_at": "2026-11-17T18:19:26.644000Z",
+   "author": "dexhorthy",
+   "topic": "Workflows",
+   "tags": [
+    "refactoring",
+    "video"
+   ],
+   "title": "For big refactors, delete and reimplement from a new plan",
+   "tip": "Vaibhav's tip: for a big refactor or library swap, delete the old code and tests, have the agent write a new plan, and reimplement from scratch rather than editing in place.",
+   "source_type": "video",
+   "added_at": "2026-11-19T18:28:17-07:00",
+   "video_timestamp": "32:50",
+   "source_url": "https://x.com/i/broadcasts/2WXPoPRqBdVEPZ",
+   "id": "x-broadcast-2WXPoPRqBdVEPZ-1970",
+   "credit": "Tip from @vaibcode"
+  },
+  {
+   "date": "2026-11-12",
+   "posted_at": "2026-11-12T11:52:35.290000Z",
+   "author": "mattpocockuk",
+   "topic": "Agent skills & setup",
+   "tags": [
+    "home repo",
+    "config",
+    "video"
+   ],
+   "title": "Put private skills and shared settings in the Home Repo",
+   "tip": "Keep private skills (sensitive workflows) and version-controlled config like settings.json in the Home Repo so the whole team gets them.",
+   "source_type": "video",
+   "added_at": "2026-11-19T18:28:17-07:00",
+   "video_timestamp": "2:54",
+   "source_url": "https://x.com/mattpocockuk/status/2120847219788308872",
+   "id": "x-2120847219788308872-174"
+  },
+  {
+   "date": "2026-11-12",
+   "posted_at": "2026-11-12T11:52:35.290000Z",
+   "author": "mattpocockuk",
+   "topic": "Agent skills & setup",
+   "tags": [
+    "home repo",
+    "cli",
+    "wiki",
+    "video"
+   ],
+   "title": "Keep custom CLI tooling in the Home Repo",
+   "tip": "E.g. one CLI wrapping Slack, Discord, GitHub and Google Calendar for your agents. The Home Repo can also hold an LLM wiki of markdown on audiences, business concepts and architecture (05:44).",
+   "source_type": "video",
+   "added_at": "2026-11-19T18:28:17-07:00",
+   "video_timestamp": "6:36",
+   "source_url": "https://x.com/mattpocockuk/status/2120847219788308872",
+   "id": "x-2120847219788308872-396"
+  },
+  {
+   "date": "2026-11-13",
+   "posted_at": "2026-11-13T12:00:25.319000Z",
+   "author": "mattpocockuk",
+   "topic": "Agent skills & setup",
+   "tags": [
+    "skills",
+    "pr review",
+    "video",
+    "video"
+   ],
+   "title": "How /animatic turns a PR into a narrated video",
+   "tip": "The agent writes a JSON storyboard, Playwright renders code frames from the PR diff, TTS reads each line and FFmpeg stitches an MP4. Voice engine (ElevenLabs, OpenAI, Edge-TTS), rendering style and stitcher are CLI options (00:56); the MP4 is posted as a PR comment via the GitHub/GitLab API or saved locally (01:25).",
+   "source_type": "video",
+   "added_at": "2026-11-19T18:28:17-07:00",
+   "video_timestamp": "0:14",
+   "source_url": "https://x.com/mattpocockuk/status/2121211579098083668",
+   "id": "x-2121211579098083668-14"
+  },
+  {
+   "date": "2026-11-19",
+   "posted_at": "2026-11-20T00:08:02.880000Z",
+   "author": "dexhorthy",
+   "topic": "Code quality",
+   "tags": [
+    "review",
+    "video"
+   ],
+   "title": "Scale human review to the stakes",
+   "tip": "Agent reviewers, linters and verifiers help but aren't enough; scale human review to the stakes, not to lines of code or PR counts.",
+   "source_type": "video",
+   "added_at": "2026-11-19T18:28:17-07:00",
+   "video_timestamp": "0:16",
+   "source_url": "https://x.com/aiDotEngineer/status/2123566998294601980",
+   "id": "x-2123566998294601980-16",
+   "credit": "Talk clip via @aiDotEngineer"
+  },
+  {
+   "date": "2026-11-19",
+   "posted_at": "2026-11-20T00:08:02.880000Z",
+   "author": "dexhorthy",
+   "topic": "Code quality",
+   "tags": [
+    "vibe coding",
+    "video"
+   ],
+   "title": "Slop is fine when it gets you the outcome",
+   "tip": "One-shot prompts and vibe coding are fine when they get you the outcome; slop is bad only when it undermines quality, maintainability or teammates' time.",
+   "source_type": "video",
+   "added_at": "2026-11-19T18:28:17-07:00",
+   "video_timestamp": "0:34",
+   "source_url": "https://x.com/aiDotEngineer/status/2123566998294601980",
+   "id": "x-2123566998294601980-34",
+   "credit": "Talk clip via @aiDotEngineer"
+  },
+  {
+   "date": "2026-11-12",
+   "posted_at": "2026-11-12T19:18:53.213000Z",
+   "author": "ericzakariasson",
+   "topic": "Grok Bot",
+   "tags": [
+    "deep links",
+    "video"
+   ],
+   "title": "Prefill links come in web and app forms",
+   "tip": "Shareable prefilled-prompt links work as a web link (https://cursor.com/grok-bot/link/v1/prompt?text=...) or an app link (grokbot://app/v1/prompt?text=...).",
+   "source_type": "video",
+   "added_at": "2026-11-19T18:28:17-07:00",
+   "video_timestamp": "0:00",
+   "source_url": "https://x.com/ericzakariasson/status/2120959534537871653",
+   "id": "x-2120959534537871653-0"
+  },
+  {
+   "date": "2026-11-13",
+   "posted_at": "2026-11-13T17:28:42.686000Z",
+   "author": "ericzakariasson",
+   "topic": "Grok Bot",
+   "tags": [
+    "docs",
+    "diagrams",
+    "video"
+   ],
+   "title": "Ask the docs for a diagram",
+   "tip": "On supported docs pages, 'Ask Grok Bot' answers questions about the page; asking it to walk through how Grok Bot handles a task 'with a diagram' returns a step-by-step flowchart.",
+   "source_type": "video",
+   "added_at": "2026-11-19T18:28:17-07:00",
+   "video_timestamp": "0:00",
+   "source_url": "https://x.com/ericzakariasson/status/2121294195843629360",
+   "id": "x-2121294195843629360-0"
+  },
+  {
+   "date": "2026-11-16",
+   "posted_at": "2026-11-16T20:01:57.720000Z",
+   "author": "ericzakariasson",
+   "topic": "Cursor",
+   "tags": [
+    "voice",
+    "video"
+   ],
+   "title": "Edit dictated prompts before sending, including follow-ups",
+   "tip": "Click the mic in the agent prompt box to dictate (text transcribes live); cancel or stop recording and edit before sending. It works for follow-ups too, e.g. 'Write a unit test for the dark mode toggle' (00:22).",
+   "source_type": "video",
+   "added_at": "2026-11-19T18:28:17-07:00",
+   "video_timestamp": "0:07",
+   "source_url": "https://x.com/ericzakariasson/status/2122419926208249898",
+   "id": "x-2122419926208249898-7"
+  },
+  {
+   "date": "2026-11-12",
+   "posted_at": "2026-11-12T16:55:56.257000Z",
+   "author": "ericzakariasson",
+   "topic": "Grok Bot",
+   "tags": [
+    "meetings",
+    "video"
+   ],
+   "title": "Pull a bot into a video call from chat",
+   "tip": "Invite a bot to a video call from text chat and it joins.",
+   "source_type": "video",
+   "added_at": "2026-11-19T18:28:17-07:00",
+   "video_timestamp": "0:09",
+   "source_url": "https://x.com/bot/status/2120582957782200586",
+   "id": "x-2120582957782200586-9",
+   "credit": "Video by @bot"
+  },
+  {
+   "date": "2026-11-12",
+   "posted_at": "2026-11-12T16:55:56.257000Z",
+   "author": "ericzakariasson",
+   "topic": "Grok Bot",
+   "tags": [
+    "teams",
+    "handoff",
+    "video"
+   ],
+   "title": "Have bots tag each other to hand off work",
+   "tip": "Bots can tag one another in channels to pass work along (e.g. a research bot handing off to a copy bot).",
+   "source_type": "video",
+   "added_at": "2026-11-19T18:28:17-07:00",
+   "video_timestamp": "0:35",
+   "source_url": "https://x.com/bot/status/2120582957782200586",
+   "id": "x-2120582957782200586-35",
+   "credit": "Video by @bot"
+  },
+  {
+   "date": "2026-11-12",
+   "posted_at": "2026-11-12T16:55:56.257000Z",
+   "author": "ericzakariasson",
+   "topic": "Grok Bot",
+   "tags": [
+    "review",
+    "safety",
+    "video"
+   ],
+   "title": "Use a bot as a safety net before sharing",
+   "tip": "Bots can warn you about sensitive content, e.g. confidential financials on slides, before a deck is shared externally.",
+   "source_type": "video",
+   "added_at": "2026-11-19T18:28:17-07:00",
+   "video_timestamp": "0:55",
+   "source_url": "https://x.com/bot/status/2120582957782200586",
+   "id": "x-2120582957782200586-55",
+   "credit": "Video by @bot"
+  },
+  {
+   "date": "2026-11-13",
+   "posted_at": "2026-11-13T19:25:50.251000Z",
+   "author": "poteto",
+   "topic": "Grok Bot",
+   "tags": [
+    "meetings",
+    "notes",
+    "video"
+   ],
+   "title": "Ask the bot for things out loud during meetings",
+   "tip": "Once in a Zoom/Google Meet call (ask it in chat to join), the bot responds to spoken requests such as sending follow-ups, confirms with a chat reaction, and writes structured notes and action items into apps like Notion (00:18).",
+   "source_type": "video",
+   "added_at": "2026-11-19T18:28:17-07:00",
+   "video_timestamp": "0:16",
+   "source_url": "https://x.com/bot/status/2121320089920430181",
+   "id": "x-2121320089920430181-16",
+   "credit": "Video by @bot"
+  },
+  {
+   "date": "2026-11-18",
+   "posted_at": "2026-11-18T18:51:40.460000Z",
+   "author": "Baconbrix",
+   "topic": "Grok Bot",
+   "tags": [
+    "travel",
+    "video"
+   ],
+   "title": "Give travel requests themes and dates",
+   "tip": "Ask for specific flights (e.g. nonstop SFO to LAX) and pick from options in chat (00:05), or give themed preferences and dates (e.g. a desert hotel near Joshua Tree) to get bookable hotel options.",
+   "source_type": "video",
+   "added_at": "2026-11-19T18:28:17-07:00",
+   "video_timestamp": "0:19",
+   "source_url": "https://x.com/bot/status/2123121401762918718",
+   "id": "x-2123121401762918718-19",
+   "credit": "Video by @bot"
+  },
+  {
+   "date": "2026-11-12",
+   "posted_at": "2026-11-12T18:02:10.593000Z",
+   "author": "ccheever",
+   "topic": "Mobile & app building",
+   "tags": [
+    "expo",
+    "verification",
+    "video"
+   ],
+   "title": "Let agents check UI across device types, with a human pause",
+   "tip": "Expo Simulators work from local and cloud agents (00:25), let agents test UI across iPhones, Androids, foldables and watches, and the workflow can pause for a human to check the simulator before the agent ships (00:50).",
+   "source_type": "video",
+   "added_at": "2026-11-19T18:28:17-07:00",
+   "video_timestamp": "0:36",
+   "source_url": "https://x.com/expo/status/2120924979898601506",
+   "id": "x-2120924979898601506-36",
+   "credit": "Video by @expo"
+  },
+  {
+   "date": "2026-11-19",
+   "posted_at": "2026-11-19T19:12:06.573000Z",
+   "author": "zachlloydtweets",
+   "topic": "Software factories",
+   "tags": [
+    "factories-as-code",
+    "metrics",
+    "video"
+   ],
+   "title": "Warp Factories: workflows as YAML, dashboards, self-improvement",
+   "tip": "Define agent workflows as code in YAML; dashboards track code quality, test coverage, regression risk and cost per PR (00:51); a Self-Improvement toggle lets the loop optimize itself (00:58); built-in benchmarking compares configs, subagents and models (01:03).",
+   "source_type": "video",
+   "added_at": "2026-11-19T18:28:17-07:00",
+   "video_timestamp": "0:27",
+   "source_url": "https://x.com/warpdotdev/status/2123493996286951624",
+   "id": "x-2123493996286951624-27",
+   "credit": "Video by @warpdotdev"
+  },
+  {
+   "date": "2026-11-11",
+   "posted_at": "2026-11-12T02:21:27.925000Z",
+   "author": "zachlloydtweets",
+   "topic": "Models & evaluation",
+   "tags": [
+    "benchmarks",
+    "video"
+   ],
+   "title": "Benchmark several model configs in one run on the same harness",
+   "tip": "Put multiple model configurations (e.g. Gemini 4 Carbon vs Gemini 4 Argon) in a single benchmark run on the same harness.",
+   "source_type": "video",
+   "added_at": "2026-11-19T18:28:17-07:00",
+   "video_timestamp": "0:02",
+   "source_url": "https://x.com/warpdotdev/status/2120702943003574441",
+   "id": "x-2120702943003574441-2",
+   "credit": "Video by @warpdotdev"
+  },
+  {
+   "date": "2026-11-14",
+   "posted_at": "2026-11-15T00:10:08.468000Z",
+   "author": "swyx",
+   "topic": "Prompting",
+   "tags": [
+    "ux",
+    "intra-turn",
+    "video"
+   ],
+   "title": "Surface assumptions as editable widgets before generating",
+   "tip": "Feedforward UX: the AI shows its assumptions (e.g. kids' ages, interests) as editable controls before writing the plan, offers preselected style/color dropdowns for creative assets (00:26), and 'leaving blanks' templates for missing details like guest count or tone (00:41), so you steer without extra chat turns.",
+   "source_type": "video",
+   "added_at": "2026-11-19T18:28:17-07:00",
+   "video_timestamp": "0:04",
+   "source_url": "https://x.com/liu_xingyu/status/2121015724374397183",
+   "id": "x-2121015724374397183-4",
+   "credit": "Video by @liu_xingyu"
   }
  ],
  "videos": [
@@ -1247,13 +2183,14 @@
    "source_url": "https://www.youtube.com/watch?v=O_zcc6Xl12g",
    "posted_in": "https://x.com/poteto/status/2121673563489140863",
    "duration_s": 1051,
-   "summary_status": "transcript",
-   "summary": "Lauren Tan (@poteto) explains how the Grok Bot team ships at very high volume without losing quality by investing in the agent's environment so agents can be trusted: deterministic guardrails first (API design, architecture, lint rules, types, tests), then runtime and formal verification, then a little prose. Examples: banning useEffect in product code, banning ~99% of comments, directory-based import bans, a runtime-verification 'feature map', TLA+/Lean, and Bombadil for property-based UI tests. She reports shipping about 3,000 PRs herself in a month and the team about 11,000, ~227 contributors in October, a revert rate steady around 0.5%, roughly daily stable releases, and improved app performance; and closes with Grok Bot as the outer loop (e.g. auto-fuzzing each release and auto-merging fixes).",
+   "summary_status": "done",
+   "summary": "Lauren Tan (@poteto) on scaling Grok Bot's coding agents into a high-trust \"software factory\". Agents learn from their environment, so remove bad patterns, ban nuanced APIs, and replace prose instructions and code comments with strict architectural boundaries and lint rules. Spend most agent effort on programmatic verification (custom app CLIs, formal proofs, property-based UI tests) so agents verify their own work before human review. Results shown: 10,926 PRs merged in October (of 23,310 total), 19 desktop releases a month with a median 23 hours between releases, a revert rate steady at 0.47%, and comments cut from 65,824 to 1,227 while lint rules grew to 169.",
    "note": null,
    "added_at": "2026-11-19T18:15:05-07:00",
    "date": "2026-11-14",
    "has_local_copy": true,
-   "has_transcript": true
+   "has_transcript": true,
+   "watched_at": "2026-11-19T18:28:17-07:00"
   },
   {
    "id": "yt-ZBTegd8DUZM",
@@ -1262,13 +2199,14 @@
    "source_url": "https://www.youtube.com/watch?v=ZBTegd8DUZM",
    "posted_in": "https://x.com/mattpocockuk/status/2122325627529519558",
    "duration_s": 2775,
-   "summary_status": "coming",
-   "summary": null,
+   "summary_status": "done",
+   "summary": "Matt Pocock talks with Armin Ronacher (@mitsuhiko) and Mario Zechner (@badlogicgames), the creators of Pi, about where coding agents help and where they don't. Agents are strong tactically (fast code, reliable bug triage) but weak at system design, architecture and ambiguous problems. Use the time agents save on drudgery for quality rather than more features, and keep humans on domain knowledge, trade-offs and oversight.",
    "note": null,
    "added_at": "2026-11-19T18:15:05-07:00",
    "date": "2026-11-16",
    "has_local_copy": true,
-   "has_transcript": true
+   "has_transcript": true,
+   "watched_at": "2026-11-19T18:28:17-07:00"
   },
   {
    "id": "yt-uPCH2axUpbc",
@@ -1277,13 +2215,14 @@
    "source_url": "https://youtu.be/uPCH2axUpbc",
    "posted_in": "https://x.com/zachlloydtweets/status/2120676687054794917",
    "duration_s": 3724,
-   "summary_status": "coming",
-   "summary": null,
+   "summary_status": "done",
+   "summary": "Ben Holmes (@BHolmesDev) fixes the code review bottleneck in three stages using Warp Factories: an isolated agent-to-agent review loop, end-to-end verification in a sandbox with recorded video, and an automated merge-risk assessment added to the PR description, so humans see polished, verified PRs with a risk summary. In a Warp benchmark shown, an independent reviewer averaged $12.02 and 71.1% correctness vs $4.82 and 68.6% for self-review.",
    "note": null,
    "added_at": "2026-11-19T18:15:05-07:00",
    "date": "2026-11-11",
    "has_local_copy": true,
-   "has_transcript": true
+   "has_transcript": true,
+   "watched_at": "2026-11-19T18:28:17-07:00"
   },
   {
    "id": "x-2123098316867051991",
@@ -1292,13 +2231,14 @@
    "source_url": "https://x.com/mattpocockuk/status/2123098316867051991",
    "posted_in": "https://x.com/mattpocockuk/status/2123098316867051991",
    "duration_s": 4170,
-   "summary_status": "coming",
-   "summary": null,
+   "summary_status": "done",
+   "summary": "Matt Pocock builds a thumbnail-editor feature for his Course Video Manager app with Claude Code in VS Code. He aligns with the agent first (/grill-with-docs), pins down domain language in GLOSSARY.md plus an ADR, compacts the planning chat into a spec and tickets, runs /implement-spec to get one large PR, then runs /retro so the agent reviews its own work against project standards (it flags ignored rules, too many comments, and a PR too big to review) and splits it into smaller stacked PRs that he reviews and merges one at a time.",
    "note": null,
    "added_at": "2026-11-19T18:15:05-07:00",
    "date": "2026-11-18",
    "has_local_copy": true,
-   "has_transcript": false
+   "has_transcript": false,
+   "watched_at": "2026-11-19T18:28:17-07:00"
   },
   {
    "id": "x-2120847219788308872",
@@ -1307,13 +2247,14 @@
    "source_url": "https://x.com/mattpocockuk/status/2120847219788308872",
    "posted_in": "https://x.com/mattpocockuk/status/2120847219788308872",
    "duration_s": 533,
-   "summary_status": "coming",
-   "summary": null,
+   "summary_status": "done",
+   "summary": "Keep one central Home Repo holding all agent skills, tooling, docs and config, always run agent sessions from it, and let it reach into your other repos, so capabilities stay in sync across the team.",
    "note": null,
    "added_at": "2026-11-19T18:15:05-07:00",
    "date": "2026-11-12",
    "has_local_copy": true,
-   "has_transcript": false
+   "has_transcript": false,
+   "watched_at": "2026-11-19T18:28:17-07:00"
   },
   {
    "id": "x-2121211579098083668",
@@ -1322,13 +2263,14 @@
    "source_url": "https://x.com/mattpocockuk/status/2121211579098083668",
    "posted_in": "https://x.com/mattpocockuk/status/2121211579098083668",
    "duration_s": 102,
-   "summary_status": "coming",
-   "summary": null,
+   "summary_status": "done",
+   "summary": "Work-in-progress skill that turns a PR into a short narrated video so humans can review agent PRs faster.",
    "note": null,
    "added_at": "2026-11-19T18:15:05-07:00",
    "date": "2026-11-13",
    "has_local_copy": true,
-   "has_transcript": false
+   "has_transcript": false,
+   "watched_at": "2026-11-19T18:28:17-07:00"
   },
   {
    "id": "x-broadcast-2WXPoPRqBdVEPZ",
@@ -1337,13 +2279,14 @@
    "source_url": "https://x.com/i/broadcasts/2WXPoPRqBdVEPZ",
    "posted_in": "https://x.com/dexhorthy/status/2122756514590904459",
    "duration_s": 2252,
-   "summary_status": "coming",
-   "summary": null,
+   "summary_status": "done",
+   "summary": "@dexhorthy hosts Gabe Orlanski (creator of SlopCodeBench, University of Wisconsin) and Vaibhav (@vaibcode, BoundaryML founder). SlopCodeBench tests agents on iterative, multi-checkpoint tasks: agents solve isolated steps but fail to refactor or centralize code as requirements grow, piling on workarounds. Gabe's post \"Slop is Moving Up the Stack\" adds that agents rewrite libraries instead of using provided ones, and LibraryDesignBench shows agent-designed libraries are hard for other agents to use. Recurring anti-patterns: Go-style (value, error) returns in Python, catch-and-reraise at every layer, and type(x) == T instead of isinstance().",
    "note": null,
    "added_at": "2026-11-19T18:15:05-07:00",
    "date": "2026-11-17",
    "has_local_copy": true,
-   "has_transcript": false
+   "has_transcript": false,
+   "watched_at": "2026-11-19T18:28:17-07:00"
   },
   {
    "id": "x-2123566998294601980",
@@ -1352,13 +2295,14 @@
    "source_url": "https://x.com/aiDotEngineer/status/2123566998294601980",
    "posted_in": "https://x.com/dexhorthy/status/2123569019374678055",
    "duration_s": 58,
-   "summary_status": "coming",
-   "summary": null,
+   "summary_status": "done",
+   "summary": "As models improve, shift review from line-by-line code to plans, designs and outcomes; bring your own thinking or you get the same baseline output as everyone. Slop is fine when it gets you to the outcome, bad when it hurts quality, maintainability or teammates' time.",
    "note": null,
    "added_at": "2026-11-19T18:15:05-07:00",
    "date": "2026-11-19",
    "has_local_copy": true,
-   "has_transcript": false
+   "has_transcript": false,
+   "watched_at": "2026-11-19T18:28:17-07:00"
   },
   {
    "id": "x-2120959534537871653",
@@ -1367,13 +2311,14 @@
    "source_url": "https://x.com/ericzakariasson/status/2120959534537871653",
    "posted_in": "https://x.com/ericzakariasson/status/2120959534537871653",
    "duration_s": 9,
-   "summary_status": "coming",
-   "summary": null,
+   "summary_status": "done",
+   "summary": "Demo of shareable links that open Grok Bot with a prefilled prompt, in web and app-link forms.",
    "note": null,
    "added_at": "2026-11-19T18:15:05-07:00",
    "date": "2026-11-12",
    "has_local_copy": true,
-   "has_transcript": false
+   "has_transcript": false,
+   "watched_at": "2026-11-19T18:28:17-07:00"
   },
   {
    "id": "x-2121294195843629360",
@@ -1382,13 +2327,14 @@
    "source_url": "https://x.com/ericzakariasson/status/2121294195843629360",
    "posted_in": "https://x.com/ericzakariasson/status/2121294195843629360",
    "duration_s": 18,
-   "summary_status": "coming",
-   "summary": null,
+   "summary_status": "done",
+   "summary": "Demo of 'Ask Grok Bot' on a docs page, answering a question about how Grok Bot handles a task with a step-by-step flowchart.",
    "note": null,
    "added_at": "2026-11-19T18:15:05-07:00",
    "date": "2026-11-13",
    "has_local_copy": true,
-   "has_transcript": false
+   "has_transcript": false,
+   "watched_at": "2026-11-19T18:28:17-07:00"
   },
   {
    "id": "x-2122419926208249898",
@@ -1397,13 +2343,14 @@
    "source_url": "https://x.com/ericzakariasson/status/2122419926208249898",
    "posted_in": "https://x.com/ericzakariasson/status/2122419926208249898",
    "duration_s": 29,
-   "summary_status": "coming",
-   "summary": null,
+   "summary_status": "done",
+   "summary": "Demo of dictating prompts to the Cursor agent with the mic button: live transcription, editing before sending, and use for follow-ups.",
    "note": null,
    "added_at": "2026-11-19T18:15:05-07:00",
    "date": "2026-11-16",
    "has_local_copy": true,
-   "has_transcript": false
+   "has_transcript": false,
+   "watched_at": "2026-11-19T18:28:17-07:00"
   },
   {
    "id": "x-2123102642704675241",
@@ -1412,13 +2359,14 @@
    "source_url": "https://x.com/ericzakariasson/status/2123102642704675241",
    "posted_in": "https://x.com/ericzakariasson/status/2123102642704675241",
    "duration_s": 24,
-   "summary_status": "coming",
-   "summary": null,
+   "summary_status": "done",
+   "summary": "Announcement: grok-bot.directory lets you browse community-built bots by category and add them to your workspace, discover MCP servers/apps (e.g. Apify, Zapier, ElevenLabs), and submit your own bot or app via a share link or GitHub URL.",
    "note": null,
    "added_at": "2026-11-19T18:15:05-07:00",
    "date": "2026-11-18",
    "has_local_copy": true,
-   "has_transcript": false
+   "has_transcript": false,
+   "watched_at": "2026-11-19T18:28:17-07:00"
   },
   {
    "id": "x-2123192242965737807",
@@ -1427,13 +2375,14 @@
    "source_url": "https://x.com/ericzakariasson/status/2123192242965737807",
    "posted_in": "https://x.com/ericzakariasson/status/2123192242965737807",
    "duration_s": 10,
-   "summary_status": "coming",
-   "summary": null,
+   "summary_status": "done",
+   "summary": "Announcement: creator profile pages on grok-bot.directory list all of a creator's bots, with a Copy link button for one shareable URL.",
    "note": null,
    "added_at": "2026-11-19T18:15:05-07:00",
    "date": "2026-11-18",
    "has_local_copy": true,
-   "has_transcript": false
+   "has_transcript": false,
+   "watched_at": "2026-11-19T18:28:17-07:00"
   },
   {
    "id": "x-2120582957782200586",
@@ -1442,13 +2391,14 @@
    "source_url": "https://x.com/bot/status/2120582957782200586",
    "posted_in": "https://x.com/ericzakariasson/status/2120923560177029246",
    "duration_s": 79,
-   "summary_status": "coming",
-   "summary": null,
+   "summary_status": "done",
+   "summary": "Grok Bot 1.0 as AI teammates: specialized bots (e.g. research, copy, deck) collaborate in chats, calls and design tools, hand work to each other, and flag risks before content is shared.",
    "note": null,
    "added_at": "2026-11-19T18:15:05-07:00",
    "date": "2026-11-12",
    "has_local_copy": true,
-   "has_transcript": false
+   "has_transcript": false,
+   "watched_at": "2026-11-19T18:28:17-07:00"
   },
   {
    "id": "x-2121320089920430181",
@@ -1457,13 +2407,14 @@
    "source_url": "https://x.com/bot/status/2121320089920430181",
    "posted_in": "https://x.com/poteto/status/2121323671587606654",
    "duration_s": 29,
-   "summary_status": "coming",
-   "summary": null,
+   "summary_status": "done",
+   "summary": "Demo: ask your bot in chat to join an in-progress Zoom or Google Meet call; it takes spoken requests and writes structured notes and action items into apps like Notion.",
    "note": null,
    "added_at": "2026-11-19T18:15:05-07:00",
    "date": "2026-11-13",
    "has_local_copy": true,
-   "has_transcript": false
+   "has_transcript": false,
+   "watched_at": "2026-11-19T18:28:17-07:00"
   },
   {
    "id": "x-2123121401762918718",
@@ -1472,13 +2423,14 @@
    "source_url": "https://x.com/bot/status/2123121401762918718",
    "posted_in": "https://x.com/Baconbrix/status/2123127013468975357",
    "duration_s": 36,
-   "summary_status": "coming",
-   "summary": null,
+   "summary_status": "done",
+   "summary": "Demo: asking Grok Bot for specific flights and themed hotel options, and picking from bookable choices in chat.",
    "note": null,
    "added_at": "2026-11-19T18:15:05-07:00",
    "date": "2026-11-18",
    "has_local_copy": true,
-   "has_transcript": false
+   "has_transcript": false,
+   "watched_at": "2026-11-19T18:28:17-07:00"
   },
   {
    "id": "x-2122254137920196618",
@@ -1487,13 +2439,14 @@
    "source_url": "https://x.com/owickstrom/status/2122254137920196618",
    "posted_in": "https://x.com/owickstrom/status/2122254137920196618",
    "duration_s": 16,
-   "summary_status": "coming",
-   "summary": null,
+   "summary_status": "done",
+   "summary": "Demo only: Bombadil solving a Rubik's Cube step by step, with move notation and a progress bar.",
    "note": null,
    "added_at": "2026-11-19T18:15:05-07:00",
    "date": "2026-11-16",
    "has_local_copy": true,
-   "has_transcript": false
+   "has_transcript": false,
+   "watched_at": "2026-11-19T18:28:17-07:00"
   },
   {
    "id": "x-2123459506684543365",
@@ -1502,13 +2455,14 @@
    "source_url": "https://x.com/EnoReyes/status/2123459506684543365",
    "posted_in": "https://x.com/EnoReyes/status/2123459506684543365",
    "duration_s": 214,
-   "summary_status": "coming",
-   "summary": null,
+   "summary_status": "done",
+   "summary": "Narrative short film made with Factory Droids; no practical tips in the video itself (see @EnoReyes's thread for how it was made).",
    "note": null,
    "added_at": "2026-11-19T18:15:05-07:00",
    "date": "2026-11-19",
    "has_local_copy": true,
-   "has_transcript": false
+   "has_transcript": false,
+   "watched_at": "2026-11-19T18:28:17-07:00"
   },
   {
    "id": "x-2120924979898601506",
@@ -1517,13 +2471,14 @@
    "source_url": "https://x.com/expo/status/2120924979898601506",
    "posted_in": "https://x.com/ccheever/status/2120940229750411348",
    "duration_s": 72,
-   "summary_status": "coming",
-   "summary": null,
+   "summary_status": "done",
+   "summary": "Cloud Android/iOS simulators that let AI agents visually verify app changes, usable from local and cloud agents, with an optional pause for a human check before shipping.",
    "note": null,
    "added_at": "2026-11-19T18:15:05-07:00",
    "date": "2026-11-12",
    "has_local_copy": true,
-   "has_transcript": false
+   "has_transcript": false,
+   "watched_at": "2026-11-19T18:28:17-07:00"
   },
   {
    "id": "x-2120994964255748490",
@@ -1532,13 +2487,14 @@
    "source_url": "https://x.com/eiioth/status/2120994964255748490",
    "posted_in": "https://x.com/ccheever/status/2120995611025850589",
    "duration_s": 21,
-   "summary_status": "coming",
-   "summary": null,
+   "summary_status": "done",
+   "summary": "Demo only: an iOS app built and packaged in 10.7 seconds in the terminal with Exact Build.",
    "note": null,
    "added_at": "2026-11-19T18:15:05-07:00",
    "date": "2026-11-12",
    "has_local_copy": true,
-   "has_transcript": false
+   "has_transcript": false,
+   "watched_at": "2026-11-19T18:28:17-07:00"
   },
   {
    "id": "x-2123493996286951624",
@@ -1547,13 +2503,14 @@
    "source_url": "https://x.com/warpdotdev/status/2123493996286951624",
    "posted_in": "https://x.com/zachlloydtweets/status/2123494544024973564",
    "duration_s": 65,
-   "summary_status": "coming",
-   "summary": null,
+   "summary_status": "done",
+   "summary": "Warp Learn / Warp Factories overview: workflows defined as YAML, quality and cost dashboards, a self-improvement toggle, and built-in benchmarking.",
    "note": null,
    "added_at": "2026-11-19T18:15:05-07:00",
    "date": "2026-11-19",
    "has_local_copy": true,
-   "has_transcript": false
+   "has_transcript": false,
+   "watched_at": "2026-11-19T18:28:17-07:00"
   },
   {
    "id": "x-2120702943003574441",
@@ -1562,13 +2519,14 @@
    "source_url": "https://x.com/warpdotdev/status/2120702943003574441",
    "posted_in": "https://x.com/zachlloydtweets/status/2120703492042142015",
    "duration_s": 9,
-   "summary_status": "coming",
-   "summary": null,
+   "summary_status": "done",
+   "summary": "Demo: running multiple model configurations (Gemini 4 Carbon vs Gemini 4 Argon) in one benchmark on the same harness.",
    "note": null,
    "added_at": "2026-11-19T18:15:05-07:00",
    "date": "2026-11-11",
    "has_local_copy": true,
-   "has_transcript": false
+   "has_transcript": false,
+   "watched_at": "2026-11-19T18:28:17-07:00"
   },
   {
    "id": "x-2121015724374397183",
@@ -1577,13 +2535,14 @@
    "source_url": "https://x.com/liu_xingyu/status/2121015724374397183",
    "posted_in": "https://x.com/swyx/status/2121757606801023085",
    "duration_s": 58,
-   "summary_status": "coming",
-   "summary": null,
+   "summary_status": "done",
+   "summary": "Intra-turn, feedforward UX: the AI surfaces its assumptions as editable widgets before generating, so you can steer without extra chat turns.",
    "note": null,
    "added_at": "2026-11-19T18:15:05-07:00",
    "date": "2026-11-14",
    "has_local_copy": true,
-   "has_transcript": false
+   "has_transcript": false,
+   "watched_at": "2026-11-19T18:28:17-07:00"
   },
   {
    "id": "x-2122973631370367160",
@@ -1592,13 +2551,14 @@
    "source_url": "https://x.com/dzibanisms/status/2122973631370367160",
    "posted_in": "https://x.com/GeoffreyHuntley/status/2122975881052541107",
    "duration_s": 59,
-   "summary_status": "coming",
-   "summary": null,
+   "summary_status": "done",
+   "summary": "Demo only: a custom DST stack exploring a Kafka-over-object-storage system and finding bugs.",
    "note": null,
    "added_at": "2026-11-19T18:15:05-07:00",
    "date": "2026-11-18",
    "has_local_copy": true,
-   "has_transcript": false
+   "has_transcript": false,
+   "watched_at": "2026-11-19T18:28:17-07:00"
   },
   {
    "id": "x-2122389444678586512",
@@ -1607,13 +2567,14 @@
    "source_url": "https://x.com/aninibread/status/2122389444678586512",
    "posted_in": "https://x.com/aninibread/status/2122389444678586512",
    "duration_s": 14,
-   "summary_status": "coming",
-   "summary": null,
+   "summary_status": "done",
+   "summary": "Announcement video (SpaceXSI logo reveal); no tips.",
    "note": null,
    "added_at": "2026-11-19T18:15:05-07:00",
    "date": "2026-11-16",
    "has_local_copy": true,
-   "has_transcript": false
+   "has_transcript": false,
+   "watched_at": "2026-11-19T18:28:17-07:00"
   },
   {
    "id": "yt-ZZ19zhYnDKY",
