@@ -303,7 +303,7 @@ accts = ", ".join(f'<a href="https://x.com/{a}" target="_blank" rel="noopener">@
 about = head(f"About · {TITLE}", f"What {TITLE} is and how it's made.", "about/", 1) + f"""
 <main id="main" class="wrap prose">
 <h1>About</h1>
-<p>{TITLE} collects practical tips about {SCOPE_ABOUT} from a fixed list of builders on X: {accts}.</p>
+<p>{TITLE} collects practical tips about {SCOPE_ABOUT} from a fixed list of builders on X: {accts}.</p>{("<p>" + e(SITE["scope_note"]) + "</p>") if SITE.get("scope_note") else ""}
 <h2>How it works</h2>
 <ul>
 <li>A daily run reads these accounts' recent public posts (plus threads, quoted posts and linked videos), keeps only practical {SITE.get("keep_rule", "AI-tooling")} content, and merges new tips into <a href="../data/tips.json">data/tips.json</a>, deduplicated by source.</li>
