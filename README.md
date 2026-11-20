@@ -2,8 +2,13 @@
 
 Searchable reference of AI coding and Grok Bot tips from 16 builders on X. Live at https://cfmayer.github.io/ai-tips-watch/
 
-- `data/tips.json`: all tips and videos, plus `last_run` and a run log. Each tip: `id`, `date`, `posted_at`, `author`, `topic`, `tags`, `title`, `tip`, `credit`, `source_url`, `source_type`, `video_timestamp`, `related_urls`, `added_at`.
-- `scripts/merge.py new.json`: merge a daily run (dedupes by id and by source+title; updates video summaries by id).
-- `scripts/build.py`: regenerate `index.html`, `archive/`, `about/`, `404.html`, `sitemap.xml`, `feed.xml`.
+- `data/tips.json` (schema v2): `tips` and `sources`, plus `last_run` and a run log.
+  - Tip: `id`, `date`, `posted_at`, `author`, `topic`, `subcategory`, `edition`, `source_id`, `tags`, `title`, `tip`, `credit`, `source_url`, `source_type`, `video_timestamp`, `transcript_only`, `related_urls`, `added_at`.
+  - Source (post, article, video or thread): `id`, `type`, `title`, `author`, `url`, `posted_in`, `date`, `edition`, `summary`, `summary_status`, `duration_s`, `added_at`.
+  - `edition` = America/Denver date of the run that first added the item.
+- `data/taxonomy.json`: topics → ordered subcategories with keywords for auto-assignment.
+- `scripts/merge.py new.json [--window A/B] [--edition YYYY-MM-DD]`: merge a daily run. Assigns edition, source grouping and (if missing) subcategory; dedupes by id and by source+title; strips "From the article…:"-style labels.
+- `scripts/build.py`: regenerate `index.html` (latest-edition banner, topic → subcategory sections of source cards), `archive/`, `about/`, `404.html`, `sitemap.xml`, `feed.xml`.
+- `scripts/sitelib.py`: shared helpers (canonical source keys, editions, subcategory guessing).
 
-Daily run: collect, write `new.json`, then `python3 scripts/merge.py new.json && python3 scripts/build.py && git commit -am "Daily update" && git push`.
+Daily run: collect, write `new.json`, then `python3 scripts/merge.py new.json && python3 scripts/build.py && git add -A && git commit -m "Daily update" && git push`.

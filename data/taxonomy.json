@@ -1,0 +1,55 @@
+{
+ "Grok Bot": [
+  {"name": "Automation & routines", "keywords": ["automat", "routine", "goal", "process", "onboard", "brain dump", "eggbot", "workflow", "trigger"]},
+  {"name": "Connectors & apps", "keywords": ["connector", "connect", "mac", "apple", "calendar", "messages", "tool runs"]},
+  {"name": "Meetings", "keywords": ["meeting", "call", "zoom", "meet", "notes"]},
+  {"name": "Teams & delegation", "keywords": ["teammate", "delegate", "workstream", "handoff", "tag each other", "slack", "teams"]},
+  {"name": "Links & docs", "keywords": ["deep link", "prefill", "link", "docs", "shortcut"]},
+  {"name": "Directory & templates", "keywords": ["directory", "profile", "template", "publish"]},
+  {"name": "Shopping & travel", "keywords": ["travel", "flight", "hotel", "shopping", "order", "book"]},
+  {"name": "Releases & features", "keywords": ["release", "1.2", "1.1", "1.0", "changelog", "draw", "image"]}
+ ],
+ "Cursor": [
+  {"name": "Voice prompts", "keywords": ["voice", "dictat", "mic"]},
+  {"name": "Announcements", "keywords": ["join", "team", "announce"]}
+ ],
+ "Agent skills & setup": [
+  {"name": "Home Repo & multi-repo", "keywords": ["home repo", "multi-repo", "agents.md", "wiki", "cli tooling"]},
+  {"name": "Alignment & domain docs", "keywords": ["grill", "glossary", "adr", "domain", "spec"]},
+  {"name": "Review & explainer skills", "keywords": ["retro", "animatic", "statechart", "review", "video"]}
+ ],
+ "Prompting": [
+  {"name": "Prompt templates", "keywords": ["prompt", "template", "addendum", "grade"]},
+  {"name": "Steering & context", "keywords": ["domain", "trade-off", "assumption", "steer", "terms"]}
+ ],
+ "Code quality": [
+  {"name": "Lint rules & bans", "keywords": ["lint", "ban", "deterministic", "import", "constrain", "pyramid"]},
+  {"name": "Comments & docs", "keywords": ["comment", "markdown", "docs"]},
+  {"name": "API design", "keywords": ["api", "nuance", "usereffect", "useeffect"]},
+  {"name": "Anti-patterns & fixes", "keywords": ["anti-pattern", "quick fix", "root cause", "rewrite", "library", "assumption", "soft delete"]},
+  {"name": "Review & judgment", "keywords": ["review", "judgment", "pace", "ship", "stacked", "slop", "diff"]}
+ ],
+ "Testing & verification": [
+  {"name": "Code review agents", "keywords": ["review", "reviewer", "merge-risk", "pr description"]},
+  {"name": "Runtime & end-to-end checks", "keywords": ["runtime", "e2e", "end to end", "sandbox", "cdp", "devtools", "record", "cli", "verification"]},
+  {"name": "Property-based, fuzzing & formal", "keywords": ["property", "fuzz", "bombadil", "antithesis", "tla", "lean", "formal", "bugs"]}
+ ],
+ "Workflows": [
+  {"name": "Delegation & agent teams", "keywords": ["delegat", "outcome", "bot", "manager", "team", "memory"]},
+  {"name": "Planning & process", "keywords": ["plan", "spec", "refactor", "size", "quality", "compact"]},
+  {"name": "Automation loops", "keywords": ["loop", "trigger", "automat", "outer"]}
+ ],
+ "Software factories": [
+  {"name": "Concepts & adoption", "keywords": ["adopt", "definition", "course", "engineering problem", "prompts", "where the work"]},
+  {"name": "Architecture & orchestration", "keywords": ["orchestrat", "stack", "blueprint", "yaml", "sandbox", "layer"]},
+  {"name": "Measurement & improvement", "keywords": ["eval", "measure", "benchmark", "a/b", "self-improvement", "branch"]}
+ ],
+ "Models & evaluation": [
+  {"name": "Model releases", "keywords": ["available in", "pricing", "priced", "gemini", "astra", "release"]},
+  {"name": "Benchmarking & evaluation", "keywords": ["benchmark", "evaluate", "skeptic", "multi-step", "harness"]}
+ ],
+ "Mobile & app building": [
+  {"name": "Cloud simulators", "keywords": ["simulator", "emulator", "device"]},
+  {"name": "Builds & distribution", "keywords": ["build", "appdrop", "ipa", "ios"]}
+ ]
+}

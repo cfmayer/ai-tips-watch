@@ -10,7 +10,7 @@
 <script>(function(){var d=document.documentElement,t=null;try{t=localStorage.getItem('theme')}catch(e){}if(t!=='light'&&t!=='dark'){t=window.matchMedia&&matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light'}d.setAttribute('data-theme',t)})();</script>
 <link rel="icon" href="../favicon.svg" type="image/svg+xml">
 <link rel="alternate" type="application/atom+xml" title="AI Tips Watch (Atom feed)" href="https://cfmayer.github.io/ai-tips-watch/feed.xml">
-<link rel="stylesheet" href="../assets/site.css?v=13fb8ef3">
+<link rel="stylesheet" href="../assets/site.css?v=0d86d147">
 <meta property="og:site_name" content="AI Tips Watch">
 <meta property="og:title" content="About · AI Tips Watch">
 <meta property="og:description" content="What AI Tips Watch is and how it&#x27;s made.">
@@ -23,8 +23,9 @@
   <div class="wrap top-in">
     <a class="brand" href="../"><span class="logo" aria-hidden="true">◆</span> AI Tips Watch</a>
     <nav>
+      <a href="../#latest">Latest</a>
       <a href="../#topics">Topics</a>
-      <a href="../#videos">Videos</a>
+      <a href="../?type=video#topics">Videos</a>
       <a href="../archive/">Archive</a>
       <a href="../about/">About</a>
       <button class="theme" type="button" aria-label="Toggle dark mode" onclick="(function(d){var t=d.getAttribute('data-theme')==='dark'?'light':'dark';d.setAttribute('data-theme',t);try{localStorage.setItem('theme',t)}catch(e){}})(document.documentElement)">◐</button>
@@ -39,7 +40,9 @@
 <ul>
 <li>A daily run reads these accounts' recent public posts (plus threads, quoted posts and linked videos), keeps only practical AI-tooling content, and merges new tips into <a href="../data/tips.json">data/tips.json</a>, deduplicated by source.</li>
 <li>Tips are paraphrased, not quoted verbatim, and every one links to its exact source post, article or video (with a timestamp when it comes from a video). When an account shares someone else's post, the original author is credited.</li>
-<li>Nothing is invented: no numbers or claims appear that aren't in the source. Video summaries are added only after a video has been watched; summaries marked "from transcript" were written from auto-captions only.</li>
+<li>Nothing is invented: no numbers or claims appear that aren't in the source. Video summaries are added only after a video has been watched; tips marked "from transcript" were written from auto-captions only.</li>
+<li>Each topic is split into subcategories that come from the content. Tips from the same post, article or video are grouped into one card; when a source's tips span subcategories, the card sits in the subcategory holding most of its tips and the others get a "See also" link.</li>
+<li>Every item belongs to an <strong>edition</strong>: the date (Mountain Time) of the daily run that first added it. The top of the home page shows the latest edition; use the edition menu to view any single edition.</li>
 <li>Off-topic posts are skipped.</li>
 </ul>
 <p>Last updated Nov 19, 2026, 6:28 PM MT.</p>
