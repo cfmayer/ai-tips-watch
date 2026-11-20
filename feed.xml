@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <title>AI Tips Watch</title>
-  <subtitle>Searchable reference of AI coding and Grok Bot tips from 16 builders on X</subtitle>
+  <title>Grok Bot Tips Watch</title>
+  <subtitle>Searchable reference of Grok Bot and AI coding tips from 16 builders on X</subtitle>
   <link rel="self" type="application/atom+xml" href="https://cfmayer.github.io/ai-tips-watch/feed.xml"/>
   <link rel="alternate" type="text/html" href="https://cfmayer.github.io/ai-tips-watch/"/>
   <id>https://cfmayer.github.io/ai-tips-watch/</id>
   <updated>2026-11-19T18:28:17-07:00</updated>
-  <author><name>AI Tips Watch</name></author>
+  <author><name>Grok Bot Tips Watch</name></author>
   <entry>
     <title>Code quality › Review &amp; judgment: &#x27;There will always be alpha in reviewing something&#x27;: No Slop Manifesto talk excerpt (via @aiDotEngineer)</title>
     <link rel="alternate" type="text/html" href="https://cfmayer.github.io/ai-tips-watch/#s-x-2123566998294601980"/>

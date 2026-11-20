@@ -12,7 +12,9 @@ from sitelib import DEN, ROOT, canonical, assign_source_id, load_taxonomy, editi
 D = json.loads((ROOT / "data/tips.json").read_text())
 TAX = load_taxonomy()
 SITE = D["site"]; BASE = SITE["base_url"]; TITLE = SITE["title"]
-TAGLINE = "Searchable reference of AI coding and Grok Bot tips from 16 builders on X"
+TAGLINE = SITE.get("tagline") or f"Searchable reference of AI tips from {len(D['accounts'])} builders on X"
+SCOPE_SHORT = SITE.get("scope_short", "AI tools")
+SCOPE_ABOUT = SITE.get("scope_about", "AI tools")
 TOPIC_ORDER = list(TAX)
 e = lambda s: html.escape(str(s or ""), quote=True)
 def slug(s): return re.sub(r"[^a-z0-9]+", "-", s.lower()).strip("-")
@@ -244,7 +246,7 @@ sub_opts = "".join(f'<optgroup label="{e(tp)}">' + "".join(f'<option value="{e(t
 ed_opts = "".join(f'<option value="{ed}">{dlabel(ed)}{" (latest)" if ed == latest else ""} · {sum(1 for t in tips if t["edition"] == ed)} tips</option>' for ed in editions)
 type_counts = Counter(s["type"] for s in sources.values())
 type_opts = "".join(f'<option value="{k}">{TYPE_LABEL[k]}s ({type_counts[k]})</option>' for k in ["post", "article", "video", "thread"] if type_counts[k])
-desc = f"{len(tips)} tips from {len(sources)} sources across {len(topics)} topics on Grok Bot, Cursor, agent skills, prompting and AI coding workflows, each linked to its source."
+desc = f"{len(tips)} tips from {len(sources)} sources across {len(topics)} topics on {SCOPE_SHORT}, each linked to its source."
 index = head(f"{TITLE}: {TAGLINE}", desc, "", 0) + f"""
 <main id="main" class="wrap">
 <section class="hero">
@@ -298,13 +300,13 @@ archive = head(f"Archive · {TITLE}", "Every tip, newest first.", "archive/", 1)
 
 # ---------- about ----------
 accts = ", ".join(f'<a href="https://x.com/{a}" target="_blank" rel="noopener">@{a}</a>' for a in D["accounts"])
-about = head(f"About · {TITLE}", "What AI Tips Watch is and how it's made.", "about/", 1) + f"""
+about = head(f"About · {TITLE}", f"What {TITLE} is and how it's made.", "about/", 1) + f"""
 <main id="main" class="wrap prose">
 <h1>About</h1>
-<p>{TITLE} collects practical tips about Grok Bot and other AI tools (coding agents, Cursor, Claude Code, Codex, agent skills, prompting and workflows) from a fixed list of builders on X: {accts}.</p>
+<p>{TITLE} collects practical tips about {SCOPE_ABOUT} from a fixed list of builders on X: {accts}.</p>
 <h2>How it works</h2>
 <ul>
-<li>A daily run reads these accounts' recent public posts (plus threads, quoted posts and linked videos), keeps only practical AI-tooling content, and merges new tips into <a href="../data/tips.json">data/tips.json</a>, deduplicated by source.</li>
+<li>A daily run reads these accounts' recent public posts (plus threads, quoted posts and linked videos), keeps only practical {SITE.get("keep_rule", "AI-tooling")} content, and merges new tips into <a href="../data/tips.json">data/tips.json</a>, deduplicated by source.</li>
 <li>Tips are paraphrased, not quoted verbatim, and every one links to its exact source post, article or video (with a timestamp when it comes from a video). When an account shares someone else's post, the original author is credited.</li>
 <li>Nothing is invented: no numbers or claims appear that aren't in the source. Video summaries are added only after a video has been watched; tips marked "from transcript" were written from auto-captions only.</li>
 <li>Each topic is split into subcategories that come from the content. Tips from the same post, article or video are grouped into one card; when a source's tips span subcategories, the card sits in the subcategory holding most of its tips and the others get a "See also" link.</li>

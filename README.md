@@ -1,6 +1,6 @@
-# AI Tips Watch
+# Grok Bot Tips Watch
 
-Searchable reference of AI coding and Grok Bot tips from 16 builders on X. Live at https://cfmayer.github.io/ai-tips-watch/
+Searchable reference of Grok Bot and AI coding tips from 16 builders on X. Live at https://cfmayer.github.io/ai-tips-watch/
 
 - `data/tips.json` (schema v2): `tips` and `sources`, plus `last_run` and a run log.
   - Tip: `id`, `date`, `posted_at`, `author`, `topic`, `subcategory`, `edition`, `source_id`, `tags`, `title`, `tip`, `credit`, `source_url`, `source_type`, `video_timestamp`, `transcript_only`, `related_urls`, `added_at`.

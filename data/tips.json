@@ -1,7 +1,10 @@
 {
  "site": {
-  "title": "AI Tips Watch",
-  "base_url": "https://cfmayer.github.io/ai-tips-watch/"
+  "title": "Grok Bot Tips Watch",
+  "base_url": "https://cfmayer.github.io/ai-tips-watch/",
+  "tagline": "Searchable reference of Grok Bot and AI coding tips from 16 builders on X",
+  "scope_short": "Grok Bot, Cursor, agent skills, prompting and AI coding workflows",
+  "scope_about": "Grok Bot and other AI tools (coding agents, Cursor, Claude Code, Codex, agent skills, prompting and workflows)"
  },
  "last_run": "2026-11-19T18:28:17-07:00",
  "window": {
