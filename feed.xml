@@ -1,0 +1,610 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>AI Tips Watch</title>
+  <subtitle>Searchable reference of AI coding and Grok Bot tips from 16 builders on X</subtitle>
+  <link rel="self" type="application/atom+xml" href="https://cfmayer.github.io/ai-tips-watch/feed.xml"/>
+  <link rel="alternate" type="text/html" href="https://cfmayer.github.io/ai-tips-watch/"/>
+  <id>https://cfmayer.github.io/ai-tips-watch/</id>
+  <updated>2026-11-19T18:15:05-07:00</updated>
+  <author><name>AI Tips Watch</name></author>
+  <entry>
+    <title>Software factories: Free course: build your own software factory (Warp Learn)</title>
+    <link rel="alternate" type="text/html" href="https://cfmayer.github.io/ai-tips-watch/#x-2123494544024973564"/>
+    <link rel="related" href="https://x.com/zachlloydtweets/status/2123494544024973564"/>
+    <id>https://cfmayer.github.io/ai-tips-watch/#x-2123494544024973564</id>
+    <published>2026-11-19T19:12:06.573000Z</published>
+    <updated>2026-11-19T18:15:05-07:00</updated>
+    <author><name>@zachlloydtweets</name></author>
+    <summary>Warp Learn is a free, hands-on course (taught by @BHolmesDev) that goes from fundamentals to a first automation loop to a full factory with specs, risk assessment and end-to-end verification. Zach&#x27;s definition: an automation loop in the cloud that orchestrates agents to build better software over time. (Source: https://x.com/zachlloydtweets/status/2123494544024973564)</summary>
+  </entry>
+  <entry>
+    <title>Workflows: Act as the studio exec: give agents outcomes and a budget</title>
+    <link rel="alternate" type="text/html" href="https://cfmayer.github.io/ai-tips-watch/#x-2123459510463590839"/>
+    <link rel="related" href="https://x.com/EnoReyes/status/2123459510463590839"/>
+    <id>https://cfmayer.github.io/ai-tips-watch/#x-2123459510463590839</id>
+    <published>2026-11-19T16:52:53.921000Z</published>
+    <updated>2026-11-19T18:15:05-07:00</updated>
+    <author><name>@EnoReyes</name></author>
+    <summary>Eno made a 57-shot, 5,129-frame 3D short film with Factory&#x27;s Droids (an unreleased system): his role was giving outcomes and budget while the system designed sets, props, animation, QC, sound and rendering, running Blender on a Mac mini, renting GPUs on Modal and scoring with ElevenLabs. His takeaway: future work looks like one person who knows what they want plus intelligence assembled around goals. (Source: https://x.com/EnoReyes/status/2123459510463590839)</summary>
+  </entry>
+  <entry>
+    <title>Testing &amp; verification: Bombadil 0.8.0: faster browser and TUI fuzzing</title>
+    <link rel="alternate" type="text/html" href="https://cfmayer.github.io/ai-tips-watch/#x-2123389608549343504"/>
+    <link rel="related" href="https://x.com/owickstrom/status/2123389608549343504"/>
+    <id>https://cfmayer.github.io/ai-tips-watch/#x-2123389608549343504</id>
+    <published>2026-11-19T12:15:08.006000Z</published>
+    <updated>2026-11-19T18:15:05-07:00</updated>
+    <author><name>@owickstrom</name></author>
+    <summary>Bombadil 0.8.0 (Antithesis&#x27;s open-source browser and TUI fuzzer) is up to 4x faster for browser fuzzing and 2x for TUIs, with binary compressed traces that cut disk use and IO. Try it with chrome-headless-shell (see the Bombadil docs). (Source: https://x.com/owickstrom/status/2123389608549343504)</summary>
+  </entry>
+  <entry>
+    <title>Models &amp; evaluation: Gemini 4 Neon in Cursor: new cost-performance frontier</title>
+    <link rel="alternate" type="text/html" href="https://cfmayer.github.io/ai-tips-watch/#x-2123198346802450926"/>
+    <link rel="related" href="https://x.com/cursor_ai/status/2123198346802450926"/>
+    <id>https://cfmayer.github.io/ai-tips-watch/#x-2123198346802450926</id>
+    <published>2026-11-18T23:35:07.652000Z</published>
+    <updated>2026-11-19T18:15:05-07:00</updated>
+    <author><name>@cursor_ai</name></author>
+    <summary>Gemini 4 Neon is available in Cursor. At default effort it scores 63.7% on CursorBench 4.1 (vs 57.3% for Gemini 4 Hydrogen), priced at $3/M input and $15/M output tokens. Docs: cursor.com/docs/models/gemini-4-neon. (Source: https://x.com/cursor_ai/status/2123198346802450926)</summary>
+  </entry>
+  <entry>
+    <title>Grok Bot: Share a profile page of everything you&#x27;ve published</title>
+    <link rel="alternate" type="text/html" href="https://cfmayer.github.io/ai-tips-watch/#x-2123192242965737807"/>
+    <link rel="related" href="https://x.com/ericzakariasson/status/2123192242965737807"/>
+    <id>https://cfmayer.github.io/ai-tips-watch/#x-2123192242965737807</id>
+    <published>2026-11-18T23:10:52.384000Z</published>
+    <updated>2026-11-19T18:15:05-07:00</updated>
+    <author><name>@ericzakariasson</name></author>
+    <summary>grok-bot.directory now has profiles: one page listing all your published bots and apps, with a link you can share or pin. Find yours in the account menu. (Source: https://x.com/ericzakariasson/status/2123192242965737807)</summary>
+  </entry>
+  <entry>
+    <title>Grok Bot: Choose how each tool runs (1.2.3)</title>
+    <link rel="alternate" type="text/html" href="https://cfmayer.github.io/ai-tips-watch/#x-2123178980010332646"/>
+    <link rel="related" href="https://x.com/ericzakariasson/status/2123178980010332646"/>
+    <id>https://cfmayer.github.io/ai-tips-watch/#x-2123178980010332646</id>
+    <published>2026-11-18T22:18:10.249000Z</published>
+    <updated>2026-11-19T18:15:05-07:00</updated>
+    <author><name>@ericzakariasson</name></author>
+    <summary>Grok Bot 1.2.3 lets you pick how each tool runs, reconnect accounts right from chat, and makes the bot reach for connectors before the browser. (Source: https://x.com/ericzakariasson/status/2123178980010332646)</summary>
+  </entry>
+  <entry>
+    <title>Testing &amp; verification: Lots of agent-written tests don&#x27;t prove the system works</title>
+    <link rel="alternate" type="text/html" href="https://cfmayer.github.io/ai-tips-watch/#x-2123162993550823688-21:44"/>
+    <link rel="related" href="https://x.com/dexhorthy/status/2123162993550823688"/>
+    <id>https://cfmayer.github.io/ai-tips-watch/#x-2123162993550823688-21:44</id>
+    <published>2026-11-18T21:14:38.780000Z</published>
+    <updated>2026-11-19T18:15:05-07:00</updated>
+    <author><name>@dexhorthy</name></author>
+    <summary>Highlighted by @dexhorthy from @badlogicgames on Matt Pocock&#x27;s livestream: a large pile of agent-written lint rules, unit tests or e2e tests doesn&#x27;t mean the system is good. Agents are goal-seeking and can reward-hack or measure the wrong thing, so without real insight into what&#x27;s happening you can&#x27;t tell whether your verification is worth anything. (Source: https://x.com/dexhorthy/status/2123162993550823688)</summary>
+  </entry>
+  <entry>
+    <title>Grok Bot: Install the Dr Eggbot v2 template to design bots for you</title>
+    <link rel="alternate" type="text/html" href="https://cfmayer.github.io/ai-tips-watch/#x-2123159763626430464"/>
+    <link rel="related" href="https://x.com/poteto/status/2123159763626430464"/>
+    <id>https://cfmayer.github.io/ai-tips-watch/#x-2123159763626430464</id>
+    <published>2026-11-18T21:01:48.706000Z</published>
+    <updated>2026-11-19T18:15:05-07:00</updated>
+    <author><name>@poteto</name></author>
+    <summary>Dr Eggbot is a bot designer that creates bots for you. A new v2 template ships with new skills for automating work and life; it differs from the old one, so install v2 fresh and ask the old Eggbot to transfer anything you want to keep. (Source: https://x.com/poteto/status/2123159763626430464)</summary>
+  </entry>
+  <entry>
+    <title>Grok Bot: Automating anything: start with the goal, not the process</title>
+    <link rel="alternate" type="text/html" href="https://cfmayer.github.io/ai-tips-watch/#x-2123159537016533493"/>
+    <link rel="related" href="https://x.com/poteto/status/2123159537016533493"/>
+    <id>https://cfmayer.github.io/ai-tips-watch/#x-2123159537016533493</id>
+    <published>2026-11-18T21:00:54.678000Z</published>
+    <updated>2026-11-19T18:15:05-07:00</updated>
+    <author><name>@poteto</name></author>
+    <summary>From the article &#x27;Automate Anything with Grok Bot&#x27;: automation is a goal plus a process. Don&#x27;t confuse steps (filling a form, sending an email) with the goal; ask what the work is for (revenue, cost) and tell a new bot the goal it&#x27;s responsible for. If you can&#x27;t phrase the goal, ask the bot to interview you until you have one you&#x27;re happy with. (Source: https://x.com/poteto/status/2123159537016533493)</summary>
+  </entry>
+  <entry>
+    <title>Grok Bot: Brain-dump the process, then make the bot restate it before acting</title>
+    <link rel="alternate" type="text/html" href="https://cfmayer.github.io/ai-tips-watch/#x-2123159537016533493--process"/>
+    <link rel="related" href="https://x.com/poteto/status/2123159537016533493"/>
+    <id>https://cfmayer.github.io/ai-tips-watch/#x-2123159537016533493--process</id>
+    <published>2026-11-18T21:00:54.678000Z</published>
+    <updated>2026-11-19T18:15:05-07:00</updated>
+    <author><name>@poteto</name></author>
+    <summary>From the same article: voice-dictate everything about how you do the job: the usual steps, what you watch out for, the apps and tools used, how you check the work, where the inputs come from, and where feedback comes from. Then ask the bot to restate your goal and process in plain English and not start executing yet. Iterate a few times, then let it connect the tools it needs; optionally ask it to review the process against the goal for a better way. (Source: https://x.com/poteto/status/2123159537016533493)</summary>
+  </entry>
+  <entry>
+    <title>Grok Bot: Teach the bot your judgment with real examples, one question at a time</title>
+    <link rel="alternate" type="text/html" href="https://cfmayer.github.io/ai-tips-watch/#x-2123159537016533493--judgment"/>
+    <link rel="related" href="https://x.com/poteto/status/2123159537016533493"/>
+    <id>https://cfmayer.github.io/ai-tips-watch/#x-2123159537016533493--judgment</id>
+    <published>2026-11-18T21:00:54.678000Z</published>
+    <updated>2026-11-19T18:15:05-07:00</updated>
+    <author><name>@poteto</name></author>
+    <summary>You make many decisions without noticing (which source to trust when two disagree, when a task is truly &#x27;done&#x27;). Feed the bot a few real examples, including ones that went wrong, and ask it to interview you about how you decide, where information lives, how you check work, and when to ask for help, one question at a time, before automating. (Source: https://x.com/poteto/status/2123159537016533493)</summary>
+  </entry>
+  <entry>
+    <title>Grok Bot: Let bots improve themselves by giving them access to feedback</title>
+    <link rel="alternate" type="text/html" href="https://cfmayer.github.io/ai-tips-watch/#x-2123159537016533493--feedback"/>
+    <link rel="related" href="https://x.com/poteto/status/2123159537016533493"/>
+    <id>https://cfmayer.github.io/ai-tips-watch/#x-2123159537016533493--feedback</id>
+    <published>2026-11-18T21:00:54.678000Z</published>
+    <updated>2026-11-19T18:15:05-07:00</updated>
+    <author><name>@poteto</name></author>
+    <summary>Give the bot the apps and data it needs to find feedback itself (email, social, Google/Yelp reviews) so it can propose process improvements. The more of your business is logged digitally, the better; the bot can even build you a simple app to log events. Consistent unique IDs (customer email, order number, part number) across tools let it cross-reference data. (Source: https://x.com/poteto/status/2123159537016533493)</summary>
+  </entry>
+  <entry>
+    <title>Grok Bot: Use routines so the bot works without you asking</title>
+    <link rel="alternate" type="text/html" href="https://cfmayer.github.io/ai-tips-watch/#x-2123159537016533493--routines"/>
+    <link rel="related" href="https://x.com/poteto/status/2123159537016533493"/>
+    <id>https://cfmayer.github.io/ai-tips-watch/#x-2123159537016533493--routines</id>
+    <published>2026-11-18T21:00:54.678000Z</published>
+    <updated>2026-11-19T18:15:05-07:00</updated>
+    <author><name>@poteto</name></author>
+    <summary>Without a routine, a bot only works when asked. Decide what should trigger the work (an incoming email, a Slack/Teams message, or a schedule) and ask the bot to set up the routine so you stop being the bottleneck. (Source: https://x.com/poteto/status/2123159537016533493)</summary>
+  </entry>
+  <entry>
+    <title>Grok Bot: Give travel bookings loose preferences, not exact specs</title>
+    <link rel="alternate" type="text/html" href="https://cfmayer.github.io/ai-tips-watch/#x-2123127013468975357"/>
+    <link rel="related" href="https://x.com/Baconbrix/status/2123127013468975357"/>
+    <id>https://cfmayer.github.io/ai-tips-watch/#x-2123127013468975357</id>
+    <published>2026-11-18T18:51:40.460000Z</published>
+    <updated>2026-11-19T18:15:05-07:00</updated>
+    <author><name>@Baconbrix</name></author>
+    <summary>Grok Bot can book seats, rebook a missed connection, help with refunds, or watch for upgrades, often triggered automatically from email. Pro tip: state loose preferences (for example, that you prefer aisle seats and don&#x27;t mind waiting longer) rather than exact details and it generally finds better options. (Source: https://x.com/Baconbrix/status/2123127013468975357)</summary>
+  </entry>
+  <entry>
+    <title>Grok Bot: Browse and publish community bots at grok-bot.directory</title>
+    <link rel="alternate" type="text/html" href="https://cfmayer.github.io/ai-tips-watch/#x-2123102642704675241"/>
+    <link rel="related" href="https://x.com/ericzakariasson/status/2123102642704675241"/>
+    <id>https://cfmayer.github.io/ai-tips-watch/#x-2123102642704675241</id>
+    <published>2026-11-18T17:14:50.017000Z</published>
+    <updated>2026-11-19T18:15:05-07:00</updated>
+    <author><name>@ericzakariasson</name></author>
+    <summary>grok-bot.directory is a community directory to browse and install bots and apps others have built, or publish your own (submit at grok-bot.directory/submit; submissions to the official marketplace that weren&#x27;t published are listed there too). One day in it had 1,200+ bots submitted and 7,000+ adds. (Source: https://x.com/ericzakariasson/status/2123102642704675241)</summary>
+  </entry>
+  <entry>
+    <title>Agent skills &amp; setup: Watch Matt build a 21,000-line PR with his skills</title>
+    <link rel="alternate" type="text/html" href="https://cfmayer.github.io/ai-tips-watch/#x-2123098316867051991"/>
+    <link rel="related" href="https://x.com/mattpocockuk/status/2123098316867051991"/>
+    <id>https://cfmayer.github.io/ai-tips-watch/#x-2123098316867051991</id>
+    <published>2026-11-18T16:57:38.657000Z</published>
+    <updated>2026-11-19T18:15:05-07:00</updated>
+    <author><name>@mattpocockuk</name></author>
+    <summary>A 70-minute &#x27;watch me work&#x27; session focusing on domain-driven design with /grill-with-docs, improving a codebase with /retro, and how to do human review effectively. Matt also offers a free email course on his skills at aihero.dev/skills/subscribe. (Source: https://x.com/mattpocockuk/status/2123098316867051991)</summary>
+  </entry>
+  <entry>
+    <title>Code quality: Step back before firing off many small agent changes</title>
+    <link rel="alternate" type="text/html" href="https://cfmayer.github.io/ai-tips-watch/#x-2122910519820681389"/>
+    <link rel="related" href="https://x.com/dexhorthy/status/2122910519820681389"/>
+    <id>https://cfmayer.github.io/ai-tips-watch/#x-2122910519820681389</id>
+    <published>2026-11-18T04:31:24.352000Z</published>
+    <updated>2026-11-19T18:15:05-07:00</updated>
+    <author><name>@dexhorthy</name></author>
+    <summary>Endorsed by @dexhorthy, from @ThePrimeagen: it&#x27;s easy to run lots of small &#x27;move this button&#x27; changes in parallel, but if you never step back to think deeply about what you&#x27;re building, you get slop. Take a moment to work out the best path forward. (Source: https://x.com/dexhorthy/status/2122910519820681389)</summary>
+  </entry>
+  <entry>
+    <title>Models &amp; evaluation: Astra as a workflow automation model</title>
+    <link rel="alternate" type="text/html" href="https://cfmayer.github.io/ai-tips-watch/#x-2122862646265520150"/>
+    <link rel="related" href="https://x.com/swyx/status/2122862646265520150"/>
+    <id>https://cfmayer.github.io/ai-tips-watch/#x-2122862646265520150</id>
+    <published>2026-11-18T01:21:10.407000Z</published>
+    <updated>2026-11-19T18:15:05-07:00</updated>
+    <author><name>@swyx</name></author>
+    <summary>swyx is daily-driving Astra and calls it the best workflow automation model he&#x27;s used: it no longer gets stuck in loops and learns efficiently through compactions and skill writing. It runs much of Latent Space and AI Engineer&#x27;s content publishing pipeline. (Source: https://x.com/swyx/status/2122862646265520150)</summary>
+  </entry>
+  <entry>
+    <title>Testing &amp; verification: Generate property-based tests from both the spec and the code</title>
+    <link rel="alternate" type="text/html" href="https://cfmayer.github.io/ai-tips-watch/#x-2122839807038816299"/>
+    <link rel="related" href="https://x.com/GeoffreyHuntley/status/2122839807038816299"/>
+    <id>https://cfmayer.github.io/ai-tips-watch/#x-2122839807038816299</id>
+    <published>2026-11-17T23:50:25.111000Z</published>
+    <updated>2026-11-19T18:15:05-07:00</updated>
+    <author><name>@GeoffreyHuntley</name></author>
+    <summary>Endorsed by @GeoffreyHuntley (&#x27;taps sign&#x27;), from @eulerfx: in a paper across 25 agent-built apps, spec-driven property-based tests found 56 bugs that code-driven ones missed, and code-driven found 43 that spec-driven missed (59% of bugs found by only one approach). Setup: an agent writes invariants in plain English from the requirements, then turns them into property tests by reading the code. Use both. (Source: https://x.com/GeoffreyHuntley/status/2122839807038816299)</summary>
+  </entry>
+  <entry>
+    <title>Software factories: Bring agents to where the work already lives</title>
+    <link rel="alternate" type="text/html" href="https://cfmayer.github.io/ai-tips-watch/#x-2122827126873485821"/>
+    <link rel="related" href="https://x.com/zachlloydtweets/status/2122827126873485821"/>
+    <id>https://cfmayer.github.io/ai-tips-watch/#x-2122827126873485821</id>
+    <published>2026-11-17T23:00:01.924000Z</published>
+    <updated>2026-11-19T18:15:05-07:00</updated>
+    <author><name>@zachlloydtweets</name></author>
+    <summary>Zach&#x27;s view: local prompting in terminals still has a place in the inner loop, but it&#x27;s usually better to bring agents to where work happens and context lives than to pull the work into your local environment. (Source: https://x.com/zachlloydtweets/status/2122827126873485821)</summary>
+  </entry>
+  <entry>
+    <title>Workflows: One persistent bot per project, each with its own memory</title>
+    <link rel="alternate" type="text/html" href="https://cfmayer.github.io/ai-tips-watch/#x-2122818291144229075"/>
+    <link rel="related" href="https://x.com/swyx/status/2122818291144229075"/>
+    <id>https://cfmayer.github.io/ai-tips-watch/#x-2122818291144229075</id>
+    <published>2026-11-17T22:24:55.322000Z</published>
+    <updated>2026-11-19T18:15:05-07:00</updated>
+    <author><name>@swyx</name></author>
+    <summary>Technical detail shared by swyx (from @stevenkplus1): teams now create dedicated bots per project; each has its own long-lived identity, memory bank and goals, and they can talk to each other when needed. Create a bot to manage a goal you&#x27;ll work on across sessions and days instead of reusing one long session. (Source: https://x.com/swyx/status/2122818291144229075)</summary>
+  </entry>
+  <entry>
+    <title>Grok Bot: Onboard your bot with a 10-minute voice brain dump</title>
+    <link rel="alternate" type="text/html" href="https://cfmayer.github.io/ai-tips-watch/#x-2122774297840398639"/>
+    <link rel="related" href="https://x.com/poteto/status/2122774297840398639"/>
+    <id>https://cfmayer.github.io/ai-tips-watch/#x-2122774297840398639</id>
+    <published>2026-11-17T19:30:06.501000Z</published>
+    <updated>2026-11-19T18:15:05-07:00</updated>
+    <author><name>@poteto</name></author>
+    <summary>Give the bot your most ambitious, end-to-end tasks. The best way to brief it: use voice dictation and talk for about 10 minutes, walking it through your workflow as if onboarding a new hire. Before sending, ask it to restate what you said in its own words. Name the tools and apps you use so it asks to connect them, and ask it to save its own skills so it repeats the workflow exactly your way. (Source: https://x.com/poteto/status/2122774297840398639)</summary>
+  </entry>
+  <entry>
+    <title>Grok Bot: Draw on an image to show the bot what to change</title>
+    <link rel="alternate" type="text/html" href="https://cfmayer.github.io/ai-tips-watch/#x-2122763062533079344"/>
+    <link rel="related" href="https://x.com/ericzakariasson/status/2122763062533079344"/>
+    <id>https://cfmayer.github.io/ai-tips-watch/#x-2122763062533079344</id>
+    <published>2026-11-17T18:45:27.795000Z</published>
+    <updated>2026-11-19T18:15:05-07:00</updated>
+    <author><name>@ericzakariasson</name></author>
+    <summary>Releases 1.0.3 to 1.2.0: draw right on an image to show your bot what to change (1.0.3); X DMs appear as draft cards you approve before anything is sent, plus a gift concierge (1.1.0); redesigned flight results and a full hotel photo viewer with zoomable maps (1.2.0). Changelog: x.ai/changelog/bot. (Source: https://x.com/ericzakariasson/status/2122763062533079344)</summary>
+  </entry>
+  <entry>
+    <title>Workflows: Want agent managers that own outcomes, not &#x27;AI employees&#x27;</title>
+    <link rel="alternate" type="text/html" href="https://cfmayer.github.io/ai-tips-watch/#x-2122746401482592549"/>
+    <link rel="related" href="https://x.com/swyx/status/2122746401482592549"/>
+    <id>https://cfmayer.github.io/ai-tips-watch/#x-2122746401482592549</id>
+    <published>2026-11-17T17:39:15.491000Z</published>
+    <updated>2026-11-19T18:15:05-07:00</updated>
+    <author><name>@swyx</name></author>
+    <summary>swyx on trialing Devin Bots for a week: what works is the next abstraction above single tasks: always-on, proactive agents that own outcomes, manage subagents, review themselves, and report via interactive artifacts rather than long chats. He handed off AEO, QA, cross-platform app porting, personal admin automation and video editing. Don&#x27;t overpromise &#x27;AI employees&#x27;. (Source: https://x.com/swyx/status/2122746401482592549)</summary>
+  </entry>
+  <entry>
+    <title>Software factories: Five tools to measure and improve agent throughput</title>
+    <link rel="alternate" type="text/html" href="https://cfmayer.github.io/ai-tips-watch/#x-2122706371905049006"/>
+    <link rel="related" href="https://x.com/zachlloydtweets/status/2122706371905049006"/>
+    <id>https://cfmayer.github.io/ai-tips-watch/#x-2122706371905049006</id>
+    <published>2026-11-17T15:00:11.696000Z</published>
+    <updated>2026-11-19T18:15:05-07:00</updated>
+    <author><name>@zachlloydtweets</name></author>
+    <summary>1) Online evals and LLM-as-judge scorers on past runs (e.g. &#x27;is it writing redundant tests?&#x27;); 2) self-improvement loops that mine eval results for factory changes; 3) benchmarks that rerun tasks under different configs; 4) model routing based on those results; 5) A/B tests to prove changes going forward. (Source: https://x.com/zachlloydtweets/status/2122706371905049006)</summary>
+  </entry>
+  <entry>
+    <title>Agent skills &amp; setup: Constrain your tools with harsh lint rules (/constrain)</title>
+    <link rel="alternate" type="text/html" href="https://cfmayer.github.io/ai-tips-watch/#x-2122659341685694586"/>
+    <link rel="related" href="https://x.com/mattpocockuk/status/2122659341685694586"/>
+    <id>https://cfmayer.github.io/ai-tips-watch/#x-2122659341685694586</id>
+    <published>2026-11-17T11:53:18.818000Z</published>
+    <updated>2026-11-19T18:15:05-07:00</updated>
+    <author><name>@mattpocockuk</name></author>
+    <summary>Experiment idea: if too much choice hurts agents, make extremely constrained versions of the tools you like, e.g. React allowed but all state must live in Zustand/useReducer, enforced by very strict lint rules, to strip out nuance and make the right path the only path. (Source: https://x.com/mattpocockuk/status/2122659341685694586)</summary>
+  </entry>
+  <entry>
+    <title>Prompting: A prompt to evaluate any new technology against your codebase</title>
+    <link rel="alternate" type="text/html" href="https://cfmayer.github.io/ai-tips-watch/#x-2122618527840354327"/>
+    <link rel="related" href="https://x.com/mattpocockuk/status/2122618527840354327"/>
+    <id>https://cfmayer.github.io/ai-tips-watch/#x-2122618527840354327</id>
+    <published>2026-11-17T09:11:08.039000Z</published>
+    <updated>2026-11-19T18:15:05-07:00</updated>
+    <author><name>@mattpocockuk</name></author>
+    <summary>Prompt of the day (using the XState v6 beta): 1) research what it does and the problem it solves; 2) find the gnarliest problem in our app it might help with; 3) build a proof of concept in a draft PR; 4) fully verify the results; 5) grade it on API nuance (more is worse; agents do better with fewer choices), type safety, testability, added cyclomatic complexity, docs quality, and deployment changes; 6) give an overall recommendation. Swap in any technology. (Source: https://x.com/mattpocockuk/status/2122618527840354327)</summary>
+  </entry>
+  <entry>
+    <title>Cursor: Send voice prompts straight to the agent</title>
+    <link rel="alternate" type="text/html" href="https://cfmayer.github.io/ai-tips-watch/#x-2122419926208249898"/>
+    <link rel="related" href="https://x.com/ericzakariasson/status/2122419926208249898"/>
+    <id>https://cfmayer.github.io/ai-tips-watch/#x-2122419926208249898</id>
+    <published>2026-11-16T20:01:57.720000Z</published>
+    <updated>2026-11-19T18:15:05-07:00</updated>
+    <author><name>@ericzakariasson</name></author>
+    <summary>New in Cursor: voice prompts can go directly to the agent, without a separate click to dictate and another to send. Built by a self-described voice-prompting power user. (Source: https://x.com/ericzakariasson/status/2122419926208249898)</summary>
+  </entry>
+  <entry>
+    <title>Software factories: Getting developers to adopt shared agent infrastructure</title>
+    <link rel="alternate" type="text/html" href="https://cfmayer.github.io/ai-tips-watch/#x-2122348347088683232"/>
+    <link rel="related" href="https://x.com/zachlloydtweets/status/2122348347088683232"/>
+    <id>https://cfmayer.github.io/ai-tips-watch/#x-2122348347088683232</id>
+    <published>2026-11-16T15:17:31.928000Z</published>
+    <updated>2026-11-19T18:15:05-07:00</updated>
+    <author><name>@zachlloydtweets</name></author>
+    <summary>From the article on factory adoption: frame the job as designing the factory, not working the assembly line. Expect friction when personal agent setups (harness, model, skills, MCPs) move to shared, team-owned cloud infrastructure defined in code; acknowledge it may feel like a step back, and pose it as a team engineering problem to solve together. (Source: https://x.com/zachlloydtweets/status/2122348347088683232)</summary>
+  </entry>
+  <entry>
+    <title>Software factories: What a factory&#x27;s orchestration layer must do</title>
+    <link rel="alternate" type="text/html" href="https://cfmayer.github.io/ai-tips-watch/#x-2122343954595340414"/>
+    <link rel="related" href="https://x.com/zachlloydtweets/status/2122343954595340414"/>
+    <id>https://cfmayer.github.io/ai-tips-watch/#x-2122343954595340414</id>
+    <published>2026-11-16T15:00:04.676000Z</published>
+    <updated>2026-11-19T18:15:05-07:00</updated>
+    <author><name>@zachlloydtweets</name></author>
+    <summary>Once foundations are in code, orchestration should: read the code at the current version (or an experiment branch); spin up the right sandbox on demand; route work to agents with the right model and harness; prompt them per the factory code; store artifacts and traces; loop in humans who can hand off or steer; and integrate with Sentry, GitHub, Jira, Slack, etc. Think Terraform, but for agents. (Source: https://x.com/zachlloydtweets/status/2122343954595340414)</summary>
+  </entry>
+  <entry>
+    <title>Testing &amp; verification: Run Antithesis from your coding agent</title>
+    <link rel="alternate" type="text/html" href="https://cfmayer.github.io/ai-tips-watch/#x-2122331868800401691"/>
+    <link rel="related" href="https://x.com/owickstrom/status/2122331868800401691"/>
+    <id>https://cfmayer.github.io/ai-tips-watch/#x-2122331868800401691</id>
+    <published>2026-11-16T14:12:03.198000Z</published>
+    <updated>2026-11-19T18:15:05-07:00</updated>
+    <author><name>@owickstrom</name></author>
+    <summary>Shared by @owickstrom: Antithesis launched a plugin that gives coding agents native access to Antithesis end to end, from system setup to test creation to debugging and validating fixes (example prompt: &#x27;/antithesis test HashiCorp Raft for bugs&#x27;), plus a self-serve Teams plan at $2,999/month. (Source: https://x.com/owickstrom/status/2122331868800401691)</summary>
+  </entry>
+  <entry>
+    <title>Code quality: Remove nuance from agents&#x27; decisions (from @poteto&#x27;s AIE talk)</title>
+    <link rel="alternate" type="text/html" href="https://cfmayer.github.io/ai-tips-watch/#x-2122316570852487441"/>
+    <link rel="related" href="https://x.com/mattpocockuk/status/2122316570852487441"/>
+    <id>https://cfmayer.github.io/ai-tips-watch/#x-2122316570852487441</id>
+    <published>2026-11-16T13:11:15.883000Z</published>
+    <updated>2026-11-19T18:15:05-07:00</updated>
+    <author><name>@mattpocockuk</name></author>
+    <summary>Matt&#x27;s highlight from @poteto&#x27;s AIE Code talk: &#x27;nuance tends to lead to slop&#x27;. Raise quality by designing APIs and automated checks that take nuance out of agents&#x27; choices: ban useEffect, ban ~99% of explanatory comments (they just lead to workarounds), and build APIs that hide complexity from agents. (Source: https://x.com/mattpocockuk/status/2122316570852487441)</summary>
+  </entry>
+  <entry>
+    <title>Agent skills &amp; setup: Keep a dated llm-wiki of your audience in your Home Repo</title>
+    <link rel="alternate" type="text/html" href="https://cfmayer.github.io/ai-tips-watch/#x-2122289114183516440"/>
+    <link rel="related" href="https://x.com/mattpocockuk/status/2122289504027546106"/>
+    <id>https://cfmayer.github.io/ai-tips-watch/#x-2122289114183516440</id>
+    <published>2026-11-16T11:22:09.703000Z</published>
+    <updated>2026-11-19T18:15:05-07:00</updated>
+    <author><name>@mattpocockuk</name></author>
+    <summary>Matt keeps an llm-wiki in his Home Repo that ingests good tweets, Discord/Slack messages, Gmail, YouTube and LinkedIn comments. Every claim is dated (or linked to a commit permalink) so it goes stale less. He uses it to answer questions like what people get confused about or what they&#x27;re asking now, and frames it as an agent-friendly data structure built from existing data rather than &#x27;memory&#x27;. (Source: https://x.com/mattpocockuk/status/2122289504027546106)</summary>
+  </entry>
+  <entry>
+    <title>Prompting: &#x27;You are the long-term owner of this codebase&#x27;: early benchmark notes</title>
+    <link rel="alternate" type="text/html" href="https://cfmayer.github.io/ai-tips-watch/#x-2122136000067723334"/>
+    <link rel="related" href="https://x.com/dexhorthy/status/2122136000067723334"/>
+    <id>https://cfmayer.github.io/ai-tips-watch/#x-2122136000067723334</id>
+    <published>2026-11-16T01:13:44.453000Z</published>
+    <updated>2026-11-19T18:15:05-07:00</updated>
+    <author><name>@dexhorthy</name></author>
+    <summary>Early (10%-complete) SlopCodeBench run on Fable 5.2 comparing the standard &#x27;just solve&#x27; prompt with Anthropic&#x27;s recommended &#x27;you are the long term owner of this codebase&#x27; addendum: the owner line roughly doubles tokens per task, but cost per pass is about the same; it tends to produce more formal tests; on circuit_eval it got a full pass vs 50% for the default. Unclear yet whether results are better overall. (Source: https://x.com/dexhorthy/status/2122136000067723334)</summary>
+  </entry>
+  <entry>
+    <title>Code quality: AI writes the code; you still decide what ships</title>
+    <link rel="alternate" type="text/html" href="https://cfmayer.github.io/ai-tips-watch/#x-2122067662373269960"/>
+    <link rel="related" href="https://x.com/poteto/status/2122067662373269960"/>
+    <id>https://cfmayer.github.io/ai-tips-watch/#x-2122067662373269960</id>
+    <published>2026-11-15T20:42:11.477000Z</published>
+    <updated>2026-11-19T18:15:05-07:00</updated>
+    <author><name>@poteto</name></author>
+    <summary>Revisiting an older post: senior engineers should build guardrails and teach practices that lead to quality software. AIs may write most of the code, but you decide what ships; don&#x27;t lose your taste for quality. (Source: https://x.com/poteto/status/2122067662373269960)</summary>
+  </entry>
+  <entry>
+    <title>Code quality: Pace AI output to human speed</title>
+    <link rel="alternate" type="text/html" href="https://cfmayer.github.io/ai-tips-watch/#x-2122028642515722319"/>
+    <link rel="related" href="https://x.com/dexhorthy/status/2122028642515722319"/>
+    <id>https://cfmayer.github.io/ai-tips-watch/#x-2122028642515722319</id>
+    <published>2026-11-15T18:07:08.418000Z</published>
+    <updated>2026-11-19T18:15:05-07:00</updated>
+    <author><name>@dexhorthy</name></author>
+    <summary>Shared approvingly by @dexhorthy from @steve_yegge: slow down. Pace AI outputs to human speeds; engineering still moves at engineering speed and business moves slower, and teams pushing too hard are starting to see downtime. (Source: https://x.com/dexhorthy/status/2122028642515722319)</summary>
+  </entry>
+  <entry>
+    <title>Code quality: Invest in deterministic guardrails first, prose last</title>
+    <link rel="alternate" type="text/html" href="https://cfmayer.github.io/ai-tips-watch/#yt-O_zcc6Xl12g-132"/>
+    <link rel="related" href="https://www.youtube.com/watch?v=O_zcc6Xl12g&amp;t=132s"/>
+    <id>https://cfmayer.github.io/ai-tips-watch/#yt-O_zcc6Xl12g-132</id>
+    <published>2026-11-14T18:36:10.981000Z</published>
+    <updated>2026-11-19T18:15:05-07:00</updated>
+    <author><name>@poteto</name></author>
+    <summary>Lauren&#x27;s &#x27;inverse pyramid&#x27; for an agent&#x27;s environment: most effort goes to deterministic layers (API design, architecture, refactoring, lint rules, type systems, compilers, tests) that force agents to do the right thing by default; then runtime and formal verification; and only a thin layer of prose (rules, skills, AGENTS.md) for things that need judgment. (Source: https://www.youtube.com/watch?v=O_zcc6Xl12g&amp;t=132s)</summary>
+  </entry>
+  <entry>
+    <title>Code quality: Turn every agent correction into a deterministic check</title>
+    <link rel="alternate" type="text/html" href="https://cfmayer.github.io/ai-tips-watch/#yt-O_zcc6Xl12g-187"/>
+    <link rel="related" href="https://www.youtube.com/watch?v=O_zcc6Xl12g&amp;t=187s"/>
+    <id>https://cfmayer.github.io/ai-tips-watch/#yt-O_zcc6Xl12g-187</id>
+    <published>2026-11-14T18:36:10.981000Z</published>
+    <updated>2026-11-19T18:15:05-07:00</updated>
+    <author><name>@poteto</name></author>
+    <summary>Your codebase is one of the agent&#x27;s biggest inputs. When you correct an agent, try to make it a lint rule, type or test rather than another line in your rules or AGENTS.md: it&#x27;s reproducible and enforceable. Anti-patterns and tech debt get copied by the next agent, so keep the codebase as pristine as possible. (Source: https://www.youtube.com/watch?v=O_zcc6Xl12g&amp;t=187s)</summary>
+  </entry>
+  <entry>
+    <title>Code quality: Encode context in directory structure and ban cross-imports</title>
+    <link rel="alternate" type="text/html" href="https://cfmayer.github.io/ai-tips-watch/#yt-O_zcc6Xl12g-360"/>
+    <link rel="related" href="https://www.youtube.com/watch?v=O_zcc6Xl12g&amp;t=360s"/>
+    <id>https://cfmayer.github.io/ai-tips-watch/#yt-O_zcc6Xl12g-360</id>
+    <published>2026-11-14T18:36:10.981000Z</published>
+    <updated>2026-11-19T18:15:05-07:00</updated>
+    <author><name>@poteto</name></author>
+    <summary>To stop agents importing Electron main-thread code into the renderer, the Grok Bot codebase uses two top-level directories (electron renderer and electron main) and bans imports between them with a dependency-graph analyzer and lint rules: simple to set up, and one less thing to review. (Source: https://www.youtube.com/watch?v=O_zcc6Xl12g&amp;t=360s)</summary>
+  </entry>
+  <entry>
+    <title>Code quality: Ban most comments; make lint errors tell agents to fix the root cause</title>
+    <link rel="alternate" type="text/html" href="https://cfmayer.github.io/ai-tips-watch/#yt-O_zcc6Xl12g-494"/>
+    <link rel="related" href="https://www.youtube.com/watch?v=O_zcc6Xl12g&amp;t=494s"/>
+    <id>https://cfmayer.github.io/ai-tips-watch/#yt-O_zcc6Xl12g-494</id>
+    <published>2026-11-14T18:36:10.981000Z</published>
+    <updated>2026-11-19T18:15:05-07:00</updated>
+    <author><name>@poteto</name></author>
+    <summary>Agents use markdown and code comments to justify quick fixes (e.g. imperative timers patching over an architecture clash), and over-rotate on small corrections. The team banned ~99% of comments (they go stale and aren&#x27;t enforceable) and writes lint rules whose error messages tell the agent to fix the root cause rather than patch around it. (Source: https://www.youtube.com/watch?v=O_zcc6Xl12g&amp;t=494s)</summary>
+  </entry>
+  <entry>
+    <title>Testing &amp; verification: Review verification artifacts, and give skills a feature map</title>
+    <link rel="alternate" type="text/html" href="https://cfmayer.github.io/ai-tips-watch/#yt-O_zcc6Xl12g-574"/>
+    <link rel="related" href="https://www.youtube.com/watch?v=O_zcc6Xl12g&amp;t=574s"/>
+    <id>https://cfmayer.github.io/ai-tips-watch/#yt-O_zcc6Xl12g-574</id>
+    <published>2026-11-14T18:36:10.981000Z</published>
+    <updated>2026-11-19T18:15:05-07:00</updated>
+    <author><name>@poteto</name></author>
+    <summary>Code review has shifted toward verification artifacts (videos, screenshots, diagrams, formal checks). Runtime-verification skills let agents run the app with tools like the Chrome DevTools Protocol, include a &#x27;feature map&#x27; (a user-facing site map of features for shared vocabulary), and ship custom CLIs/drivers the agent reuses, saving tokens and staying testable. (Source: https://www.youtube.com/watch?v=O_zcc6Xl12g&amp;t=574s)</summary>
+  </entry>
+  <entry>
+    <title>Testing &amp; verification: Add formal verification and property-based UI tests as extra layers</title>
+    <link rel="alternate" type="text/html" href="https://cfmayer.github.io/ai-tips-watch/#yt-O_zcc6Xl12g-654"/>
+    <link rel="related" href="https://www.youtube.com/watch?v=O_zcc6Xl12g&amp;t=654s"/>
+    <id>https://cfmayer.github.io/ai-tips-watch/#yt-O_zcc6Xl12g-654</id>
+    <published>2026-11-14T18:36:10.981000Z</published>
+    <updated>2026-11-19T18:15:05-07:00</updated>
+    <author><name>@poteto</name></author>
+    <summary>The team model-checks major user flows (e.g. multi-device notifications) with TLA+, proves certain algorithms with Lean (e.g. a custom virtualization library against flicker/jitter), and runs property-based UI testing with Bombadil. It has found real bugs, but it&#x27;s treated as one more layer, not a silver bullet. (Source: https://www.youtube.com/watch?v=O_zcc6Xl12g&amp;t=654s)</summary>
+  </entry>
+  <entry>
+    <title>Agent skills &amp; setup: Use a statechart skill to review state machines from the user&#x27;s view</title>
+    <link rel="alternate" type="text/html" href="https://cfmayer.github.io/ai-tips-watch/#yt-O_zcc6Xl12g-759"/>
+    <link rel="related" href="https://www.youtube.com/watch?v=O_zcc6Xl12g&amp;t=759s"/>
+    <id>https://cfmayer.github.io/ai-tips-watch/#yt-O_zcc6Xl12g-759</id>
+    <published>2026-11-14T18:36:10.981000Z</published>
+    <updated>2026-11-19T18:15:05-07:00</updated>
+    <author><name>@poteto</name></author>
+    <summary>Lauren built a &#x27;statechart&#x27; skill in her pstack plugin that visualizes state machines from the user&#x27;s point of view, which she finds easier to review alongside videos and screenshots. (Source: https://www.youtube.com/watch?v=O_zcc6Xl12g&amp;t=759s)</summary>
+  </entry>
+  <entry>
+    <title>Grok Bot: Use Grok Bot as the outer loop: auto-fuzz every release</title>
+    <link rel="alternate" type="text/html" href="https://cfmayer.github.io/ai-tips-watch/#yt-O_zcc6Xl12g-975"/>
+    <link rel="related" href="https://www.youtube.com/watch?v=O_zcc6Xl12g&amp;t=975s"/>
+    <id>https://cfmayer.github.io/ai-tips-watch/#yt-O_zcc6Xl12g-975</id>
+    <published>2026-11-14T18:36:10.981000Z</published>
+    <updated>2026-11-19T18:15:05-07:00</updated>
+    <author><name>@poteto</name></author>
+    <summary>Once foundations are solid, Grok Bot (connectors, routines that kick off Cursor cloud agents, projects) can orchestrate the outer loop. Example: on each new release, Grok Bot spins up a Cursor project that fuzzes the build like a real user, opens fix PRs for bugs found, and auto-merges them. (Source: https://www.youtube.com/watch?v=O_zcc6Xl12g&amp;t=975s)</summary>
+  </entry>
+  <entry>
+    <title>Code quality: Keep reviewing something: plan, design, or result</title>
+    <link rel="alternate" type="text/html" href="https://cfmayer.github.io/ai-tips-watch/#x-2121660606256435325"/>
+    <link rel="related" href="https://x.com/dexhorthy/status/2121660606256435325"/>
+    <id>https://cfmayer.github.io/ai-tips-watch/#x-2121660606256435325</id>
+    <published>2026-11-14T17:44:41.736000Z</published>
+    <updated>2026-11-19T18:15:05-07:00</updated>
+    <author><name>@dexhorthy</name></author>
+    <summary>From the No AI Slop Manifesto (slopmanifesto.com), co-written at AIE Code Summit: AI amplifies human judgment rather than replacing it; we own the intent, taste and consequences of what we ship; and there will always be value in reviewing something. Even if we stop reading most code, review the plan, design or result, or you get the same output as everyone else. The right level of review depends on the stakes. (Source: https://x.com/dexhorthy/status/2121660606256435325)</summary>
+  </entry>
+  <entry>
+    <title>Code quality: Quick fixes considered harmful: ask agents for the root-cause fix</title>
+    <link rel="alternate" type="text/html" href="https://cfmayer.github.io/ai-tips-watch/#x-2121646643124809848"/>
+    <link rel="related" href="https://x.com/poteto/status/2121646643124809848"/>
+    <id>https://cfmayer.github.io/ai-tips-watch/#x-2121646643124809848</id>
+    <published>2026-11-14T16:49:12.666000Z</published>
+    <updated>2026-11-19T18:15:05-07:00</updated>
+    <author><name>@poteto</name></author>
+    <summary>Asking an agent for the smallest or quickest change can make it write worse code: the bandaid becomes a pattern the next agent copies until it spreads everywhere. We used to accept bandaids because time was short; agents change that calculus, so sometimes ask for the root-cause fix even if it&#x27;s more invasive. (Source: https://x.com/poteto/status/2121646643124809848)</summary>
+  </entry>
+  <entry>
+    <title>Models &amp; evaluation: Be skeptical of viral agent launches</title>
+    <link rel="alternate" type="text/html" href="https://cfmayer.github.io/ai-tips-watch/#x-2121421582338077111"/>
+    <link rel="related" href="https://x.com/GeoffreyHuntley/status/2121421582338077111"/>
+    <id>https://cfmayer.github.io/ai-tips-watch/#x-2121421582338077111</id>
+    <published>2026-11-14T01:54:53.993000Z</published>
+    <updated>2026-11-19T18:15:05-07:00</updated>
+    <author><name>@GeoffreyHuntley</name></author>
+    <summary>Geoffrey gets about three paid-promotion offers a day; his rule of thumb is to assume a viral agent product was paid-boosted and look for honest reviews instead. (Source: https://x.com/GeoffreyHuntley/status/2121421582338077111)</summary>
+  </entry>
+  <entry>
+    <title>Grok Bot: Say your blockers out loud on calls with the bot present</title>
+    <link rel="alternate" type="text/html" href="https://cfmayer.github.io/ai-tips-watch/#x-2121327615072219448"/>
+    <link rel="related" href="https://x.com/Baconbrix/status/2121327615072219448"/>
+    <id>https://cfmayer.github.io/ai-tips-watch/#x-2121327615072219448</id>
+    <published>2026-11-13T19:41:30.451000Z</published>
+    <updated>2026-11-19T18:15:05-07:00</updated>
+    <author><name>@Baconbrix</name></author>
+    <summary>With Grok Bot in a work meeting, voice the things blocking you; the bot can follow up later with a ping when it finds a way to unblock you. (Source: https://x.com/Baconbrix/status/2121327615072219448)</summary>
+  </entry>
+  <entry>
+    <title>Grok Bot: Bring your bot to meetings so it gathers its own context</title>
+    <link rel="alternate" type="text/html" href="https://cfmayer.github.io/ai-tips-watch/#x-2121323671587606654"/>
+    <link rel="related" href="https://x.com/poteto/status/2121323671587606654"/>
+    <id>https://cfmayer.github.io/ai-tips-watch/#x-2121323671587606654</id>
+    <published>2026-11-13T19:25:50.251000Z</published>
+    <updated>2026-11-19T18:15:05-07:00</updated>
+    <author><name>@poteto</name></author>
+    <summary>Inviting a bot to meetings lets it collect context firsthand, which makes it smarter over time. It can also attend for you (e.g. when you&#x27;re on a flight without connectivity) and take notes. To set it up, just ask your bot. (Source: https://x.com/poteto/status/2121323671587606654)</summary>
+  </entry>
+  <entry>
+    <title>Software factories: The software factory stack, layer by layer</title>
+    <link rel="alternate" type="text/html" href="https://cfmayer.github.io/ai-tips-watch/#x-2121318753711583254"/>
+    <link rel="related" href="https://x.com/zachlloydtweets/status/2121318753711583254"/>
+    <id>https://cfmayer.github.io/ai-tips-watch/#x-2121318753711583254</id>
+    <published>2026-11-13T19:06:17.738000Z</published>
+    <updated>2026-11-19T18:15:05-07:00</updated>
+    <author><name>@zachlloydtweets</name></author>
+    <summary>00 factories-as-code (workflows, permissions, sandbox config all versioned); 01 own your data and context (skills, MCPs, traces, logs); 02 compute: agents get their own sandboxed, self-hostable computers; 03 inference: any model and harness, no lock-in; 04 improvement: observe cost per PR, cycle time and DORA metrics, with agents scoring output and proposing changes; 05 orchestration: launch, track, recover, pass messages; 06 access: MCP server/REST API and integrations (Slack, Teams, Jira, Linear) rather than a tightly coupled web &#x27;ADE&#x27;. (Source: https://x.com/zachlloydtweets/status/2121318753711583254)</summary>
+  </entry>
+  <entry>
+    <title>Grok Bot: Ask Grok Bot questions inside the docs</title>
+    <link rel="alternate" type="text/html" href="https://cfmayer.github.io/ai-tips-watch/#x-2121294195843629360"/>
+    <link rel="related" href="https://x.com/ericzakariasson/status/2121294195843629360"/>
+    <id>https://cfmayer.github.io/ai-tips-watch/#x-2121294195843629360</id>
+    <published>2026-11-13T17:28:42.686000Z</published>
+    <updated>2026-11-19T18:15:05-07:00</updated>
+    <author><name>@ericzakariasson</name></author>
+    <summary>The docs (docs.x.ai/grok-bot/overview) now have Grok Bot built in: it answers from the docs, links the pages it used, and can draw a diagram of how a task runs. (Source: https://x.com/ericzakariasson/status/2121294195843629360)</summary>
+  </entry>
+  <entry>
+    <title>Grok Bot: Try shopping through the bot</title>
+    <link rel="alternate" type="text/html" href="https://cfmayer.github.io/ai-tips-watch/#x-2121272900154163322"/>
+    <link rel="related" href="https://x.com/Baconbrix/status/2121272900154163322"/>
+    <id>https://cfmayer.github.io/ai-tips-watch/#x-2121272900154163322</id>
+    <published>2026-11-13T16:04:05.398000Z</published>
+    <updated>2026-11-19T18:15:05-07:00</updated>
+    <author><name>@Baconbrix</name></author>
+    <summary>Shared by @Baconbrix from @mikepat711: shopping with Grok Bot now delivers results as cards; after you order you get a progress card and the bot keeps an eye on the order automatically. (Source: https://x.com/Baconbrix/status/2121272900154163322)</summary>
+  </entry>
+  <entry>
+    <title>Software factories: Keep the agent pipeline as version-controlled code</title>
+    <link rel="alternate" type="text/html" href="https://cfmayer.github.io/ai-tips-watch/#x-2121256829196067308"/>
+    <link rel="related" href="https://x.com/zachlloydtweets/status/2121256829196067308"/>
+    <id>https://cfmayer.github.io/ai-tips-watch/#x-2121256829196067308</id>
+    <published>2026-11-13T15:00:13.783000Z</published>
+    <updated>2026-11-19T18:15:05-07:00</updated>
+    <author><name>@zachlloydtweets</name></author>
+    <summary>Defining the factory as code lets you branch to test configurations (e.g. are open-weight models fine for front-end tasks? are these skills worth their tokens?) and enables self-improvement loops where agents analyze past failures and propose diffs to the definition. (Source: https://x.com/zachlloydtweets/status/2121256829196067308)</summary>
+  </entry>
+  <entry>
+    <title>Agent skills &amp; setup: Swap walls of markdown for an /animatic video</title>
+    <link rel="alternate" type="text/html" href="https://cfmayer.github.io/ai-tips-watch/#x-2121211579098083668"/>
+    <link rel="related" href="https://x.com/mattpocockuk/status/2121211579098083668"/>
+    <id>https://cfmayer.github.io/ai-tips-watch/#x-2121211579098083668</id>
+    <published>2026-11-13T12:00:25.319000Z</published>
+    <updated>2026-11-19T18:15:05-07:00</updated>
+    <author><name>@mattpocockuk</name></author>
+    <summary>Matt is building two skills: /setup-animatic (picks the tooling and sets it up locally or on a remote machine) and /animatic (creates an upload-ready video). The goal: every important PR comes with a video showing how it works. (Source: https://x.com/mattpocockuk/status/2121211579098083668)</summary>
+  </entry>
+  <entry>
+    <title>Software factories: Blueprints plus an orchestrator agent, not rigid if-this-then-that</title>
+    <link rel="alternate" type="text/html" href="https://cfmayer.github.io/ai-tips-watch/#x-2121037698437972036"/>
+    <link rel="related" href="https://x.com/zachlloydtweets/status/2121037698437972036"/>
+    <id>https://cfmayer.github.io/ai-tips-watch/#x-2121037698437972036</id>
+    <published>2026-11-13T00:29:28.939000Z</published>
+    <updated>2026-11-19T18:15:05-07:00</updated>
+    <author><name>@zachlloydtweets</name></author>
+    <summary>Warp&#x27;s factory design: users define a workflow &#x27;blueprint&#x27; that looks like a DAG, but an orchestration agent decides how to progress work and when to loop in a human, so it can take a different path when guidelines are incomplete or a human asks. (Source: https://x.com/zachlloydtweets/status/2121037698437972036)</summary>
+  </entry>
+  <entry>
+    <title>Mobile &amp; app building: Fast cloud iOS builds and instant sharing with Exact Build + AppDrop</title>
+    <link rel="alternate" type="text/html" href="https://cfmayer.github.io/ai-tips-watch/#x-2120995611025850589"/>
+    <link rel="related" href="https://x.com/ccheever/status/2120995611025850589"/>
+    <id>https://cfmayer.github.io/ai-tips-watch/#x-2120995611025850589</id>
+    <published>2026-11-12T21:42:14.518000Z</published>
+    <updated>2026-11-19T18:15:05-07:00</updated>
+    <author><name>@ccheever</name></author>
+    <summary>If you&#x27;re trying Exact: Exact Build is a fast (Linux-based) iOS build service, often under 30 seconds, and AppDrop signs and distributes IPAs so you can send what you built to someone&#x27;s iPhone right away. Both are in alpha. (Source: https://x.com/ccheever/status/2120995611025850589)</summary>
+  </entry>
+  <entry>
+    <title>Grok Bot: Connect more apps so your bot has context</title>
+    <link rel="alternate" type="text/html" href="https://cfmayer.github.io/ai-tips-watch/#x-2120967515224609057"/>
+    <link rel="related" href="https://x.com/poteto/status/2120967515224609057"/>
+    <id>https://cfmayer.github.io/ai-tips-watch/#x-2120967515224609057</id>
+    <published>2026-11-12T19:50:35.957000Z</published>
+    <updated>2026-11-19T18:15:05-07:00</updated>
+    <author><name>@poteto</name></author>
+    <summary>The more connectors (and so context and tools) a bot has, the more useful it gets. Two starter ideas: have it read messages from family and put important events on your calendar, or read messages from prospective clients and manage your small-business bookings. (Source: https://x.com/poteto/status/2120967515224609057)</summary>
+  </entry>
+  <entry>
+    <title>Software factories: Treat coding agents as an engineering problem, not a prompting problem</title>
+    <link rel="alternate" type="text/html" href="https://cfmayer.github.io/ai-tips-watch/#x-2120966552472477810"/>
+    <link rel="related" href="https://x.com/zachlloydtweets/status/2120966552472477810"/>
+    <id>https://cfmayer.github.io/ai-tips-watch/#x-2120966552472477810</id>
+    <published>2026-11-12T19:46:46.419000Z</published>
+    <updated>2026-11-19T18:15:05-07:00</updated>
+    <author><name>@zachlloydtweets</name></author>
+    <summary>Core idea of Zach&#x27;s AIE Code keynote: define the agent system in code, measure what it produces on your codebase, and keep iterating. Everyone has agents; the hard part is engineering the factory around them. (Source: https://x.com/zachlloydtweets/status/2120966552472477810)</summary>
+  </entry>
+  <entry>
+    <title>Grok Bot: Prefill bot messages from links and shortcuts</title>
+    <link rel="alternate" type="text/html" href="https://cfmayer.github.io/ai-tips-watch/#x-2120959534537871653"/>
+    <link rel="related" href="https://x.com/ericzakariasson/status/2120959534537871653"/>
+    <id>https://cfmayer.github.io/ai-tips-watch/#x-2120959534537871653</id>
+    <published>2026-11-12T19:18:53.213000Z</published>
+    <updated>2026-11-19T18:15:05-07:00</updated>
+    <author><name>@ericzakariasson</name></author>
+    <summary>Grok Bot supports deep links that open your bot with a message already drafted. Put one in a shortcut, a note, or another app. Build your own with the deep-links docs at docs.x.ai/grok-bot/deep-links. (Source: https://x.com/ericzakariasson/status/2120959534537871653)</summary>
+  </entry>
+  <entry>
+    <title>Grok Bot: Run Grok Bot on a Mac to reach Apple apps from anywhere</title>
+    <link rel="alternate" type="text/html" href="https://cfmayer.github.io/ai-tips-watch/#x-2120958346731946063"/>
+    <link rel="related" href="https://x.com/Baconbrix/status/2120958346731946063"/>
+    <id>https://cfmayer.github.io/ai-tips-watch/#x-2120958346731946063</id>
+    <published>2026-11-12T19:14:10.018000Z</published>
+    <updated>2026-11-19T18:15:05-07:00</updated>
+    <author><name>@Baconbrix</name></author>
+    <summary>Grok Bot on Mac can use Messages, Mail, Notes, Reminders, Calendar, Location and Contacts. You can then remote-control that Mac from any Grok Bot client (mobile, web, Tesla) to check your calendar, send messages, or read reminders. (Source: https://x.com/Baconbrix/status/2120958346731946063)</summary>
+  </entry>
+</feed>
