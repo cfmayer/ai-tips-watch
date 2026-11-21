@@ -5,8 +5,155 @@
   <link rel="self" type="application/atom+xml" href="https://cfmayer.github.io/ai-tips-watch/feed.xml"/>
   <link rel="alternate" type="text/html" href="https://cfmayer.github.io/ai-tips-watch/"/>
   <id>https://cfmayer.github.io/ai-tips-watch/</id>
-  <updated>2026-11-19T18:28:17-07:00</updated>
+  <updated>2026-11-21T05:13:24-07:00</updated>
   <author><name>Grok Bot Tips Watch</name></author>
+  <entry>
+    <title>Agent skills &amp; setup › Alignment &amp; domain docs: Record hard-won naming decisions in ADRs</title>
+    <link rel="alternate" type="text/html" href="https://cfmayer.github.io/ai-tips-watch/#s-x-2124058139477594142"/>
+    <link rel="related" href="https://x.com/mattpocockuk/status/2124058139477594142"/>
+    <id>https://cfmayer.github.io/ai-tips-watch/#s-x-2124058139477594142</id>
+    <published>2026-11-21T08:31:38Z</published>
+    <updated>2026-11-21T05:20:00-07:00</updated>
+    <author><name>@mattpocockuk</name></author>
+    <category term="edition-2026-11-21"/>
+    <summary>• Record hard-won naming decisions in ADRs: When a grilling session settles a naming or data-relationship question (his example ADR: &quot;A Thumbnail Diagram is not a Diagram&quot;), write it up as an ADR; without it the agent would fill the gap with its own assumptions. (Source: https://x.com/mattpocockuk/status/2124058139477594142)</summary>
+  </entry>
+  <entry>
+    <title>Grok Bot › Releases &amp; features: Grok Bot Q&amp;A - Travel, 1.0, meetings &amp; more! (X broadcast)</title>
+    <link rel="alternate" type="text/html" href="https://cfmayer.github.io/ai-tips-watch/#s-x-broadcast-2aWQllRAKjNOBd"/>
+    <link rel="related" href="https://x.com/i/broadcasts/2aWQllRAKjNOBd"/>
+    <id>https://cfmayer.github.io/ai-tips-watch/#s-x-broadcast-2aWQllRAKjNOBd</id>
+    <published>2026-11-21T00:07:50Z</published>
+    <updated>2026-11-21T05:20:00-07:00</updated>
+    <author><name>@ericzakariasson</name></author>
+    <category term="edition-2026-11-21"/>
+    <summary>Friday jam livestream on what&#x27;s new in Grok Bot: travel search, phone calls and meetings, tool permissions, the Directory, memory import, plus community workflows shown on screen.
+• 6:52 Search flights in chat: Ask for flights in plain words (the demo: &quot;Find nonstop flights from SFO to LAX&quot;); Grok Bot answers with a short pick plus Recommended and Cheapest option cards.
+• 9:51 Phone calls from Grok Bot: Grok Bot can make phone calls: call a business, use calls as a tool, hand a call off to you, confirm who it&#x27;s calling, and show a live transcript.
+• 18:30 Per-tool permissions on connector pages: On a connector&#x27;s page, set each tool to Always allow, Auto-review, Needs approval or Blocked to control exactly what the bot may run without you.
+• 27:37 Don&#x27;t run one chat forever: Using the same bot chat for too long degrades results because it has to re-read the whole chat; spin up fresh bots or split tasks instead.
+• 31:10 Install community bots from the Directory: The Grok Bot Directory lists community-built bot templates you can install instead of building from scratch.
+• 46:22 Import memory from another assistant: Settings has an &quot;Import memory to Grok Bot&quot; page: click Start import to bring your preferences, context and memories over from another AI assistant. (Source: https://x.com/i/broadcasts/2aWQllRAKjNOBd)</summary>
+  </entry>
+  <entry>
+    <title>Code quality › Lint rules &amp; bans: Try pstack&#x27;s /no-comments, or turn it into a lint rule</title>
+    <link rel="alternate" type="text/html" href="https://cfmayer.github.io/ai-tips-watch/#s-x-2123898792487576021"/>
+    <link rel="related" href="https://x.com/poteto/status/2123898792487576021"/>
+    <id>https://cfmayer.github.io/ai-tips-watch/#s-x-2123898792487576021</id>
+    <published>2026-11-20T21:58:26Z</published>
+    <updated>2026-11-21T05:20:00-07:00</updated>
+    <author><name>@poteto</name></author>
+    <category term="edition-2026-11-21"/>
+    <summary>• Try pstack&#x27;s /no-comments, or turn it into a lint rule: Run the /no-comments skill from pstack (github.com/cursor/plugins, pstack/skills/no-comments), or better, ask your agent to turn it into a lint rule. (Source: https://x.com/poteto/status/2123898792487576021)</summary>
+  </entry>
+  <entry>
+    <title>Software factories › Measurement &amp; improvement: Engineer Your Coding Agents Like Any Other System — Zach Lloyd, Warp</title>
+    <link rel="alternate" type="text/html" href="https://cfmayer.github.io/ai-tips-watch/#s-yt-0LeT996Hz3E"/>
+    <link rel="related" href="https://www.youtube.com/watch?v=0LeT996Hz3E"/>
+    <id>https://cfmayer.github.io/ai-tips-watch/#s-yt-0LeT996Hz3E</id>
+    <published>2026-11-20T20:11:37Z</published>
+    <updated>2026-11-21T05:20:00-07:00</updated>
+    <author><name>@zachlloydtweets</name></author>
+    <category term="edition-2026-11-21"/>
+    <summary>AI Engineer Code Summit keynote: software engineering is becoming factory engineering. Lloyd lays out a code-defined, closed-loop factory stack (declarative definition, recorded agent runs, sandboxed compute, flexible inference, online evals, self-improvement PRs, benchmarks on your own data); from about 10:40 it becomes a Warp Factories product demo.
+• 3:56 Encode the factory declaratively: Define your factory in a declarative, version-controlled language (like Terraform): which agents run, how they&#x27;re triggered, their workflows and the tools they can use.
+• 7:28 Product engineering vs. factory engineering: Building the product and improving the system of agents that builds it are two distinct skill sets; treat factory engineering as its own job.
+• 9:00 Record everything agents produce: Centrally record agent conversations, artifacts, videos and screenshots; that record is the raw material for improving the factory.
+• 9:37 Keep the inference layer flexible: Run agents in sandboxes for security and repeatability, and support multiple models and agent harnesses, since different tasks need different capabilities.
+• 13:24 Online evals score agent output: Have separate agents review and score your coding agents&#x27; output as it happens (e.g. flag redundant or unnecessary tests) to catch failure modes.
+• 14:59 Self-improvement as PRs: Let agents read the eval scores, find failure patterns, and propose fixes as pull requests against the factory&#x27;s own definition.
+• 15:51 Benchmark on your own tasks: Skip generic leaderboards: build a benchmark from your organization&#x27;s real past tasks and replay it across models and configurations to weigh quality against cost. (Source: https://www.youtube.com/watch?v=0LeT996Hz3E)</summary>
+  </entry>
+  <entry>
+    <title>Code quality › Comments &amp; docs: Put the &#x27;why&#x27; in ADRs, not comments</title>
+    <link rel="alternate" type="text/html" href="https://cfmayer.github.io/ai-tips-watch/#s-x-2123861337650471082"/>
+    <link rel="related" href="https://x.com/mattpocockuk/status/2123861337650471082"/>
+    <id>https://cfmayer.github.io/ai-tips-watch/#s-x-2123861337650471082</id>
+    <published>2026-11-20T19:29:36Z</published>
+    <updated>2026-11-21T05:20:00-07:00</updated>
+    <author><name>@mattpocockuk</name></author>
+    <category term="edition-2026-11-21"/>
+    <summary>• Put the &#x27;why&#x27; in ADRs, not comments: Comments are a bad store for the why of a codebase, so put it in an ADR instead. Not every piece of code needs one, and don&#x27;t remove a fence until you know why it was put up. (Source: https://x.com/mattpocockuk/status/2123861337650471082)</summary>
+  </entry>
+  <entry>
+    <title>Agent skills &amp; setup › Alignment &amp; domain docs: ADRs stop agents re-suggesting explored avenues</title>
+    <link rel="alternate" type="text/html" href="https://cfmayer.github.io/ai-tips-watch/#s-x-2123860812607758629"/>
+    <link rel="related" href="https://x.com/mattpocockuk/status/2123860812607758629"/>
+    <id>https://cfmayer.github.io/ai-tips-watch/#s-x-2123860812607758629</id>
+    <published>2026-11-20T19:27:31Z</published>
+    <updated>2026-11-21T05:20:00-07:00</updated>
+    <author><name>@mattpocockuk</name></author>
+    <category term="edition-2026-11-21"/>
+    <summary>• ADRs stop agents re-suggesting explored avenues: ADRs keep agents from repeatedly recommending approaches you&#x27;ve already explored, and let them see the history of surprising decisions after you hand the system off. (Source: https://x.com/mattpocockuk/status/2123860812607758629)</summary>
+  </entry>
+  <entry>
+    <title>Workflows › Remixable software: voiced: open-source dictation, remixed by prompt</title>
+    <link rel="alternate" type="text/html" href="https://cfmayer.github.io/ai-tips-watch/#s-x-2123825984231362902"/>
+    <link rel="related" href="https://x.com/ericzakariasson/status/2123825984231362902"/>
+    <id>https://cfmayer.github.io/ai-tips-watch/#s-x-2123825984231362902</id>
+    <published>2026-11-20T17:09:08Z</published>
+    <updated>2026-11-21T05:20:00-07:00</updated>
+    <author><name>@ericzakariasson</name></author>
+    <category term="edition-2026-11-21"/>
+    <summary>18-second demo: one voiced dictation pill is forked again and again by prompt into an orb, a green terminal, a VU meter, a pirate-voice cleanup and more.
+• 0:00 Fork-and-remix prompt for voiced: voiced (github.com/ericzakariasson/voiced) is an open-source dictation and voice-prompting tool powered by Grok voice. To customize it, prompt your agent: &quot;Fork Voiced, read AGENTS.md at its root and follow its first run section, then make this change: …&quot; (e.g. make the pill hot pink, or make the cleanup talk like a pirate). (Source: https://x.com/ericzakariasson/status/2123825984231362902)</summary>
+  </entry>
+  <entry>
+    <title>Agent skills &amp; setup › Skill packs &amp; updates: pstack updates itself; rerun /setup-pstack to change routing</title>
+    <link rel="alternate" type="text/html" href="https://cfmayer.github.io/ai-tips-watch/#s-x-2123824683862855898"/>
+    <link rel="related" href="https://x.com/poteto/status/2123824683862855898"/>
+    <id>https://cfmayer.github.io/ai-tips-watch/#s-x-2123824683862855898</id>
+    <published>2026-11-20T17:03:58Z</published>
+    <updated>2026-11-21T05:20:00-07:00</updated>
+    <author><name>@poteto</name></author>
+    <category term="edition-2026-11-21"/>
+    <summary>• pstack updates itself; rerun /setup-pstack to change routing: pstack v0.15.46 prunes its skills to be much shorter and adds Gemini 4 Neon as a panel reviewer. It auto-updates for Grok Bot and Cursor users; to change which models handle which role, run /setup-pstack again. (Source: https://x.com/poteto/status/2123824683862855898)</summary>
+  </entry>
+  <entry>
+    <title>Agent skills &amp; setup › Alignment &amp; domain docs: Only document what won&#x27;t churn</title>
+    <link rel="alternate" type="text/html" href="https://cfmayer.github.io/ai-tips-watch/#s-x-2123816567259697401"/>
+    <link rel="related" href="https://x.com/dexhorthy/status/2123816567259697401"/>
+    <id>https://cfmayer.github.io/ai-tips-watch/#s-x-2123816567259697401</id>
+    <published>2026-11-20T16:31:42Z</published>
+    <updated>2026-11-21T05:20:00-07:00</updated>
+    <author><name>@dexhorthy</name></author>
+    <category term="edition-2026-11-21"/>
+    <summary>• Only document what won&#x27;t churn: Low-granularity docs that rarely change (high-level system architecture, one sentence on each package&#x27;s role) are safe; beyond that, keeping a second copy of the truth tends to slow agents and humans down. Agents that fight doc drift for you have rarely been worth the trouble over a couple of months. (Source: https://x.com/dexhorthy/status/2123816567259697401)</summary>
+  </entry>
+  <entry>
+    <title>Software factories › Concepts &amp; adoption: Factories vs. agent teams</title>
+    <link rel="alternate" type="text/html" href="https://cfmayer.github.io/ai-tips-watch/#s-x-2123808803070063033"/>
+    <link rel="related" href="https://x.com/zachlloydtweets/status/2123808803070063033"/>
+    <id>https://cfmayer.github.io/ai-tips-watch/#s-x-2123808803070063033</id>
+    <published>2026-11-20T16:00:51Z</published>
+    <updated>2026-11-21T05:20:00-07:00</updated>
+    <author><name>@zachlloydtweets</name></author>
+    <category term="edition-2026-11-21"/>
+    <summary>• Factories vs. agent teams: Treat deploying coding agents as an optimization problem: you can only optimize what you measure, measurement needs standardized data, and that needs a centralized, code-defined factory in the cloud that lets you test different models, harnesses and skills and feed learnings back in. Agent teams that you manage like people lack that measurement loop. (Source: https://x.com/zachlloydtweets/status/2123808803070063033)</summary>
+  </entry>
+  <entry>
+    <title>Software factories › Concepts &amp; adoption: Hands-on software factory course</title>
+    <link rel="alternate" type="text/html" href="https://cfmayer.github.io/ai-tips-watch/#s-x-2123805046307430871"/>
+    <link rel="related" href="https://x.com/zachlloydtweets/status/2123805046307430871"/>
+    <id>https://cfmayer.github.io/ai-tips-watch/#s-x-2123805046307430871</id>
+    <published>2026-11-20T15:45:56Z</published>
+    <updated>2026-11-21T05:20:00-07:00</updated>
+    <author><name>@zachlloydtweets</name></author>
+    <category term="edition-2026-11-21"/>
+    <summary>• Hands-on software factory course: Warp&#x27;s team published a hands-on introductory course on learning about and building your own software factory at warp.dev/learn. (Source: https://x.com/zachlloydtweets/status/2123805046307430871)</summary>
+  </entry>
+  <entry>
+    <title>Prompting › Prompt templates: Comment-audit prompt</title>
+    <link rel="alternate" type="text/html" href="https://cfmayer.github.io/ai-tips-watch/#s-x-2123798388227403983"/>
+    <link rel="related" href="https://x.com/mattpocockuk/status/2123798388227403983"/>
+    <id>https://cfmayer.github.io/ai-tips-watch/#s-x-2123798388227403983</id>
+    <published>2026-11-20T15:19:28Z</published>
+    <updated>2026-11-21T05:20:00-07:00</updated>
+    <author><name>@mattpocockuk</name></author>
+    <category term="edition-2026-11-21"/>
+    <summary>• Comment-audit prompt: Ask the agent to categorise every code comment in your codebase (or one section) as Tautology (repeats the code), Excuse (lets a hacky implementation slide), Stale (refers to code that no longer applies) or Decision Record (an important, non-obvious decision). Then: delete tautologies and stale comments, delete excuses and file an issue to fix the hack, and move decision records into ADRs.
+• Ban comments with a ratchet, then make it a skill: After the cleanup, have the agent add a lint rule banning comments with a ratchet approach (not every comment goes in one PR), create a /delete-comment skill in the repo so you can repeat the process, and estimate how many lines you&#x27;ll shed. (Source: https://x.com/mattpocockuk/status/2123798388227403983)</summary>
+  </entry>
   <entry>
     <title>Code quality › Review &amp; judgment: &#x27;There will always be alpha in reviewing something&#x27;: No Slop Manifesto talk excerpt (via @aiDotEngineer)</title>
     <link rel="alternate" type="text/html" href="https://cfmayer.github.io/ai-tips-watch/#s-x-2123566998294601980"/>
@@ -612,138 +759,5 @@
     <author><name>@dexhorthy</name></author>
     <category term="edition-2026-11-19"/>
     <summary>• Pace AI output to human speed: Slow down. Pace AI outputs to human speeds; engineering still moves at engineering speed and business moves slower, and teams pushing too hard are starting to see downtime. (Source: https://x.com/dexhorthy/status/2122028642515722319)</summary>
-  </entry>
-  <entry>
-    <title>Code quality › Review &amp; judgment: Keep reviewing something: plan, design, or result</title>
-    <link rel="alternate" type="text/html" href="https://cfmayer.github.io/ai-tips-watch/#s-x-2121660606256435325"/>
-    <link rel="related" href="https://x.com/dexhorthy/status/2121660606256435325"/>
-    <id>https://cfmayer.github.io/ai-tips-watch/#s-x-2121660606256435325</id>
-    <published>2026-11-14T17:44:41.736000Z</published>
-    <updated>2026-11-19T18:15:05-07:00</updated>
-    <author><name>@dexhorthy</name></author>
-    <category term="edition-2026-11-19"/>
-    <summary>• Keep reviewing something: plan, design, or result: The No AI Slop Manifesto (slopmanifesto.com), co-written at AIE Code Summit, says AI amplifies human judgment rather than replacing it; we own the intent, taste and consequences of what we ship; and there will always be value in reviewing something. Even if we stop reading most code, review the plan, design or result, or you get the same output as everyone else. The right level of review depends on the stakes. (Source: https://x.com/dexhorthy/status/2121660606256435325)</summary>
-  </entry>
-  <entry>
-    <title>Code quality › Anti-patterns &amp; fixes: Quick fixes considered harmful: ask agents for the root-cause fix</title>
-    <link rel="alternate" type="text/html" href="https://cfmayer.github.io/ai-tips-watch/#s-x-2121646643124809848"/>
-    <link rel="related" href="https://x.com/poteto/status/2121646643124809848"/>
-    <id>https://cfmayer.github.io/ai-tips-watch/#s-x-2121646643124809848</id>
-    <published>2026-11-14T16:49:12.666000Z</published>
-    <updated>2026-11-19T18:15:05-07:00</updated>
-    <author><name>@poteto</name></author>
-    <category term="edition-2026-11-19"/>
-    <summary>• Quick fixes considered harmful: ask agents for the root-cause fix: Asking an agent for the smallest or quickest change can make it write worse code: the bandaid becomes a pattern the next agent copies until it spreads everywhere. We used to accept bandaids because time was short; agents change that calculus, so sometimes ask for the root-cause fix even if it&#x27;s more invasive. (Source: https://x.com/poteto/status/2121646643124809848)</summary>
-  </entry>
-  <entry>
-    <title>Models &amp; evaluation › Benchmarking &amp; evaluation: Be skeptical of viral agent launches</title>
-    <link rel="alternate" type="text/html" href="https://cfmayer.github.io/ai-tips-watch/#s-x-2121421582338077111"/>
-    <link rel="related" href="https://x.com/GeoffreyHuntley/status/2121421582338077111"/>
-    <id>https://cfmayer.github.io/ai-tips-watch/#s-x-2121421582338077111</id>
-    <published>2026-11-14T01:54:53.993000Z</published>
-    <updated>2026-11-19T18:15:05-07:00</updated>
-    <author><name>@GeoffreyHuntley</name></author>
-    <category term="edition-2026-11-19"/>
-    <summary>• Be skeptical of viral agent launches: Geoffrey gets about three paid-promotion offers a day; his rule of thumb is to assume a viral agent product was paid-boosted and look for honest reviews instead. (Source: https://x.com/GeoffreyHuntley/status/2121421582338077111)</summary>
-  </entry>
-  <entry>
-    <title>Grok Bot › Meetings: Say your blockers out loud on calls with the bot present</title>
-    <link rel="alternate" type="text/html" href="https://cfmayer.github.io/ai-tips-watch/#s-x-2121327615072219448"/>
-    <link rel="related" href="https://x.com/Baconbrix/status/2121327615072219448"/>
-    <id>https://cfmayer.github.io/ai-tips-watch/#s-x-2121327615072219448</id>
-    <published>2026-11-13T19:41:30.451000Z</published>
-    <updated>2026-11-19T18:15:05-07:00</updated>
-    <author><name>@Baconbrix</name></author>
-    <category term="edition-2026-11-19"/>
-    <summary>• Say your blockers out loud on calls with the bot present: With Grok Bot in a work meeting, voice the things blocking you; the bot can follow up later with a ping when it finds a way to unblock you. (Source: https://x.com/Baconbrix/status/2121327615072219448)</summary>
-  </entry>
-  <entry>
-    <title>Software factories › Architecture &amp; orchestration: The software factory stack, layer by layer</title>
-    <link rel="alternate" type="text/html" href="https://cfmayer.github.io/ai-tips-watch/#s-x-2121318753711583254"/>
-    <link rel="related" href="https://x.com/zachlloydtweets/status/2121318753711583254"/>
-    <id>https://cfmayer.github.io/ai-tips-watch/#s-x-2121318753711583254</id>
-    <published>2026-11-13T19:06:17.738000Z</published>
-    <updated>2026-11-19T18:15:05-07:00</updated>
-    <author><name>@zachlloydtweets</name></author>
-    <category term="edition-2026-11-19"/>
-    <summary>• The software factory stack, layer by layer: 00 factories-as-code (workflows, permissions, sandbox config all versioned); 01 own your data and context (skills, MCPs, traces, logs); 02 compute: agents get their own sandboxed, self-hostable computers; 03 inference: any model and harness, no lock-in; 04 improvement: observe cost per PR, cycle time and DORA metrics, with agents scoring output and proposing changes; 05 orchestration: launch, track, recover, pass messages; 06 access: MCP server/REST API and integrations (Slack, Teams, Jira, Linear) rather than a tightly coupled web &#x27;ADE&#x27;. (Source: https://x.com/zachlloydtweets/status/2121318753711583254)</summary>
-  </entry>
-  <entry>
-    <title>Grok Bot › Shopping &amp; travel: Try shopping through the bot</title>
-    <link rel="alternate" type="text/html" href="https://cfmayer.github.io/ai-tips-watch/#s-x-2121272900154163322"/>
-    <link rel="related" href="https://x.com/Baconbrix/status/2121272900154163322"/>
-    <id>https://cfmayer.github.io/ai-tips-watch/#s-x-2121272900154163322</id>
-    <published>2026-11-13T16:04:05.398000Z</published>
-    <updated>2026-11-19T18:15:05-07:00</updated>
-    <author><name>@Baconbrix</name></author>
-    <category term="edition-2026-11-19"/>
-    <summary>• Try shopping through the bot: Shopping with Grok Bot now delivers results as cards; after you order you get a progress card and the bot keeps an eye on the order automatically. (Source: https://x.com/Baconbrix/status/2121272900154163322)</summary>
-  </entry>
-  <entry>
-    <title>Software factories › Measurement &amp; improvement: Keep the agent pipeline as version-controlled code</title>
-    <link rel="alternate" type="text/html" href="https://cfmayer.github.io/ai-tips-watch/#s-x-2121256829196067308"/>
-    <link rel="related" href="https://x.com/zachlloydtweets/status/2121256829196067308"/>
-    <id>https://cfmayer.github.io/ai-tips-watch/#s-x-2121256829196067308</id>
-    <published>2026-11-13T15:00:13.783000Z</published>
-    <updated>2026-11-19T18:15:05-07:00</updated>
-    <author><name>@zachlloydtweets</name></author>
-    <category term="edition-2026-11-19"/>
-    <summary>• Keep the agent pipeline as version-controlled code: Defining the factory as code lets you branch to test configurations (e.g. are open-weight models fine for front-end tasks? are these skills worth their tokens?) and enables self-improvement loops where agents analyze past failures and propose diffs to the definition. (Source: https://x.com/zachlloydtweets/status/2121256829196067308)</summary>
-  </entry>
-  <entry>
-    <title>Software factories › Architecture &amp; orchestration: Blueprints plus an orchestrator agent, not rigid if-this-then-that</title>
-    <link rel="alternate" type="text/html" href="https://cfmayer.github.io/ai-tips-watch/#s-x-2121037698437972036"/>
-    <link rel="related" href="https://x.com/zachlloydtweets/status/2121037698437972036"/>
-    <id>https://cfmayer.github.io/ai-tips-watch/#s-x-2121037698437972036</id>
-    <published>2026-11-13T00:29:28.939000Z</published>
-    <updated>2026-11-19T18:15:05-07:00</updated>
-    <author><name>@zachlloydtweets</name></author>
-    <category term="edition-2026-11-19"/>
-    <summary>• Blueprints plus an orchestrator agent, not rigid if-this-then-that: Warp&#x27;s factory design: users define a workflow &#x27;blueprint&#x27; that looks like a DAG, but an orchestration agent decides how to progress work and when to loop in a human, so it can take a different path when guidelines are incomplete or a human asks. (Source: https://x.com/zachlloydtweets/status/2121037698437972036)</summary>
-  </entry>
-  <entry>
-    <title>Mobile &amp; app building › Builds &amp; distribution: Exact Build + AppDrop announcement (via @eiioth)</title>
-    <link rel="alternate" type="text/html" href="https://cfmayer.github.io/ai-tips-watch/#s-x-2120994964255748490"/>
-    <link rel="related" href="https://x.com/eiioth/status/2120994964255748490"/>
-    <id>https://cfmayer.github.io/ai-tips-watch/#s-x-2120994964255748490</id>
-    <published>2026-11-12T21:42:14.518000Z</published>
-    <updated>2026-11-19T18:15:05-07:00</updated>
-    <author><name>@ccheever</name></author>
-    <category term="edition-2026-11-19"/>
-    <summary>Demo only: an iOS app built and packaged in 10.7 seconds in the terminal with Exact Build.
-• Fast cloud iOS builds and instant sharing with Exact Build + AppDrop: If you&#x27;re trying Exact: Exact Build is a fast (Linux-based) iOS build service, often under 30 seconds, and AppDrop signs and distributes IPAs so you can send what you built to someone&#x27;s iPhone right away. Both are in alpha. (Source: https://x.com/eiioth/status/2120994964255748490)</summary>
-  </entry>
-  <entry>
-    <title>Grok Bot › Connectors &amp; apps: Connect more apps so your bot has context</title>
-    <link rel="alternate" type="text/html" href="https://cfmayer.github.io/ai-tips-watch/#s-x-2120967515224609057"/>
-    <link rel="related" href="https://x.com/poteto/status/2120967515224609057"/>
-    <id>https://cfmayer.github.io/ai-tips-watch/#s-x-2120967515224609057</id>
-    <published>2026-11-12T19:50:35.957000Z</published>
-    <updated>2026-11-19T18:15:05-07:00</updated>
-    <author><name>@poteto</name></author>
-    <category term="edition-2026-11-19"/>
-    <summary>• Connect more apps so your bot has context: The more connectors (and so context and tools) a bot has, the more useful it gets. Two starter ideas: have it read messages from family and put important events on your calendar, or read messages from prospective clients and manage your small-business bookings. (Source: https://x.com/poteto/status/2120967515224609057)</summary>
-  </entry>
-  <entry>
-    <title>Software factories › Concepts &amp; adoption: Treat coding agents as an engineering problem, not a prompting problem</title>
-    <link rel="alternate" type="text/html" href="https://cfmayer.github.io/ai-tips-watch/#s-x-2120966552472477810"/>
-    <link rel="related" href="https://x.com/zachlloydtweets/status/2120966552472477810"/>
-    <id>https://cfmayer.github.io/ai-tips-watch/#s-x-2120966552472477810</id>
-    <published>2026-11-12T19:46:46.419000Z</published>
-    <updated>2026-11-19T18:15:05-07:00</updated>
-    <author><name>@zachlloydtweets</name></author>
-    <category term="edition-2026-11-19"/>
-    <summary>• Treat coding agents as an engineering problem, not a prompting problem: Core idea of Zach&#x27;s AIE Code keynote: define the agent system in code, measure what it produces on your codebase, and keep iterating. Everyone has agents; the hard part is engineering the factory around them. (Source: https://x.com/zachlloydtweets/status/2120966552472477810)</summary>
-  </entry>
-  <entry>
-    <title>Grok Bot › Connectors &amp; apps: Run Grok Bot on a Mac to reach Apple apps from anywhere</title>
-    <link rel="alternate" type="text/html" href="https://cfmayer.github.io/ai-tips-watch/#s-x-2120958346731946063"/>
-    <link rel="related" href="https://x.com/Baconbrix/status/2120958346731946063"/>
-    <id>https://cfmayer.github.io/ai-tips-watch/#s-x-2120958346731946063</id>
-    <published>2026-11-12T19:14:10.018000Z</published>
-    <updated>2026-11-19T18:15:05-07:00</updated>
-    <author><name>@Baconbrix</name></author>
-    <category term="edition-2026-11-19"/>
-    <summary>• Run Grok Bot on a Mac to reach Apple apps from anywhere: Grok Bot on Mac can use Messages, Mail, Notes, Reminders, Calendar, Location and Contacts. You can then remote-control that Mac from any Grok Bot client (mobile, web, Tesla) to check your calendar, send messages, or read reminders. (Source: https://x.com/Baconbrix/status/2120958346731946063)</summary>
   </entry>
 </feed>

@@ -6,7 +6,7 @@
   "scope_short": "Grok Bot, Cursor, agent skills, prompting and AI coding workflows",
   "scope_about": "Grok Bot and other AI tools (coding agents, Cursor, Claude Code, Codex, agent skills, prompting and workflows)"
  },
- "last_run": "2026-11-19T18:28:17-07:00",
+ "last_run": "2026-11-21T05:13:24-07:00",
  "window": {
   "start": "2026-11-12",
   "end": "2026-11-19"
@@ -52,6 +52,14 @@
    "tips_added": 0,
    "tips_removed": 2,
    "note": "Two tips that only pointed at their own video were folded into the video source cards."
+  },
+  {
+   "at": "2026-11-21T05:13:24-07:00",
+   "edition": "2026-11-21",
+   "window": "2026-11-20T12:00Z/2026-11-21T12:10Z",
+   "tips_added": 24,
+   "sources_added": 12,
+   "source_summaries_updated": 0
   }
  ],
  "tips": [
@@ -2500,6 +2508,484 @@
    "subcategory": "Review & judgment",
    "source_id": "x-2123566998294601980",
    "edition": "2026-11-19"
+  },
+  {
+   "added_at": "2026-11-21T05:20:00-07:00",
+   "tags": [
+    "comments",
+    "adr",
+    "prompt"
+   ],
+   "id": "x-2123798388227403983",
+   "date": "2026-11-20",
+   "posted_at": "2026-11-20T15:19:28Z",
+   "author": "mattpocockuk",
+   "topic": "Prompting",
+   "subcategory": "Prompt templates",
+   "title": "Comment-audit prompt",
+   "tip": "Ask the agent to categorise every code comment in your codebase (or one section) as Tautology (repeats the code), Excuse (lets a hacky implementation slide), Stale (refers to code that no longer applies) or Decision Record (an important, non-obvious decision). Then: delete tautologies and stale comments, delete excuses and file an issue to fix the hack, and move decision records into ADRs.",
+   "source_type": "post",
+   "source_url": "https://x.com/mattpocockuk/status/2123798388227403983",
+   "edition": "2026-11-21",
+   "source_id": "x-2123798388227403983"
+  },
+  {
+   "added_at": "2026-11-21T05:20:00-07:00",
+   "tags": [
+    "comments",
+    "lint",
+    "skills"
+   ],
+   "id": "x-2123798388227403983-b",
+   "date": "2026-11-20",
+   "posted_at": "2026-11-20T15:19:28Z",
+   "author": "mattpocockuk",
+   "topic": "Code quality",
+   "subcategory": "Lint rules & bans",
+   "title": "Ban comments with a ratchet, then make it a skill",
+   "tip": "After the cleanup, have the agent add a lint rule banning comments with a ratchet approach (not every comment goes in one PR), create a /delete-comment skill in the repo so you can repeat the process, and estimate how many lines you'll shed.",
+   "source_type": "post",
+   "source_url": "https://x.com/mattpocockuk/status/2123798388227403983",
+   "source_id": "x-2123798388227403983",
+   "edition": "2026-11-21"
+  },
+  {
+   "added_at": "2026-11-21T05:20:00-07:00",
+   "tags": [
+    "pstack",
+    "comments",
+    "lint"
+   ],
+   "id": "x-2123898792487576021",
+   "date": "2026-11-20",
+   "posted_at": "2026-11-20T21:58:26Z",
+   "author": "poteto",
+   "topic": "Code quality",
+   "subcategory": "Lint rules & bans",
+   "title": "Try pstack's /no-comments, or turn it into a lint rule",
+   "tip": "Run the /no-comments skill from pstack (github.com/cursor/plugins, pstack/skills/no-comments), or better, ask your agent to turn it into a lint rule.",
+   "source_type": "post",
+   "source_url": "https://x.com/poteto/status/2123898792487576021",
+   "credit": "Quoting @mattpocockuk's comment-audit prompt",
+   "edition": "2026-11-21",
+   "source_id": "x-2123898792487576021"
+  },
+  {
+   "added_at": "2026-11-21T05:20:00-07:00",
+   "tags": [
+    "pstack",
+    "grok bot",
+    "model routing"
+   ],
+   "id": "x-2123824683862855898",
+   "date": "2026-11-20",
+   "posted_at": "2026-11-20T17:03:58Z",
+   "author": "poteto",
+   "topic": "Agent skills & setup",
+   "subcategory": "Skill packs & updates",
+   "title": "pstack updates itself; rerun /setup-pstack to change routing",
+   "tip": "pstack v0.15.46 prunes its skills to be much shorter and adds Gemini 4 Neon as a panel reviewer. It auto-updates for Grok Bot and Cursor users; to change which models handle which role, run /setup-pstack again.",
+   "source_type": "post",
+   "source_url": "https://x.com/poteto/status/2123824683862855898",
+   "edition": "2026-11-21",
+   "source_id": "x-2123824683862855898"
+  },
+  {
+   "added_at": "2026-11-21T05:20:00-07:00",
+   "tags": [
+    "adr",
+    "domain docs"
+   ],
+   "id": "x-2124058139477594142",
+   "date": "2026-11-21",
+   "posted_at": "2026-11-21T08:31:38Z",
+   "author": "mattpocockuk",
+   "topic": "Agent skills & setup",
+   "subcategory": "Alignment & domain docs",
+   "title": "Record hard-won naming decisions in ADRs",
+   "tip": "When a grilling session settles a naming or data-relationship question (his example ADR: \"A Thumbnail Diagram is not a Diagram\"), write it up as an ADR; without it the agent would fill the gap with its own assumptions.",
+   "source_type": "post",
+   "source_url": "https://x.com/mattpocockuk/status/2124058139477594142",
+   "edition": "2026-11-21",
+   "source_id": "x-2124058139477594142"
+  },
+  {
+   "added_at": "2026-11-21T05:20:00-07:00",
+   "tags": [
+    "adr"
+   ],
+   "id": "x-2123860812607758629",
+   "date": "2026-11-20",
+   "posted_at": "2026-11-20T19:27:31Z",
+   "author": "mattpocockuk",
+   "topic": "Agent skills & setup",
+   "subcategory": "Alignment & domain docs",
+   "title": "ADRs stop agents re-suggesting explored avenues",
+   "tip": "ADRs keep agents from repeatedly recommending approaches you've already explored, and let them see the history of surprising decisions after you hand the system off.",
+   "source_type": "post",
+   "source_url": "https://x.com/mattpocockuk/status/2123860812607758629",
+   "edition": "2026-11-21",
+   "source_id": "x-2123860812607758629"
+  },
+  {
+   "added_at": "2026-11-21T05:20:00-07:00",
+   "tags": [
+    "adr",
+    "comments"
+   ],
+   "id": "x-2123861337650471082",
+   "date": "2026-11-20",
+   "posted_at": "2026-11-20T19:29:36Z",
+   "author": "mattpocockuk",
+   "topic": "Code quality",
+   "subcategory": "Comments & docs",
+   "title": "Put the 'why' in ADRs, not comments",
+   "tip": "Comments are a bad store for the why of a codebase, so put it in an ADR instead. Not every piece of code needs one, and don't remove a fence until you know why it was put up.",
+   "source_type": "post",
+   "source_url": "https://x.com/mattpocockuk/status/2123861337650471082",
+   "edition": "2026-11-21",
+   "source_id": "x-2123861337650471082"
+  },
+  {
+   "added_at": "2026-11-21T05:20:00-07:00",
+   "tags": [
+    "docs",
+    "context"
+   ],
+   "id": "x-2123816567259697401",
+   "date": "2026-11-20",
+   "posted_at": "2026-11-20T16:31:42Z",
+   "author": "dexhorthy",
+   "topic": "Agent skills & setup",
+   "subcategory": "Alignment & domain docs",
+   "title": "Only document what won't churn",
+   "tip": "Low-granularity docs that rarely change (high-level system architecture, one sentence on each package's role) are safe; beyond that, keeping a second copy of the truth tends to slow agents and humans down. Agents that fight doc drift for you have rarely been worth the trouble over a couple of months.",
+   "source_type": "post",
+   "source_url": "https://x.com/dexhorthy/status/2123816567259697401",
+   "edition": "2026-11-21",
+   "source_id": "x-2123816567259697401"
+  },
+  {
+   "added_at": "2026-11-21T05:20:00-07:00",
+   "tags": [
+    "voice",
+    "open source",
+    "grok voice",
+    "video"
+   ],
+   "id": "x-2123825984231362902",
+   "date": "2026-11-20",
+   "posted_at": "2026-11-20T17:09:08Z",
+   "author": "ericzakariasson",
+   "topic": "Workflows",
+   "subcategory": "Remixable software",
+   "title": "Fork-and-remix prompt for voiced",
+   "tip": "voiced (github.com/ericzakariasson/voiced) is an open-source dictation and voice-prompting tool powered by Grok voice. To customize it, prompt your agent: \"Fork Voiced, read AGENTS.md at its root and follow its first run section, then make this change: …\" (e.g. make the pill hot pink, or make the cleanup talk like a pirate).",
+   "source_type": "video",
+   "video_timestamp": "0:00",
+   "source_url": "https://x.com/ericzakariasson/status/2123825984231362902",
+   "edition": "2026-11-21",
+   "source_id": "x-2123825984231362902"
+  },
+  {
+   "added_at": "2026-11-21T05:20:00-07:00",
+   "tags": [
+    "software factories",
+    "agent teams"
+   ],
+   "id": "x-2123808803070063033",
+   "date": "2026-11-20",
+   "posted_at": "2026-11-20T16:00:51Z",
+   "author": "zachlloydtweets",
+   "topic": "Software factories",
+   "subcategory": "Concepts & adoption",
+   "title": "Factories vs. agent teams",
+   "tip": "Treat deploying coding agents as an optimization problem: you can only optimize what you measure, measurement needs standardized data, and that needs a centralized, code-defined factory in the cloud that lets you test different models, harnesses and skills and feed learnings back in. Agent teams that you manage like people lack that measurement loop.",
+   "source_type": "post",
+   "source_url": "https://x.com/zachlloydtweets/status/2123808803070063033",
+   "edition": "2026-11-21",
+   "source_id": "x-2123808803070063033"
+  },
+  {
+   "added_at": "2026-11-21T05:20:00-07:00",
+   "tags": [
+    "software factories",
+    "course"
+   ],
+   "id": "x-2123805046307430871",
+   "date": "2026-11-20",
+   "posted_at": "2026-11-20T15:45:56Z",
+   "author": "zachlloydtweets",
+   "topic": "Software factories",
+   "subcategory": "Concepts & adoption",
+   "title": "Hands-on software factory course",
+   "tip": "Warp's team published a hands-on introductory course on learning about and building your own software factory at warp.dev/learn.",
+   "source_type": "post",
+   "source_url": "https://x.com/zachlloydtweets/status/2123805046307430871",
+   "edition": "2026-11-21",
+   "source_id": "x-2123805046307430871"
+  },
+  {
+   "added_at": "2026-11-21T05:20:00-07:00",
+   "tags": [
+    "software factories",
+    "video"
+   ],
+   "id": "yt-0LeT996Hz3E-236",
+   "date": "2026-11-20",
+   "posted_at": "2026-11-20T20:11:37Z",
+   "author": "zachlloydtweets",
+   "topic": "Software factories",
+   "subcategory": "Architecture & orchestration",
+   "title": "Encode the factory declaratively",
+   "tip": "Define your factory in a declarative, version-controlled language (like Terraform): which agents run, how they're triggered, their workflows and the tools they can use.",
+   "source_type": "video",
+   "video_timestamp": "3:56",
+   "source_url": "https://www.youtube.com/watch?v=0LeT996Hz3E&t=236",
+   "source_id": "yt-0LeT996Hz3E",
+   "edition": "2026-11-21"
+  },
+  {
+   "added_at": "2026-11-21T05:20:00-07:00",
+   "tags": [
+    "software factories",
+    "video"
+   ],
+   "id": "yt-0LeT996Hz3E-448",
+   "date": "2026-11-20",
+   "posted_at": "2026-11-20T20:11:37Z",
+   "author": "zachlloydtweets",
+   "topic": "Software factories",
+   "subcategory": "Concepts & adoption",
+   "title": "Product engineering vs. factory engineering",
+   "tip": "Building the product and improving the system of agents that builds it are two distinct skill sets; treat factory engineering as its own job.",
+   "source_type": "video",
+   "video_timestamp": "7:28",
+   "source_url": "https://www.youtube.com/watch?v=0LeT996Hz3E&t=448",
+   "source_id": "yt-0LeT996Hz3E",
+   "edition": "2026-11-21"
+  },
+  {
+   "added_at": "2026-11-21T05:20:00-07:00",
+   "tags": [
+    "software factories",
+    "video"
+   ],
+   "id": "yt-0LeT996Hz3E-540",
+   "date": "2026-11-20",
+   "posted_at": "2026-11-20T20:11:37Z",
+   "author": "zachlloydtweets",
+   "topic": "Software factories",
+   "subcategory": "Measurement & improvement",
+   "title": "Record everything agents produce",
+   "tip": "Centrally record agent conversations, artifacts, videos and screenshots; that record is the raw material for improving the factory.",
+   "source_type": "video",
+   "video_timestamp": "9:00",
+   "source_url": "https://www.youtube.com/watch?v=0LeT996Hz3E&t=540",
+   "source_id": "yt-0LeT996Hz3E",
+   "edition": "2026-11-21"
+  },
+  {
+   "added_at": "2026-11-21T05:20:00-07:00",
+   "tags": [
+    "software factories",
+    "video"
+   ],
+   "id": "yt-0LeT996Hz3E-577",
+   "date": "2026-11-20",
+   "posted_at": "2026-11-20T20:11:37Z",
+   "author": "zachlloydtweets",
+   "topic": "Software factories",
+   "subcategory": "Architecture & orchestration",
+   "title": "Keep the inference layer flexible",
+   "tip": "Run agents in sandboxes for security and repeatability, and support multiple models and agent harnesses, since different tasks need different capabilities.",
+   "source_type": "video",
+   "video_timestamp": "9:37",
+   "source_url": "https://www.youtube.com/watch?v=0LeT996Hz3E&t=577",
+   "source_id": "yt-0LeT996Hz3E",
+   "edition": "2026-11-21"
+  },
+  {
+   "added_at": "2026-11-21T05:20:00-07:00",
+   "tags": [
+    "software factories",
+    "video"
+   ],
+   "id": "yt-0LeT996Hz3E-804",
+   "date": "2026-11-20",
+   "posted_at": "2026-11-20T20:11:37Z",
+   "author": "zachlloydtweets",
+   "topic": "Software factories",
+   "subcategory": "Measurement & improvement",
+   "title": "Online evals score agent output",
+   "tip": "Have separate agents review and score your coding agents' output as it happens (e.g. flag redundant or unnecessary tests) to catch failure modes.",
+   "source_type": "video",
+   "video_timestamp": "13:24",
+   "source_url": "https://www.youtube.com/watch?v=0LeT996Hz3E&t=804",
+   "source_id": "yt-0LeT996Hz3E",
+   "edition": "2026-11-21"
+  },
+  {
+   "added_at": "2026-11-21T05:20:00-07:00",
+   "tags": [
+    "software factories",
+    "video"
+   ],
+   "id": "yt-0LeT996Hz3E-899",
+   "date": "2026-11-20",
+   "posted_at": "2026-11-20T20:11:37Z",
+   "author": "zachlloydtweets",
+   "topic": "Software factories",
+   "subcategory": "Measurement & improvement",
+   "title": "Self-improvement as PRs",
+   "tip": "Let agents read the eval scores, find failure patterns, and propose fixes as pull requests against the factory's own definition.",
+   "source_type": "video",
+   "video_timestamp": "14:59",
+   "source_url": "https://www.youtube.com/watch?v=0LeT996Hz3E&t=899",
+   "source_id": "yt-0LeT996Hz3E",
+   "edition": "2026-11-21"
+  },
+  {
+   "added_at": "2026-11-21T05:20:00-07:00",
+   "tags": [
+    "software factories",
+    "video"
+   ],
+   "id": "yt-0LeT996Hz3E-951",
+   "date": "2026-11-20",
+   "posted_at": "2026-11-20T20:11:37Z",
+   "author": "zachlloydtweets",
+   "topic": "Software factories",
+   "subcategory": "Measurement & improvement",
+   "title": "Benchmark on your own tasks",
+   "tip": "Skip generic leaderboards: build a benchmark from your organization's real past tasks and replay it across models and configurations to weigh quality against cost.",
+   "source_type": "video",
+   "video_timestamp": "15:51",
+   "source_url": "https://www.youtube.com/watch?v=0LeT996Hz3E&t=951",
+   "source_id": "yt-0LeT996Hz3E",
+   "edition": "2026-11-21"
+  },
+  {
+   "added_at": "2026-11-21T05:20:00-07:00",
+   "tags": [
+    "grok bot",
+    "video"
+   ],
+   "id": "x-broadcast-2aWQllRAKjNOBd-412",
+   "date": "2026-11-20",
+   "posted_at": "2026-11-21T00:07:50Z",
+   "author": "ericzakariasson",
+   "topic": "Grok Bot",
+   "subcategory": "Shopping & travel",
+   "title": "Search flights in chat",
+   "tip": "Ask for flights in plain words (the demo: \"Find nonstop flights from SFO to LAX\"); Grok Bot answers with a short pick plus Recommended and Cheapest option cards.",
+   "source_type": "video",
+   "video_timestamp": "6:52",
+   "source_url": "https://x.com/i/broadcasts/2aWQllRAKjNOBd",
+   "source_id": "x-broadcast-2aWQllRAKjNOBd",
+   "edition": "2026-11-21"
+  },
+  {
+   "added_at": "2026-11-21T05:20:00-07:00",
+   "tags": [
+    "grok bot",
+    "video"
+   ],
+   "id": "x-broadcast-2aWQllRAKjNOBd-591",
+   "date": "2026-11-20",
+   "posted_at": "2026-11-21T00:07:50Z",
+   "author": "ericzakariasson",
+   "topic": "Grok Bot",
+   "subcategory": "Releases & features",
+   "title": "Phone calls from Grok Bot",
+   "tip": "Grok Bot can make phone calls: call a business, use calls as a tool, hand a call off to you, confirm who it's calling, and show a live transcript.",
+   "source_type": "video",
+   "video_timestamp": "9:51",
+   "source_url": "https://x.com/i/broadcasts/2aWQllRAKjNOBd",
+   "source_id": "x-broadcast-2aWQllRAKjNOBd",
+   "credit": "Post shown on stream",
+   "edition": "2026-11-21"
+  },
+  {
+   "added_at": "2026-11-21T05:20:00-07:00",
+   "tags": [
+    "grok bot",
+    "video"
+   ],
+   "id": "x-broadcast-2aWQllRAKjNOBd-1110",
+   "date": "2026-11-20",
+   "posted_at": "2026-11-21T00:07:50Z",
+   "author": "ericzakariasson",
+   "topic": "Grok Bot",
+   "subcategory": "Connectors & apps",
+   "title": "Per-tool permissions on connector pages",
+   "tip": "On a connector's page, set each tool to Always allow, Auto-review, Needs approval or Blocked to control exactly what the bot may run without you.",
+   "source_type": "video",
+   "video_timestamp": "18:30",
+   "source_url": "https://x.com/i/broadcasts/2aWQllRAKjNOBd",
+   "source_id": "x-broadcast-2aWQllRAKjNOBd",
+   "edition": "2026-11-21"
+  },
+  {
+   "added_at": "2026-11-21T05:20:00-07:00",
+   "tags": [
+    "grok bot",
+    "video"
+   ],
+   "id": "x-broadcast-2aWQllRAKjNOBd-1657",
+   "date": "2026-11-20",
+   "posted_at": "2026-11-21T00:07:50Z",
+   "author": "ericzakariasson",
+   "topic": "Grok Bot",
+   "subcategory": "Teams & delegation",
+   "title": "Don't run one chat forever",
+   "tip": "Using the same bot chat for too long degrades results because it has to re-read the whole chat; spin up fresh bots or split tasks instead.",
+   "source_type": "video",
+   "video_timestamp": "27:37",
+   "source_url": "https://x.com/i/broadcasts/2aWQllRAKjNOBd",
+   "source_id": "x-broadcast-2aWQllRAKjNOBd",
+   "credit": "Community post shown on stream",
+   "edition": "2026-11-21"
+  },
+  {
+   "added_at": "2026-11-21T05:20:00-07:00",
+   "tags": [
+    "grok bot",
+    "video"
+   ],
+   "id": "x-broadcast-2aWQllRAKjNOBd-1870",
+   "date": "2026-11-20",
+   "posted_at": "2026-11-21T00:07:50Z",
+   "author": "ericzakariasson",
+   "topic": "Grok Bot",
+   "subcategory": "Directory & templates",
+   "title": "Install community bots from the Directory",
+   "tip": "The Grok Bot Directory lists community-built bot templates you can install instead of building from scratch.",
+   "source_type": "video",
+   "video_timestamp": "31:10",
+   "source_url": "https://x.com/i/broadcasts/2aWQllRAKjNOBd",
+   "source_id": "x-broadcast-2aWQllRAKjNOBd",
+   "edition": "2026-11-21"
+  },
+  {
+   "added_at": "2026-11-21T05:20:00-07:00",
+   "tags": [
+    "grok bot",
+    "video"
+   ],
+   "id": "x-broadcast-2aWQllRAKjNOBd-2782",
+   "date": "2026-11-20",
+   "posted_at": "2026-11-21T00:07:50Z",
+   "author": "ericzakariasson",
+   "topic": "Grok Bot",
+   "subcategory": "Releases & features",
+   "title": "Import memory from another assistant",
+   "tip": "Settings has an \"Import memory to Grok Bot\" page: click Start import to bring your preferences, context and memories over from another AI assistant.",
+   "source_type": "video",
+   "video_timestamp": "46:22",
+   "source_url": "https://x.com/i/broadcasts/2aWQllRAKjNOBd",
+   "source_id": "x-broadcast-2aWQllRAKjNOBd",
+   "edition": "2026-11-21"
   }
  ],
  "sources": [
@@ -3329,6 +3815,144 @@
    "date": "2026-11-18",
    "added_at": "2026-11-19T18:15:05-07:00",
    "edition": "2026-11-19"
+  },
+  {
+   "id": "yt-0LeT996Hz3E",
+   "type": "video",
+   "title": "Engineer Your Coding Agents Like Any Other System — Zach Lloyd, Warp",
+   "author": "zachlloydtweets",
+   "url": "https://www.youtube.com/watch?v=0LeT996Hz3E",
+   "posted_in": "https://x.com/zachlloydtweets/status/2123871909536497848",
+   "date": "2026-11-20",
+   "added_at": "2026-11-21T05:20:00-07:00",
+   "duration_s": 1110,
+   "summary": "AI Engineer Code Summit keynote: software engineering is becoming factory engineering. Lloyd lays out a code-defined, closed-loop factory stack (declarative definition, recorded agent runs, sandboxed compute, flexible inference, online evals, self-improvement PRs, benchmarks on your own data); from about 10:40 it becomes a Warp Factories product demo.",
+   "summary_status": "done",
+   "has_local_copy": true,
+   "has_transcript": false,
+   "edition": "2026-11-21"
+  },
+  {
+   "id": "x-broadcast-2aWQllRAKjNOBd",
+   "type": "video",
+   "title": "Grok Bot Q&A - Travel, 1.0, meetings & more! (X broadcast)",
+   "author": "ericzakariasson",
+   "url": "https://x.com/i/broadcasts/2aWQllRAKjNOBd",
+   "posted_in": "https://x.com/ericzakariasson/status/2123931356229194194",
+   "date": "2026-11-20",
+   "added_at": "2026-11-21T05:20:00-07:00",
+   "duration_s": 3866,
+   "summary": "Friday jam livestream on what's new in Grok Bot: travel search, phone calls and meetings, tool permissions, the Directory, memory import, plus community workflows shown on screen.",
+   "summary_status": "done",
+   "has_local_copy": true,
+   "has_transcript": false,
+   "note": "Watched visually; the video model had no audio track, so tips come only from what is shown on screen.",
+   "edition": "2026-11-21"
+  },
+  {
+   "id": "x-2123825984231362902",
+   "type": "video",
+   "title": "voiced: open-source dictation, remixed by prompt",
+   "author": "ericzakariasson",
+   "url": "https://x.com/ericzakariasson/status/2123825984231362902",
+   "date": "2026-11-20",
+   "added_at": "2026-11-21T05:20:00-07:00",
+   "duration_s": 18,
+   "summary": "18-second demo: one voiced dictation pill is forked again and again by prompt into an orb, a green terminal, a VU meter, a pirate-voice cleanup and more.",
+   "summary_status": "done",
+   "has_local_copy": true,
+   "has_transcript": false,
+   "edition": "2026-11-21"
+  },
+  {
+   "id": "x-2123798388227403983",
+   "type": "post",
+   "title": null,
+   "author": "mattpocockuk",
+   "url": "https://x.com/mattpocockuk/status/2123798388227403983",
+   "date": "2026-11-20",
+   "added_at": "2026-11-21T05:13:24-07:00",
+   "edition": "2026-11-21"
+  },
+  {
+   "id": "x-2123898792487576021",
+   "type": "post",
+   "title": null,
+   "author": "poteto",
+   "url": "https://x.com/poteto/status/2123898792487576021",
+   "date": "2026-11-20",
+   "added_at": "2026-11-21T05:13:24-07:00",
+   "edition": "2026-11-21"
+  },
+  {
+   "id": "x-2123824683862855898",
+   "type": "post",
+   "title": null,
+   "author": "poteto",
+   "url": "https://x.com/poteto/status/2123824683862855898",
+   "date": "2026-11-20",
+   "added_at": "2026-11-21T05:13:24-07:00",
+   "edition": "2026-11-21"
+  },
+  {
+   "id": "x-2124058139477594142",
+   "type": "post",
+   "title": null,
+   "author": "mattpocockuk",
+   "url": "https://x.com/mattpocockuk/status/2124058139477594142",
+   "date": "2026-11-21",
+   "added_at": "2026-11-21T05:13:24-07:00",
+   "edition": "2026-11-21"
+  },
+  {
+   "id": "x-2123860812607758629",
+   "type": "post",
+   "title": null,
+   "author": "mattpocockuk",
+   "url": "https://x.com/mattpocockuk/status/2123860812607758629",
+   "date": "2026-11-20",
+   "added_at": "2026-11-21T05:13:24-07:00",
+   "edition": "2026-11-21"
+  },
+  {
+   "id": "x-2123861337650471082",
+   "type": "post",
+   "title": null,
+   "author": "mattpocockuk",
+   "url": "https://x.com/mattpocockuk/status/2123861337650471082",
+   "date": "2026-11-20",
+   "added_at": "2026-11-21T05:13:24-07:00",
+   "edition": "2026-11-21"
+  },
+  {
+   "id": "x-2123816567259697401",
+   "type": "post",
+   "title": null,
+   "author": "dexhorthy",
+   "url": "https://x.com/dexhorthy/status/2123816567259697401",
+   "date": "2026-11-20",
+   "added_at": "2026-11-21T05:13:24-07:00",
+   "edition": "2026-11-21"
+  },
+  {
+   "id": "x-2123808803070063033",
+   "type": "post",
+   "title": null,
+   "author": "zachlloydtweets",
+   "url": "https://x.com/zachlloydtweets/status/2123808803070063033",
+   "date": "2026-11-20",
+   "added_at": "2026-11-21T05:13:24-07:00",
+   "edition": "2026-11-21"
+  },
+  {
+   "id": "x-2123805046307430871",
+   "type": "post",
+   "title": null,
+   "author": "zachlloydtweets",
+   "url": "https://x.com/zachlloydtweets/status/2123805046307430871",
+   "date": "2026-11-20",
+   "added_at": "2026-11-21T05:13:24-07:00",
+   "edition": "2026-11-21"
   }
  ],
  "schema_version": 2
