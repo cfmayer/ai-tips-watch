@@ -5,8 +5,45 @@
   <link rel="self" type="application/atom+xml" href="https://cfmayer.github.io/ai-tips-watch/feed.xml"/>
   <link rel="alternate" type="text/html" href="https://cfmayer.github.io/ai-tips-watch/"/>
   <id>https://cfmayer.github.io/ai-tips-watch/</id>
-  <updated>2026-11-21T05:13:24-07:00</updated>
+  <updated>2026-11-22T05:01:29-07:00</updated>
   <author><name>Grok Bot Tips Watch</name></author>
+  <entry>
+    <title>Agent skills &amp; setup › Skill packs &amp; updates: VECTOR: a /vector skill for delegating any task to AI</title>
+    <link rel="alternate" type="text/html" href="https://cfmayer.github.io/ai-tips-watch/#s-x-2124471135953723528"/>
+    <link rel="related" href="https://x.com/mattpocockuk/status/2124471135953723528"/>
+    <id>https://cfmayer.github.io/ai-tips-watch/#s-x-2124471135953723528</id>
+    <published>2026-11-22T11:52:44Z</published>
+    <updated>2026-11-22T05:10:00-07:00</updated>
+    <author><name>@mattpocockuk</name></author>
+    <category term="edition-2026-11-22"/>
+    <summary>Matt Pocock is writing docs for VECTOR, a skill for non-developers that guides you through delegating a task to AI in six steps. The docs aren&#x27;t released yet.
+• /vector: six steps to delegate a task to AI: VECTOR is a skill (/vector) for non-developers that walks you through delegating a task to AI in six steps: find workflows AI could help with, give agents the right context, reorder the workflow, and find ways it can improve over time through memory. Planned docs include the /vector skill for building your own workflows, workshop templates for helping people new to AI build theirs, and example prompts. (Source: https://x.com/mattpocockuk/status/2124471135953723528)</summary>
+  </entry>
+  <entry>
+    <title>Prompting › Steering &amp; context: Teaching an agent your writing style with a sentence scorer</title>
+    <link rel="alternate" type="text/html" href="https://cfmayer.github.io/ai-tips-watch/#s-x-2124214098984370645"/>
+    <link rel="related" href="https://x.com/mattpocockuk/status/2124214098984370645"/>
+    <id>https://cfmayer.github.io/ai-tips-watch/#s-x-2124214098984370645</id>
+    <published>2026-11-21T18:51:21Z</published>
+    <updated>2026-11-22T05:10:00-07:00</updated>
+    <author><name>@mattpocockuk</name></author>
+    <category term="edition-2026-11-22"/>
+    <summary>A short self-thread on getting an agent to learn your writing style by scoring its sentences one at a time, with a follow-up on which scoring mode worked better.
+• Sentence-scorer loop for your writing style: To get an agent to write in your style, build a small &#x27;scorer&#x27; app where the agent sends you example sentences one at a time and you score them swipe-left style. Plan an article together, work through it sentence by sentence, and let the agent test its own hypotheses about your style and build up a profile over time.
+• Review sentence by sentence: Working sentence by sentence fits the small amount of high-quality working memory people have: instead of judging whether a whole piece flows together, you only judge whether one sentence reads well.
+• Score one sentence at a time, not pick-the-best: In the scorer, single mode (&quot;score this sentence 1-4&quot;) worked far better than multi (&quot;which of these is better&quot;). Reading three options and choosing the best is much harder on your brain than giving fast, vibes-based feedback on one. (Source: https://x.com/mattpocockuk/status/2124214098984370645)</summary>
+  </entry>
+  <entry>
+    <title>Workflows › Planning &amp; process: Plan up front only when rework is costly</title>
+    <link rel="alternate" type="text/html" href="https://cfmayer.github.io/ai-tips-watch/#s-x-2124147482238333210"/>
+    <link rel="related" href="https://x.com/mattpocockuk/status/2124147482238333210"/>
+    <id>https://cfmayer.github.io/ai-tips-watch/#s-x-2124147482238333210</id>
+    <published>2026-11-21T14:26:39Z</published>
+    <updated>2026-11-22T05:10:00-07:00</updated>
+    <author><name>@mattpocockuk</name></author>
+    <category term="edition-2026-11-22"/>
+    <summary>• Plan up front only when rework is costly: Up-front planning with an agent pays off when rework is costly, such as large diffs and features. When rework is cheap, there&#x27;s not much need for it. (Source: https://x.com/mattpocockuk/status/2124147482238333210)</summary>
+  </entry>
   <entry>
     <title>Agent skills &amp; setup › Alignment &amp; domain docs: Record hard-won naming decisions in ADRs</title>
     <link rel="alternate" type="text/html" href="https://cfmayer.github.io/ai-tips-watch/#s-x-2124058139477594142"/>
@@ -726,38 +763,5 @@
     <author><name>@owickstrom</name></author>
     <category term="edition-2026-11-19"/>
     <summary>Demo only: Bombadil solving a Rubik&#x27;s Cube step by step, with move notation and a progress bar. (Source: https://x.com/owickstrom/status/2122254137920196618)</summary>
-  </entry>
-  <entry>
-    <title>Cursor › Announcements: Joining SpaceXSI to work on Cursor and Grok Bot (announcement)</title>
-    <link rel="alternate" type="text/html" href="https://cfmayer.github.io/ai-tips-watch/#s-x-2122389444678586512"/>
-    <link rel="related" href="https://x.com/aninibread/status/2122389444678586512"/>
-    <id>https://cfmayer.github.io/ai-tips-watch/#s-x-2122389444678586512</id>
-    <published>2026-11-16T00:00:00Z</published>
-    <updated>2026-11-19T18:15:05-07:00</updated>
-    <author><name>@aninibread</name></author>
-    <category term="edition-2026-11-19"/>
-    <summary>Announcement video (SpaceXSI logo reveal); no tips. (Source: https://x.com/aninibread/status/2122389444678586512)</summary>
-  </entry>
-  <entry>
-    <title>Code quality › Review &amp; judgment: AI writes the code; you still decide what ships</title>
-    <link rel="alternate" type="text/html" href="https://cfmayer.github.io/ai-tips-watch/#s-x-2122067662373269960"/>
-    <link rel="related" href="https://x.com/poteto/status/2122067662373269960"/>
-    <id>https://cfmayer.github.io/ai-tips-watch/#s-x-2122067662373269960</id>
-    <published>2026-11-15T20:42:11.477000Z</published>
-    <updated>2026-11-19T18:15:05-07:00</updated>
-    <author><name>@poteto</name></author>
-    <category term="edition-2026-11-19"/>
-    <summary>• AI writes the code; you still decide what ships: Revisiting an older post: senior engineers should build guardrails and teach practices that lead to quality software. AIs may write most of the code, but you decide what ships; don&#x27;t lose your taste for quality. (Source: https://x.com/poteto/status/2122067662373269960)</summary>
-  </entry>
-  <entry>
-    <title>Code quality › Review &amp; judgment: Pace AI output to human speed</title>
-    <link rel="alternate" type="text/html" href="https://cfmayer.github.io/ai-tips-watch/#s-x-2122028642515722319"/>
-    <link rel="related" href="https://x.com/dexhorthy/status/2122028642515722319"/>
-    <id>https://cfmayer.github.io/ai-tips-watch/#s-x-2122028642515722319</id>
-    <published>2026-11-15T18:07:08.418000Z</published>
-    <updated>2026-11-19T18:15:05-07:00</updated>
-    <author><name>@dexhorthy</name></author>
-    <category term="edition-2026-11-19"/>
-    <summary>• Pace AI output to human speed: Slow down. Pace AI outputs to human speeds; engineering still moves at engineering speed and business moves slower, and teams pushing too hard are starting to see downtime. (Source: https://x.com/dexhorthy/status/2122028642515722319)</summary>
   </entry>
 </feed>
