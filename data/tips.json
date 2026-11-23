@@ -6,7 +6,7 @@
   "scope_short": "Grok Bot, Cursor, agent skills, prompting and AI coding workflows",
   "scope_about": "Grok Bot and other AI tools (coding agents, Cursor, Claude Code, Codex, agent skills, prompting and workflows)"
  },
- "last_run": "2026-11-22T05:01:29-07:00",
+ "last_run": "2026-11-23T05:11:31-07:00",
  "window": {
   "start": "2026-11-12",
   "end": "2026-11-19"
@@ -67,6 +67,14 @@
    "window": "2026-11-21T12:10Z/2026-11-22T12:05Z",
    "tips_added": 5,
    "sources_added": 3,
+   "source_summaries_updated": 0
+  },
+  {
+   "at": "2026-11-23T05:11:31-07:00",
+   "edition": "2026-11-23",
+   "window": "2026-11-22T12:01Z/2026-11-23T12:10Z",
+   "tips_added": 10,
+   "sources_added": 7,
    "source_summaries_updated": 0
   }
  ],
@@ -3093,6 +3101,212 @@
    "tip": "Up-front planning with an agent pays off when rework is costly, such as large diffs and features. When rework is cheap, there's not much need for it.",
    "edition": "2026-11-22",
    "source_id": "x-2124147482238333210"
+  },
+  {
+   "id": "x-2124592480674779605-326",
+   "source_id": "x-2124592480674779605",
+   "date": "2026-11-22",
+   "posted_at": "2026-11-22T19:54:55Z",
+   "author": "zachlloydtweets",
+   "topic": "Software factories",
+   "subcategory": "Measurement & improvement",
+   "title": "Per-stage subagents cost ~40% more for no real quality gain",
+   "tags": [
+    "subagents",
+    "cost",
+    "benchmarks",
+    "video"
+   ],
+   "source_type": "video",
+   "video_timestamp": "5:26",
+   "source_url": "https://x.com/zachlloydtweets/status/2124592480674779605",
+   "added_at": "2026-11-23T05:15:00-07:00",
+   "tip": "On Warp's benchmark, giving each factory stage its own subagent (own context window and computer) averaged $6.27 per task versus $3.84 for one agent running the same stages in a single context window, about 40% more expensive with no meaningful quality gain. The single-agent setup became their default; don't assume subagents pay off until your own benchmark shows it.",
+   "edition": "2026-11-23"
+  },
+  {
+   "id": "x-2124592480674779605-231",
+   "source_id": "x-2124592480674779605",
+   "date": "2026-11-22",
+   "posted_at": "2026-11-22T19:54:55Z",
+   "author": "zachlloydtweets",
+   "topic": "Software factories",
+   "subcategory": "Measurement & improvement",
+   "title": "Benchmark factory designs by replaying real past tasks",
+   "tags": [
+    "benchmarks",
+    "evals",
+    "video"
+   ],
+   "source_type": "video",
+   "video_timestamp": "3:51",
+   "source_url": "https://x.com/zachlloydtweets/status/2124592480674779605",
+   "added_at": "2026-11-23T05:15:00-07:00",
+   "tip": "Build a benchmark from real coding tasks your team already completed and replay them through each factory configuration, measuring correctness and cost, instead of picking an agent architecture from opinions online.",
+   "edition": "2026-11-23"
+  },
+  {
+   "id": "x-2124592480674779605-132",
+   "source_id": "x-2124592480674779605",
+   "date": "2026-11-22",
+   "posted_at": "2026-11-22T19:54:55Z",
+   "author": "zachlloydtweets",
+   "topic": "Software factories",
+   "subcategory": "Architecture & orchestration",
+   "title": "Write stage transitions as plain-language conditions",
+   "tags": [
+    "orchestration",
+    "routing",
+    "config",
+    "video"
+   ],
+   "source_type": "video",
+   "video_timestamp": "2:12",
+   "source_url": "https://x.com/zachlloydtweets/status/2124592480674779605",
+   "added_at": "2026-11-23T05:15:00-07:00",
+   "tip": "Factory stage transitions don't have to be rigid if/then code. Warp's factory.yaml describes when each stage applies in plain English (e.g. stay in triage while \"the cause, scope, or tracking state is not yet known\") and lets the agent decide when to move on.",
+   "edition": "2026-11-23"
+  },
+  {
+   "id": "x-2124624191563698426",
+   "source_id": "x-2124624191563698426",
+   "date": "2026-11-22",
+   "posted_at": "2026-11-22T22:00:55Z",
+   "author": "dexhorthy",
+   "topic": "Prompting",
+   "subcategory": "Steering & context",
+   "title": "Code mode cut a daily Linear sweep from 245k to 23k tokens",
+   "tags": [
+    "code mode",
+    "tool calling",
+    "tokens",
+    "linear"
+   ],
+   "source_type": "post",
+   "source_url": "https://x.com/dexhorthy/status/2124624191563698426",
+   "added_at": "2026-11-23T05:15:00-07:00",
+   "tip": "Using Procedural Tool Calling (basically code mode, where the agent writes code that calls the tools) in Factory dropped a daily Linear sweep from 245k tokens to 23k and from 7 minutes to 36 seconds.",
+   "edition": "2026-11-23"
+  },
+  {
+   "id": "x-2124626368499794190",
+   "source_id": "x-2124624191563698426",
+   "date": "2026-11-22",
+   "posted_at": "2026-11-22T22:09:34Z",
+   "author": "dexhorthy",
+   "topic": "Prompting",
+   "subcategory": "Steering & context",
+   "title": "Show the model only the fields that drive the decision",
+   "tags": [
+    "context",
+    "tool output",
+    "json"
+   ],
+   "source_type": "post",
+   "source_url": "https://x.com/dexhorthy/status/2124626368499794190",
+   "added_at": "2026-11-23T05:15:00-07:00",
+   "tip": "Most of the code-mode win comes from making sure the model only sees the Linear fields that matter to its decisions, instead of the giant blobs of JSON tool calls usually return.",
+   "edition": "2026-11-23"
+  },
+  {
+   "id": "x-2124613833050472826",
+   "source_id": "x-2124613833050472826",
+   "date": "2026-11-22",
+   "posted_at": "2026-11-22T21:19:45Z",
+   "author": "dexhorthy",
+   "topic": "Agent skills & setup",
+   "subcategory": "Harnesses & tools",
+   "title": "Keep the lab's tool defs and system prompt; own the rest",
+   "tags": [
+    "harness",
+    "system prompt",
+    "tools"
+   ],
+   "source_type": "post",
+   "source_url": "https://x.com/dexhorthy/status/2124613833050472826",
+   "added_at": "2026-11-23T05:15:00-07:00",
+   "tip": "Don't use a lab's harness blindly, but its tool definitions and system prompt are part of how the model was RL'd, so if you depart from them you're on your own. Other parts of the harness, like orchestration, are yours to own.",
+   "edition": "2026-11-23"
+  },
+  {
+   "id": "x-2124666271530995771",
+   "source_id": "x-2124666271530995771",
+   "date": "2026-11-23",
+   "posted_at": "2026-11-23T00:48:08Z",
+   "author": "dexhorthy",
+   "topic": "Models & evaluation",
+   "subcategory": "Benchmarking & evaluation",
+   "title": "If you don't read the code, read the evals",
+   "tags": [
+    "evals",
+    "review"
+   ],
+   "source_type": "post",
+   "source_url": "https://x.com/dexhorthy/status/2124666271530995771",
+   "added_at": "2026-11-23T05:15:00-07:00",
+   "tip": "Models are still bad at writing and code-reviewing evals. If you don't read the code an agent writes, at least read its evals.",
+   "edition": "2026-11-23"
+  },
+  {
+   "id": "x-2124500662436151797",
+   "source_id": "x-2124500662436151797",
+   "date": "2026-11-22",
+   "posted_at": "2026-11-22T13:50:03Z",
+   "author": "mattpocockuk",
+   "topic": "Agent skills & setup",
+   "subcategory": "Skill packs & updates",
+   "title": "Write a skill for your ideal codebase",
+   "tags": [
+    "typescript",
+    "greenfield",
+    "skills"
+   ],
+   "source_type": "post",
+   "source_url": "https://x.com/mattpocockuk/status/2124500662436151797",
+   "added_at": "2026-11-23T05:15:00-07:00",
+   "tip": "Matt Pocock is drafting /the-perfect-typescript-codebase, a skill that describes a platonic ideal of a great codebase. After starting a greenfield project with an early version, he called it the best codebase he's ever produced.",
+   "edition": "2026-11-23"
+  },
+  {
+   "id": "x-2124797717834543167",
+   "source_id": "x-2124797717834543167",
+   "date": "2026-11-23",
+   "posted_at": "2026-11-23T09:30:27Z",
+   "author": "mattpocockuk",
+   "topic": "Workflows",
+   "subcategory": "Delegation & agent teams",
+   "title": "A shared chat workspace for agents and developers",
+   "tags": [
+    "agents",
+    "slack",
+    "observability"
+   ],
+   "source_type": "post",
+   "source_url": "https://x.com/mattpocockuk/status/2124797717834543167",
+   "added_at": "2026-11-23T05:15:00-07:00",
+   "tip": "Vercel Board is basically a private Slack workspace where your agents and developers work together, and it can sync to Slack channels for observability. Matt Pocock thinks most teams should build their own version from scratch.",
+   "edition": "2026-11-23"
+  },
+  {
+   "id": "x-2124525336994177412",
+   "source_id": "x-2124525336994177412",
+   "date": "2026-11-22",
+   "posted_at": "2026-11-22T15:28:06Z",
+   "author": "poteto",
+   "topic": "Prompting",
+   "subcategory": "Prompt templates",
+   "title": "A pstack prompt for gardening your codebase",
+   "tags": [
+    "pstack",
+    "poteto-mode",
+    "refactoring"
+   ],
+   "source_type": "post",
+   "source_url": "https://x.com/poteto/status/2124525336994177412",
+   "added_at": "2026-11-23T05:15:00-07:00",
+   "tip": "Run \"Use /poteto-mode on this repo\", then have it find the mistakes agents and humans keep repeating (git log, past bug fixes, review comments) and make each impossible: architecture first, then types, then a lint whose error names the fix, then a test. Delete comments that restate code (/no-comments), write formal models that replay past concurrency/retry/state-machine bugs (/create-formal-verification-skill) and run them in CI, replace implementation-pinning unit tests with those models plus real DB and e2e tests (keeping security and legal tests), and ship one verifiable PR per step.",
+   "credit": "Quoting @RayFernando1337",
+   "edition": "2026-11-23"
   }
  ],
  "sources": [
@@ -4092,6 +4306,83 @@
    "date": "2026-11-21",
    "added_at": "2026-11-22T05:01:29-07:00",
    "edition": "2026-11-22"
+  },
+  {
+   "id": "x-2124592480674779605",
+   "type": "video",
+   "title": "Benchmarking subagents vs. one agent in Warp's software factory",
+   "author": "zachlloydtweets",
+   "url": "https://x.com/zachlloydtweets/status/2124592480674779605",
+   "date": "2026-11-22",
+   "added_at": "2026-11-23T05:15:00-07:00",
+   "duration_s": 407,
+   "summary": "6:47 screen recording: Zach Lloyd walks through Warp's internal factory (a triage → spec → implementation → code-review → delivery blueprint defined in factory.yaml), then benchmarks a version with a dedicated subagent per stage against a single agent running the same stages in one context window.",
+   "summary_status": "done",
+   "has_local_copy": true,
+   "has_transcript": false,
+   "edition": "2026-11-23"
+  },
+  {
+   "id": "x-2124624191563698426",
+   "type": "thread",
+   "title": "Code mode (PTC) for a daily Linear sweep",
+   "author": "dexhorthy",
+   "url": "https://x.com/dexhorthy/status/2124624191563698426",
+   "date": "2026-11-22",
+   "added_at": "2026-11-23T05:15:00-07:00",
+   "summary": "Dex Horthy on a code-mode hack (Procedural Tool Calling) in Factory that cut a daily Linear sweep's tokens and run time, plus a follow-up reply on why it works.",
+   "edition": "2026-11-23"
+  },
+  {
+   "id": "x-2124500662436151797",
+   "type": "thread",
+   "title": "A /the-perfect-typescript-codebase skill",
+   "author": "mattpocockuk",
+   "url": "https://x.com/mattpocockuk/status/2124500662436151797",
+   "date": "2026-11-22",
+   "added_at": "2026-11-23T05:15:00-07:00",
+   "summary": "Matt Pocock is drafting a skill that describes his platonic ideal of a TypeScript codebase. It isn't released yet.",
+   "edition": "2026-11-23"
+  },
+  {
+   "id": "x-2124613833050472826",
+   "type": "post",
+   "title": null,
+   "author": "dexhorthy",
+   "url": "https://x.com/dexhorthy/status/2124613833050472826",
+   "date": "2026-11-22",
+   "added_at": "2026-11-23T05:11:31-07:00",
+   "edition": "2026-11-23"
+  },
+  {
+   "id": "x-2124666271530995771",
+   "type": "post",
+   "title": null,
+   "author": "dexhorthy",
+   "url": "https://x.com/dexhorthy/status/2124666271530995771",
+   "date": "2026-11-23",
+   "added_at": "2026-11-23T05:11:31-07:00",
+   "edition": "2026-11-23"
+  },
+  {
+   "id": "x-2124797717834543167",
+   "type": "post",
+   "title": null,
+   "author": "mattpocockuk",
+   "url": "https://x.com/mattpocockuk/status/2124797717834543167",
+   "date": "2026-11-23",
+   "added_at": "2026-11-23T05:11:31-07:00",
+   "edition": "2026-11-23"
+  },
+  {
+   "id": "x-2124525336994177412",
+   "type": "post",
+   "title": null,
+   "author": "poteto",
+   "url": "https://x.com/poteto/status/2124525336994177412",
+   "date": "2026-11-22",
+   "added_at": "2026-11-23T05:11:31-07:00",
+   "edition": "2026-11-23"
   }
  ],
  "schema_version": 2

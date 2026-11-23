@@ -5,8 +5,91 @@
   <link rel="self" type="application/atom+xml" href="https://cfmayer.github.io/ai-tips-watch/feed.xml"/>
   <link rel="alternate" type="text/html" href="https://cfmayer.github.io/ai-tips-watch/"/>
   <id>https://cfmayer.github.io/ai-tips-watch/</id>
-  <updated>2026-11-22T05:01:29-07:00</updated>
+  <updated>2026-11-23T05:11:31-07:00</updated>
   <author><name>Grok Bot Tips Watch</name></author>
+  <entry>
+    <title>Workflows › Delegation &amp; agent teams: A shared chat workspace for agents and developers</title>
+    <link rel="alternate" type="text/html" href="https://cfmayer.github.io/ai-tips-watch/#s-x-2124797717834543167"/>
+    <link rel="related" href="https://x.com/mattpocockuk/status/2124797717834543167"/>
+    <id>https://cfmayer.github.io/ai-tips-watch/#s-x-2124797717834543167</id>
+    <published>2026-11-23T09:30:27Z</published>
+    <updated>2026-11-23T05:15:00-07:00</updated>
+    <author><name>@mattpocockuk</name></author>
+    <category term="edition-2026-11-23"/>
+    <summary>• A shared chat workspace for agents and developers: Vercel Board is basically a private Slack workspace where your agents and developers work together, and it can sync to Slack channels for observability. Matt Pocock thinks most teams should build their own version from scratch. (Source: https://x.com/mattpocockuk/status/2124797717834543167)</summary>
+  </entry>
+  <entry>
+    <title>Models &amp; evaluation › Benchmarking &amp; evaluation: If you don&#x27;t read the code, read the evals</title>
+    <link rel="alternate" type="text/html" href="https://cfmayer.github.io/ai-tips-watch/#s-x-2124666271530995771"/>
+    <link rel="related" href="https://x.com/dexhorthy/status/2124666271530995771"/>
+    <id>https://cfmayer.github.io/ai-tips-watch/#s-x-2124666271530995771</id>
+    <published>2026-11-23T00:48:08Z</published>
+    <updated>2026-11-23T05:15:00-07:00</updated>
+    <author><name>@dexhorthy</name></author>
+    <category term="edition-2026-11-23"/>
+    <summary>• If you don&#x27;t read the code, read the evals: Models are still bad at writing and code-reviewing evals. If you don&#x27;t read the code an agent writes, at least read its evals. (Source: https://x.com/dexhorthy/status/2124666271530995771)</summary>
+  </entry>
+  <entry>
+    <title>Prompting › Steering &amp; context: Code mode (PTC) for a daily Linear sweep</title>
+    <link rel="alternate" type="text/html" href="https://cfmayer.github.io/ai-tips-watch/#s-x-2124624191563698426"/>
+    <link rel="related" href="https://x.com/dexhorthy/status/2124624191563698426"/>
+    <id>https://cfmayer.github.io/ai-tips-watch/#s-x-2124624191563698426</id>
+    <published>2026-11-22T22:00:55Z</published>
+    <updated>2026-11-23T05:15:00-07:00</updated>
+    <author><name>@dexhorthy</name></author>
+    <category term="edition-2026-11-23"/>
+    <summary>Dex Horthy on a code-mode hack (Procedural Tool Calling) in Factory that cut a daily Linear sweep&#x27;s tokens and run time, plus a follow-up reply on why it works.
+• Code mode cut a daily Linear sweep from 245k to 23k tokens: Using Procedural Tool Calling (basically code mode, where the agent writes code that calls the tools) in Factory dropped a daily Linear sweep from 245k tokens to 23k and from 7 minutes to 36 seconds.
+• Show the model only the fields that drive the decision: Most of the code-mode win comes from making sure the model only sees the Linear fields that matter to its decisions, instead of the giant blobs of JSON tool calls usually return. (Source: https://x.com/dexhorthy/status/2124624191563698426)</summary>
+  </entry>
+  <entry>
+    <title>Agent skills &amp; setup › Harnesses &amp; tools: Keep the lab&#x27;s tool defs and system prompt; own the rest</title>
+    <link rel="alternate" type="text/html" href="https://cfmayer.github.io/ai-tips-watch/#s-x-2124613833050472826"/>
+    <link rel="related" href="https://x.com/dexhorthy/status/2124613833050472826"/>
+    <id>https://cfmayer.github.io/ai-tips-watch/#s-x-2124613833050472826</id>
+    <published>2026-11-22T21:19:45Z</published>
+    <updated>2026-11-23T05:15:00-07:00</updated>
+    <author><name>@dexhorthy</name></author>
+    <category term="edition-2026-11-23"/>
+    <summary>• Keep the lab&#x27;s tool defs and system prompt; own the rest: Don&#x27;t use a lab&#x27;s harness blindly, but its tool definitions and system prompt are part of how the model was RL&#x27;d, so if you depart from them you&#x27;re on your own. Other parts of the harness, like orchestration, are yours to own. (Source: https://x.com/dexhorthy/status/2124613833050472826)</summary>
+  </entry>
+  <entry>
+    <title>Software factories › Measurement &amp; improvement: Benchmarking subagents vs. one agent in Warp&#x27;s software factory</title>
+    <link rel="alternate" type="text/html" href="https://cfmayer.github.io/ai-tips-watch/#s-x-2124592480674779605"/>
+    <link rel="related" href="https://x.com/zachlloydtweets/status/2124592480674779605"/>
+    <id>https://cfmayer.github.io/ai-tips-watch/#s-x-2124592480674779605</id>
+    <published>2026-11-22T19:54:55Z</published>
+    <updated>2026-11-23T05:15:00-07:00</updated>
+    <author><name>@zachlloydtweets</name></author>
+    <category term="edition-2026-11-23"/>
+    <summary>6:47 screen recording: Zach Lloyd walks through Warp&#x27;s internal factory (a triage → spec → implementation → code-review → delivery blueprint defined in factory.yaml), then benchmarks a version with a dedicated subagent per stage against a single agent running the same stages in one context window.
+• 2:12 Write stage transitions as plain-language conditions: Factory stage transitions don&#x27;t have to be rigid if/then code. Warp&#x27;s factory.yaml describes when each stage applies in plain English (e.g. stay in triage while &quot;the cause, scope, or tracking state is not yet known&quot;) and lets the agent decide when to move on.
+• 3:51 Benchmark factory designs by replaying real past tasks: Build a benchmark from real coding tasks your team already completed and replay them through each factory configuration, measuring correctness and cost, instead of picking an agent architecture from opinions online.
+• 5:26 Per-stage subagents cost ~40% more for no real quality gain: On Warp&#x27;s benchmark, giving each factory stage its own subagent (own context window and computer) averaged $6.27 per task versus $3.84 for one agent running the same stages in a single context window, about 40% more expensive with no meaningful quality gain. The single-agent setup became their default; don&#x27;t assume subagents pay off until your own benchmark shows it. (Source: https://x.com/zachlloydtweets/status/2124592480674779605)</summary>
+  </entry>
+  <entry>
+    <title>Prompting › Prompt templates: A pstack prompt for gardening your codebase</title>
+    <link rel="alternate" type="text/html" href="https://cfmayer.github.io/ai-tips-watch/#s-x-2124525336994177412"/>
+    <link rel="related" href="https://x.com/poteto/status/2124525336994177412"/>
+    <id>https://cfmayer.github.io/ai-tips-watch/#s-x-2124525336994177412</id>
+    <published>2026-11-22T15:28:06Z</published>
+    <updated>2026-11-23T05:15:00-07:00</updated>
+    <author><name>@poteto</name></author>
+    <category term="edition-2026-11-23"/>
+    <summary>• A pstack prompt for gardening your codebase: Run &quot;Use /poteto-mode on this repo&quot;, then have it find the mistakes agents and humans keep repeating (git log, past bug fixes, review comments) and make each impossible: architecture first, then types, then a lint whose error names the fix, then a test. Delete comments that restate code (/no-comments), write formal models that replay past concurrency/retry/state-machine bugs (/create-formal-verification-skill) and run them in CI, replace implementation-pinning unit tests with those models plus real DB and e2e tests (keeping security and legal tests), and ship one verifiable PR per step. (Source: https://x.com/poteto/status/2124525336994177412)</summary>
+  </entry>
+  <entry>
+    <title>Agent skills &amp; setup › Skill packs &amp; updates: A /the-perfect-typescript-codebase skill</title>
+    <link rel="alternate" type="text/html" href="https://cfmayer.github.io/ai-tips-watch/#s-x-2124500662436151797"/>
+    <link rel="related" href="https://x.com/mattpocockuk/status/2124500662436151797"/>
+    <id>https://cfmayer.github.io/ai-tips-watch/#s-x-2124500662436151797</id>
+    <published>2026-11-22T13:50:03Z</published>
+    <updated>2026-11-23T05:15:00-07:00</updated>
+    <author><name>@mattpocockuk</name></author>
+    <category term="edition-2026-11-23"/>
+    <summary>Matt Pocock is drafting a skill that describes his platonic ideal of a TypeScript codebase. It isn&#x27;t released yet.
+• Write a skill for your ideal codebase: Matt Pocock is drafting /the-perfect-typescript-codebase, a skill that describes a platonic ideal of a great codebase. After starting a greenfield project with an early version, he called it the best codebase he&#x27;s ever produced. (Source: https://x.com/mattpocockuk/status/2124500662436151797)</summary>
+  </entry>
   <entry>
     <title>Agent skills &amp; setup › Skill packs &amp; updates: VECTOR: a /vector skill for delegating any task to AI</title>
     <link rel="alternate" type="text/html" href="https://cfmayer.github.io/ai-tips-watch/#s-x-2124471135953723528"/>
@@ -686,82 +769,5 @@
     <author><name>@mattpocockuk</name></author>
     <category term="edition-2026-11-19"/>
     <summary>• A prompt to evaluate any new technology against your codebase: Prompt of the day (using the XState v6 beta): 1) research what it does and the problem it solves; 2) find the gnarliest problem in our app it might help with; 3) build a proof of concept in a draft PR; 4) fully verify the results; 5) grade it on API nuance (more is worse; agents do better with fewer choices), type safety, testability, added cyclomatic complexity, docs quality, and deployment changes; 6) give an overall recommendation. Swap in any technology. (Source: https://x.com/mattpocockuk/status/2122618527840354327)</summary>
-  </entry>
-  <entry>
-    <title>Software factories › Concepts &amp; adoption: Overcoming challenges in software factory adoption</title>
-    <link rel="alternate" type="text/html" href="https://cfmayer.github.io/ai-tips-watch/#s-x-2122348347088683232"/>
-    <link rel="related" href="https://x.com/zachlloydtweets/status/2122348347088683232"/>
-    <id>https://cfmayer.github.io/ai-tips-watch/#s-x-2122348347088683232</id>
-    <published>2026-11-16T15:17:31.928000Z</published>
-    <updated>2026-11-19T18:15:05-07:00</updated>
-    <author><name>@zachlloydtweets</name></author>
-    <category term="edition-2026-11-19"/>
-    <summary>• Getting developers to adopt shared agent infrastructure: Frame the job as designing the factory, not working the assembly line. Expect friction when personal agent setups (harness, model, skills, MCPs) move to shared, team-owned cloud infrastructure defined in code; acknowledge it may feel like a step back, and pose it as a team engineering problem to solve together. (Source: https://x.com/zachlloydtweets/status/2122348347088683232)</summary>
-  </entry>
-  <entry>
-    <title>Software factories › Architecture &amp; orchestration: What a factory&#x27;s orchestration layer must do</title>
-    <link rel="alternate" type="text/html" href="https://cfmayer.github.io/ai-tips-watch/#s-x-2122343954595340414"/>
-    <link rel="related" href="https://x.com/zachlloydtweets/status/2122343954595340414"/>
-    <id>https://cfmayer.github.io/ai-tips-watch/#s-x-2122343954595340414</id>
-    <published>2026-11-16T15:00:04.676000Z</published>
-    <updated>2026-11-19T18:15:05-07:00</updated>
-    <author><name>@zachlloydtweets</name></author>
-    <category term="edition-2026-11-19"/>
-    <summary>• What a factory&#x27;s orchestration layer must do: Once foundations are in code, orchestration should: read the code at the current version (or an experiment branch); spin up the right sandbox on demand; route work to agents with the right model and harness; prompt them per the factory code; store artifacts and traces; loop in humans who can hand off or steer; and integrate with Sentry, GitHub, Jira, Slack, etc. Think Terraform, but for agents. (Source: https://x.com/zachlloydtweets/status/2122343954595340414)</summary>
-  </entry>
-  <entry>
-    <title>Testing &amp; verification › Property-based, fuzzing &amp; formal: Run Antithesis from your coding agent</title>
-    <link rel="alternate" type="text/html" href="https://cfmayer.github.io/ai-tips-watch/#s-x-2122331868800401691"/>
-    <link rel="related" href="https://x.com/owickstrom/status/2122331868800401691"/>
-    <id>https://cfmayer.github.io/ai-tips-watch/#s-x-2122331868800401691</id>
-    <published>2026-11-16T14:12:03.198000Z</published>
-    <updated>2026-11-19T18:15:05-07:00</updated>
-    <author><name>@owickstrom</name></author>
-    <category term="edition-2026-11-19"/>
-    <summary>• Run Antithesis from your coding agent: Antithesis launched a plugin that gives coding agents native access to Antithesis end to end, from system setup to test creation to debugging and validating fixes (example prompt: &#x27;/antithesis test HashiCorp Raft for bugs&#x27;), plus a self-serve Teams plan at $2,999/month. (Source: https://x.com/owickstrom/status/2122331868800401691)</summary>
-  </entry>
-  <entry>
-    <title>Code quality › API design: Remove nuance from agents&#x27; decisions (from @poteto&#x27;s AIE talk)</title>
-    <link rel="alternate" type="text/html" href="https://cfmayer.github.io/ai-tips-watch/#s-x-2122316570852487441"/>
-    <link rel="related" href="https://x.com/mattpocockuk/status/2122316570852487441"/>
-    <id>https://cfmayer.github.io/ai-tips-watch/#s-x-2122316570852487441</id>
-    <published>2026-11-16T13:11:15.883000Z</published>
-    <updated>2026-11-19T18:15:05-07:00</updated>
-    <author><name>@mattpocockuk</name></author>
-    <category term="edition-2026-11-19"/>
-    <summary>• Remove nuance from agents&#x27; decisions (from @poteto&#x27;s AIE talk): &#x27;Nuance tends to lead to slop.&#x27; Raise quality by designing APIs and automated checks that take nuance out of agents&#x27; choices: ban useEffect, ban ~99% of explanatory comments (they just lead to workarounds), and build APIs that hide complexity from agents. (Source: https://x.com/mattpocockuk/status/2122316570852487441)</summary>
-  </entry>
-  <entry>
-    <title>Agent skills &amp; setup › Home Repo &amp; multi-repo: Keep a dated llm-wiki of your audience in your Home Repo</title>
-    <link rel="alternate" type="text/html" href="https://cfmayer.github.io/ai-tips-watch/#s-x-2122289114183516440"/>
-    <link rel="related" href="https://x.com/mattpocockuk/status/2122289114183516440"/>
-    <id>https://cfmayer.github.io/ai-tips-watch/#s-x-2122289114183516440</id>
-    <published>2026-11-16T11:22:09.703000Z</published>
-    <updated>2026-11-19T18:15:05-07:00</updated>
-    <author><name>@mattpocockuk</name></author>
-    <category term="edition-2026-11-19"/>
-    <summary>• Keep a dated llm-wiki of your audience in your Home Repo: Matt keeps an llm-wiki in his Home Repo that ingests good tweets, Discord/Slack messages, Gmail, YouTube and LinkedIn comments. Every claim is dated (or linked to a commit permalink) so it goes stale less. He uses it to answer questions like what people get confused about or what they&#x27;re asking now, and frames it as an agent-friendly data structure built from existing data rather than &#x27;memory&#x27;. (Source: https://x.com/mattpocockuk/status/2122289114183516440)</summary>
-  </entry>
-  <entry>
-    <title>Prompting › Prompt templates: &#x27;You are the long-term owner of this codebase&#x27;: early benchmark notes</title>
-    <link rel="alternate" type="text/html" href="https://cfmayer.github.io/ai-tips-watch/#s-x-2122136000067723334"/>
-    <link rel="related" href="https://x.com/dexhorthy/status/2122136000067723334"/>
-    <id>https://cfmayer.github.io/ai-tips-watch/#s-x-2122136000067723334</id>
-    <published>2026-11-16T01:13:44.453000Z</published>
-    <updated>2026-11-19T18:15:05-07:00</updated>
-    <author><name>@dexhorthy</name></author>
-    <category term="edition-2026-11-19"/>
-    <summary>• &#x27;You are the long-term owner of this codebase&#x27;: early benchmark notes: Early (10%-complete) SlopCodeBench run on Fable 5.2 comparing the standard &#x27;just solve&#x27; prompt with Anthropic&#x27;s recommended &#x27;you are the long term owner of this codebase&#x27; addendum: the owner line roughly doubles tokens per task, but cost per pass is about the same; it tends to produce more formal tests; on circuit_eval it got a full pass vs 50% for the default. Unclear yet whether results are better overall. (Source: https://x.com/dexhorthy/status/2122136000067723334)</summary>
-  </entry>
-  <entry>
-    <title>Testing &amp; verification › Property-based, fuzzing &amp; formal: Bombadil learning to solve a Rubik&#x27;s Cube</title>
-    <link rel="alternate" type="text/html" href="https://cfmayer.github.io/ai-tips-watch/#s-x-2122254137920196618"/>
-    <link rel="related" href="https://x.com/owickstrom/status/2122254137920196618"/>
-    <id>https://cfmayer.github.io/ai-tips-watch/#s-x-2122254137920196618</id>
-    <published>2026-11-16T00:00:00Z</published>
-    <updated>2026-11-19T18:15:05-07:00</updated>
-    <author><name>@owickstrom</name></author>
-    <category term="edition-2026-11-19"/>
-    <summary>Demo only: Bombadil solving a Rubik&#x27;s Cube step by step, with move notation and a progress bar. (Source: https://x.com/owickstrom/status/2122254137920196618)</summary>
   </entry>
 </feed>
