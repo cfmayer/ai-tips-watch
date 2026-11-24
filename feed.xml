@@ -5,8 +5,114 @@
   <link rel="self" type="application/atom+xml" href="https://cfmayer.github.io/ai-tips-watch/feed.xml"/>
   <link rel="alternate" type="text/html" href="https://cfmayer.github.io/ai-tips-watch/"/>
   <id>https://cfmayer.github.io/ai-tips-watch/</id>
-  <updated>2026-11-23T05:11:31-07:00</updated>
+  <updated>2026-11-24T05:12:10-07:00</updated>
   <author><name>Grok Bot Tips Watch</name></author>
+  <entry>
+    <title>Grok Bot › Directory &amp; templates: Editing and refreshing your grok-bot.directory listing</title>
+    <link rel="alternate" type="text/html" href="https://cfmayer.github.io/ai-tips-watch/#s-x-2124941358339178841"/>
+    <link rel="related" href="https://x.com/ericzakariasson/status/2124941358339178841"/>
+    <id>https://cfmayer.github.io/ai-tips-watch/#s-x-2124941358339178841</id>
+    <published>2026-11-23T19:01:13Z</published>
+    <updated>2026-11-24T05:20:00-07:00</updated>
+    <author><name>@ericzakariasson</name></author>
+    <category term="edition-2026-11-24"/>
+    <summary>Replies from Eric Zakariasson explaining the new edit and refresh controls for community apps on grok-bot.directory, and how official apps differ.
+• Edit your community listing on grok-bot.directory: Sign in to grok-bot.directory with GitHub (the account that submitted the app), open your submissions and hit Edit to change its name, description, logo and website. A new name or description reruns the security check, so the listing is hidden for a few minutes. If the app isn&#x27;t in your list, claim it from its page first.
+• Refresh re-reads plugin.json; set displayName: The directory doesn&#x27;t pull changes on its own: Refresh in your submissions re-reads your repo&#x27;s plugin.json and follows renames and moves. To show a friendlier name (e.g. &quot;PR Genie&quot;), add displayName to plugin.json and hit Refresh.
+• Official apps: edit the marketplace&#x27;s .cursor-plugin/plugin.json: Official apps mirror the marketplace catalog and can&#x27;t be claimed on the directory. The marketplace reads .cursor-plugin/plugin.json, not .grok-plugin/plugin.json, so change the description there; it syncs to the directory overnight. (Source: https://x.com/ericzakariasson/status/2124941358339178841)</summary>
+  </entry>
+  <entry>
+    <title>Agent skills &amp; setup › Skill packs &amp; updates: /reframe skill in pstack</title>
+    <link rel="alternate" type="text/html" href="https://cfmayer.github.io/ai-tips-watch/#s-x-2125029185379008573"/>
+    <link rel="related" href="https://x.com/poteto/status/2125029185379008573"/>
+    <id>https://cfmayer.github.io/ai-tips-watch/#s-x-2125029185379008573</id>
+    <published>2026-11-24T00:50:13Z</published>
+    <updated>2026-11-24T05:20:00-07:00</updated>
+    <author><name>@poteto</name></author>
+    <category term="edition-2026-11-24"/>
+    <summary>• /reframe skill in pstack: &quot;You can only prompt what you can imagine.&quot; pstack has a new /reframe skill for when you know what you want but struggle to put it into words; it pairs well with /sharpen. Plugin page: https://x.ai/bot/plugin/9717366 (Source: https://x.com/poteto/status/2125029185379008573)</summary>
+  </entry>
+  <entry>
+    <title>Software factories › Architecture &amp; orchestration: Define your factory in shared code</title>
+    <link rel="alternate" type="text/html" href="https://cfmayer.github.io/ai-tips-watch/#s-x-2124986381470707937"/>
+    <link rel="related" href="https://x.com/zachlloydtweets/status/2124986381470707937"/>
+    <id>https://cfmayer.github.io/ai-tips-watch/#s-x-2124986381470707937</id>
+    <published>2026-11-23T22:00:08Z</published>
+    <updated>2026-11-24T05:20:00-07:00</updated>
+    <author><name>@zachlloydtweets</name></author>
+    <category term="edition-2026-11-24"/>
+    <summary>• Define your factory in shared code: Don&#x27;t keep coding-agent setup in someone&#x27;s head or on one laptop. Define the agents, their roles, skills, triggers and workflow in shared code so the factory is versioned: test a change on a branch, see what changed, roll back if it gets worse. An agent can even spot a recurring failure and propose a change to the factory definition. Aim for a system you can improve, not a perfect day-one config. (Source: https://x.com/zachlloydtweets/status/2124986381470707937)</summary>
+  </entry>
+  <entry>
+    <title>Workflows › Planning &amp; process: 12 Rules for a Software Factory That Doesn&#x27;t Ship Slop — Dex Horthy (AI Engineer)</title>
+    <link rel="alternate" type="text/html" href="https://cfmayer.github.io/ai-tips-watch/#s-yt--NFMsM2y0Vk"/>
+    <link rel="related" href="https://www.youtube.com/watch?v=-NFMsM2y0Vk"/>
+    <id>https://cfmayer.github.io/ai-tips-watch/#s-yt--NFMsM2y0Vk</id>
+    <published>2026-11-23T21:44:47Z</published>
+    <updated>2026-11-24T05:20:00-07:00</updated>
+    <author><name>@dexhorthy</name></author>
+    <category term="edition-2026-11-24"/>
+    <summary>20-minute AI Engineer Code Summit talk (&#x27;12-Factor Factories &amp; The War on Slop&#x27;). Dex Horthy compares a 2022-style software factory with an agentic one, walks through twelve practices for factories that don&#x27;t ship slop (planning, visual alignment, testing tools, deterministic lint rules, experiments, evals, a unified forge), and closes by reading the Anti-Slop Manifesto.
+• 6:00 Loops = forward pressure + backpressure: Design factory loops with both forward pressure (work starts on its own) and backpressure (agents keep iterating against quality checks) so output reaches a high bar before a human reviews it.
+• 9:27 Plan before agents build: Bring back architecture reviews and sprint-style planning before agents write code: about 30 minutes of alignment up front can save hours of review and rework later.
+• 10:07 Size planning by expected pain: Don&#x27;t over-plan. Weigh expected pain (chance you&#x27;ll have to redo it × how painful the change is): a two-sentence prompt is fine for low-stakes work, while core database changes deserve detailed schemas up front.
+• 11:00 Align visually, not with walls of text: Have agents produce visual artifacts such as HTML mockups, charts or tables instead of long text, so humans can quickly understand and agree on a design, before the build or after.
+• 11:24 Give agents a way to test their own work: Let agents run the app where it actually lives and check the result with screenshots, a browser, video or cURL. For a mobile app, give them a sandbox where they can build, run and see what happened.
+• 11:38 Fight slop with deterministic tools: Don&#x27;t rely only on AI reviewing AI. Strict linters, type checkers and custom lint rules stop agents from merging known-bad patterns every time.
+• 12:09 Slop is a tool: Unreviewed, imperfect output is fine where stakes are low: quick prototypes, side projects, or experiments kept behind feature flags.
+• 12:24 Let models run experiments: Connect agents to your feature-flag and A/B testing tools (the slide names PostHog and Statsig) so they can try variations and let real metrics pick the winner.
+• 12:36 Compound: eval everything, learn from past sessions: Run evals on everything and feed lessons from past sessions back into the system so the factory gets better over time.
+• 12:40 Unify your forge: Keep designs, decisions and docs in one source of truth (such as GitHub) instead of scattered Slack threads and docs, so humans and agents share the same context.
+• 13:25 You can&#x27;t buy a factory: A software factory is a way of working, not a product. You can buy infrastructure, but you still have to tune the rules and governance to your own codebase and team. (Source: https://www.youtube.com/watch?v=-NFMsM2y0Vk)</summary>
+  </entry>
+  <entry>
+    <title>Prompting › Prompt templates: Replacing an 18-tab compensation spreadsheet with a Droid-built app</title>
+    <link rel="alternate" type="text/html" href="https://cfmayer.github.io/ai-tips-watch/#s-x-2124920941474193755"/>
+    <link rel="related" href="https://x.com/troymartig/status/2124920941474193755"/>
+    <id>https://cfmayer.github.io/ai-tips-watch/#s-x-2124920941474193755</id>
+    <published>2026-11-23T17:47:00Z</published>
+    <updated>2026-11-24T05:20:00-07:00</updated>
+    <author><name>@EnoReyes</name></author>
+    <category term="edition-2026-11-24"/>
+    <summary>61-second demo by @troymartig, recommended by Eno Reyes: one prompt to Factory&#x27;s Droid builds a compensation tracker from the Rippling API, checks its numbers against the source system, publishes a web app, runs daily at 7am and Slacks a summary, with a final human Approve step for the pay run.
+• 0:14 One prompt that specifies the whole job: Spell out the whole job in one prompt: data source, business logic, output, schedule and notification. The demo prompt: &quot;Build us a compensation tracker. Pull our employees straight from the Rippling API, work out what each person is owed by month in their own currency, and tie it all out across our systems. Publish it as a web app, run it daily at 7am, and once the checks pass, Slack me what changed.&quot;
+• 0:23 Make the agent tie out numbers against the source system: Ask the agent to &quot;tie out&quot; its results across systems. In the demo it writes a check like assert ledger.total() == rippling.total() so the generated numbers are verified against the source of truth instead of reviewed by hand.
+• 0:54 Automate the run, keep a one-click human approval: Let the scheduled agent pull data, detect changes, run its checks and send a Slack summary, then stop at one human step: the pay run waits for an Approve click once every check has passed. (Source: https://x.com/troymartig/status/2124920941474193755)</summary>
+  </entry>
+  <entry>
+    <title>Grok Bot › Personal admin &amp; money: Prompt: find and claim your unclaimed money</title>
+    <link rel="alternate" type="text/html" href="https://cfmayer.github.io/ai-tips-watch/#s-x-2124909996634992677"/>
+    <link rel="related" href="https://x.com/Baconbrix/status/2124909996634992677"/>
+    <id>https://cfmayer.github.io/ai-tips-watch/#s-x-2124909996634992677</id>
+    <published>2026-11-23T16:56:00Z</published>
+    <updated>2026-11-24T05:20:00-07:00</updated>
+    <author><name>@Baconbrix</name></author>
+    <category term="edition-2026-11-24"/>
+    <summary>• Prompt: find and claim your unclaimed money: Prompt Grok Bot: &quot;search for me in my state&#x27;s official unclaimed money list, then every other state I&#x27;ve lived in. Show me what you find and submit a claim.&quot; It found $315.73 for him. (Source: https://x.com/Baconbrix/status/2124909996634992677)</summary>
+  </entry>
+  <entry>
+    <title>Software factories › Concepts &amp; adoption: Software factories vs. agent teams</title>
+    <link rel="alternate" type="text/html" href="https://cfmayer.github.io/ai-tips-watch/#s-x-2124903221621612762"/>
+    <link rel="related" href="https://x.com/zachlloydtweets/status/2124903221621612762"/>
+    <id>https://cfmayer.github.io/ai-tips-watch/#s-x-2124903221621612762</id>
+    <published>2026-11-23T16:29:41Z</published>
+    <updated>2026-11-24T05:20:00-07:00</updated>
+    <author><name>@zachlloydtweets</name></author>
+    <category term="edition-2026-11-24"/>
+    <summary>Zach Lloyd contrasts two visions: software factories (code-defined, closed-loop systems that measure and improve cloud coding agents) and agent teams that individuals manage, and argues the factory approach fits the real problem better.
+• Treat agent deployment as an optimization problem: Frame the goal as securely deploying coding agents to maximize throughput and quality at minimum cost. That chain forces the design: optimizing needs measurement, measurement needs reliable standardized data, that needs centralization, so move agents to the cloud, define the factory in code, keep it open to try different models, harnesses and skills, and feed what you learn back in. (Source: https://x.com/zachlloydtweets/status/2124903221621612762)</summary>
+  </entry>
+  <entry>
+    <title>Software factories › Concepts &amp; adoption: What counts as a software factory</title>
+    <link rel="alternate" type="text/html" href="https://cfmayer.github.io/ai-tips-watch/#s-x-2124880726877421813"/>
+    <link rel="related" href="https://x.com/zachlloydtweets/status/2124880726877421813"/>
+    <id>https://cfmayer.github.io/ai-tips-watch/#s-x-2124880726877421813</id>
+    <published>2026-11-23T15:00:18Z</published>
+    <updated>2026-11-24T05:20:00-07:00</updated>
+    <author><name>@zachlloydtweets</name></author>
+    <category term="edition-2026-11-24"/>
+    <summary>• What counts as a software factory: Agent swarms, shared skills and collections of automations can be useful, but a software factory is a code-defined, closed-loop system that runs coding agents, measures how they perform and improves them over time. Declarative beats imperative: define the system in code so you can test, measure and improve it. (Source: https://x.com/zachlloydtweets/status/2124880726877421813)</summary>
+  </entry>
   <entry>
     <title>Workflows › Delegation &amp; agent teams: A shared chat workspace for agents and developers</title>
     <link rel="alternate" type="text/html" href="https://cfmayer.github.io/ai-tips-watch/#s-x-2124797717834543167"/>
@@ -681,93 +787,5 @@
     <author><name>@GeoffreyHuntley</name></author>
     <category term="edition-2026-11-19"/>
     <summary>• Generate property-based tests from both the spec and the code: In a paper across 25 agent-built apps, spec-driven property-based tests found 56 bugs that code-driven ones missed, and code-driven found 43 that spec-driven missed (59% of bugs found by only one approach). Setup: an agent writes invariants in plain English from the requirements, then turns them into property tests by reading the code. Use both. (Source: https://x.com/GeoffreyHuntley/status/2122839807038816299)</summary>
-  </entry>
-  <entry>
-    <title>Software factories › Concepts &amp; adoption: Bring agents to where the work already lives</title>
-    <link rel="alternate" type="text/html" href="https://cfmayer.github.io/ai-tips-watch/#s-x-2122827126873485821"/>
-    <link rel="related" href="https://x.com/zachlloydtweets/status/2122827126873485821"/>
-    <id>https://cfmayer.github.io/ai-tips-watch/#s-x-2122827126873485821</id>
-    <published>2026-11-17T23:00:01.924000Z</published>
-    <updated>2026-11-19T18:15:05-07:00</updated>
-    <author><name>@zachlloydtweets</name></author>
-    <category term="edition-2026-11-19"/>
-    <summary>• Bring agents to where the work already lives: Zach&#x27;s view: local prompting in terminals still has a place in the inner loop, but it&#x27;s usually better to bring agents to where work happens and context lives than to pull the work into your local environment. (Source: https://x.com/zachlloydtweets/status/2122827126873485821)</summary>
-  </entry>
-  <entry>
-    <title>Workflows › Delegation &amp; agent teams: One persistent bot per project, each with its own memory</title>
-    <link rel="alternate" type="text/html" href="https://cfmayer.github.io/ai-tips-watch/#s-x-2122818291144229075"/>
-    <link rel="related" href="https://x.com/swyx/status/2122818291144229075"/>
-    <id>https://cfmayer.github.io/ai-tips-watch/#s-x-2122818291144229075</id>
-    <published>2026-11-17T22:24:55.322000Z</published>
-    <updated>2026-11-19T18:15:05-07:00</updated>
-    <author><name>@swyx</name></author>
-    <category term="edition-2026-11-19"/>
-    <summary>• One persistent bot per project, each with its own memory: Teams now create dedicated bots per project; each has its own long-lived identity, memory bank and goals, and they can talk to each other when needed. Create a bot to manage a goal you&#x27;ll work on across sessions and days instead of reusing one long session. (Source: https://x.com/swyx/status/2122818291144229075)</summary>
-  </entry>
-  <entry>
-    <title>Grok Bot › Automation &amp; routines: Onboard your bot with a 10-minute voice brain dump</title>
-    <link rel="alternate" type="text/html" href="https://cfmayer.github.io/ai-tips-watch/#s-x-2122774297840398639"/>
-    <link rel="related" href="https://x.com/poteto/status/2122774297840398639"/>
-    <id>https://cfmayer.github.io/ai-tips-watch/#s-x-2122774297840398639</id>
-    <published>2026-11-17T19:30:06.501000Z</published>
-    <updated>2026-11-19T18:15:05-07:00</updated>
-    <author><name>@poteto</name></author>
-    <category term="edition-2026-11-19"/>
-    <summary>• Onboard your bot with a 10-minute voice brain dump: Give the bot your most ambitious, end-to-end tasks. The best way to brief it: use voice dictation and talk for about 10 minutes, walking it through your workflow as if onboarding a new hire. Before sending, ask it to restate what you said in its own words. Name the tools and apps you use so it asks to connect them, and ask it to save its own skills so it repeats the workflow exactly your way. (Source: https://x.com/poteto/status/2122774297840398639)</summary>
-  </entry>
-  <entry>
-    <title>Grok Bot › Releases &amp; features: Draw on an image to show the bot what to change</title>
-    <link rel="alternate" type="text/html" href="https://cfmayer.github.io/ai-tips-watch/#s-x-2122763062533079344"/>
-    <link rel="related" href="https://x.com/ericzakariasson/status/2122763062533079344"/>
-    <id>https://cfmayer.github.io/ai-tips-watch/#s-x-2122763062533079344</id>
-    <published>2026-11-17T18:45:27.795000Z</published>
-    <updated>2026-11-19T18:15:05-07:00</updated>
-    <author><name>@ericzakariasson</name></author>
-    <category term="edition-2026-11-19"/>
-    <summary>• Draw on an image to show the bot what to change: Releases 1.0.3 to 1.2.0: draw right on an image to show your bot what to change (1.0.3); X DMs appear as draft cards you approve before anything is sent, plus a gift concierge (1.1.0); redesigned flight results and a full hotel photo viewer with zoomable maps (1.2.0). Changelog: x.ai/changelog/bot. (Source: https://x.com/ericzakariasson/status/2122763062533079344)</summary>
-  </entry>
-  <entry>
-    <title>Workflows › Delegation &amp; agent teams: Want agent managers that own outcomes, not &#x27;AI employees&#x27;</title>
-    <link rel="alternate" type="text/html" href="https://cfmayer.github.io/ai-tips-watch/#s-x-2122746401482592549"/>
-    <link rel="related" href="https://x.com/swyx/status/2122746401482592549"/>
-    <id>https://cfmayer.github.io/ai-tips-watch/#s-x-2122746401482592549</id>
-    <published>2026-11-17T17:39:15.491000Z</published>
-    <updated>2026-11-19T18:15:05-07:00</updated>
-    <author><name>@swyx</name></author>
-    <category term="edition-2026-11-19"/>
-    <summary>• Want agent managers that own outcomes, not &#x27;AI employees&#x27;: swyx on trialing Devin Bots for a week: what works is the next abstraction above single tasks: always-on, proactive agents that own outcomes, manage subagents, review themselves, and report via interactive artifacts rather than long chats. He handed off AEO, QA, cross-platform app porting, personal admin automation and video editing. Don&#x27;t overpromise &#x27;AI employees&#x27;. (Source: https://x.com/swyx/status/2122746401482592549)</summary>
-  </entry>
-  <entry>
-    <title>Software factories › Measurement &amp; improvement: Five tools to measure and improve agent throughput</title>
-    <link rel="alternate" type="text/html" href="https://cfmayer.github.io/ai-tips-watch/#s-x-2122706371905049006"/>
-    <link rel="related" href="https://x.com/zachlloydtweets/status/2122706371905049006"/>
-    <id>https://cfmayer.github.io/ai-tips-watch/#s-x-2122706371905049006</id>
-    <published>2026-11-17T15:00:11.696000Z</published>
-    <updated>2026-11-19T18:15:05-07:00</updated>
-    <author><name>@zachlloydtweets</name></author>
-    <category term="edition-2026-11-19"/>
-    <summary>• Five tools to measure and improve agent throughput: 1) Online evals and LLM-as-judge scorers on past runs (e.g. &#x27;is it writing redundant tests?&#x27;); 2) self-improvement loops that mine eval results for factory changes; 3) benchmarks that rerun tasks under different configs; 4) model routing based on those results; 5) A/B tests to prove changes going forward. (Source: https://x.com/zachlloydtweets/status/2122706371905049006)</summary>
-  </entry>
-  <entry>
-    <title>Code quality › Lint rules &amp; bans: Constrain your tools with harsh lint rules (/constrain)</title>
-    <link rel="alternate" type="text/html" href="https://cfmayer.github.io/ai-tips-watch/#s-x-2122659341685694586"/>
-    <link rel="related" href="https://x.com/mattpocockuk/status/2122659341685694586"/>
-    <id>https://cfmayer.github.io/ai-tips-watch/#s-x-2122659341685694586</id>
-    <published>2026-11-17T11:53:18.818000Z</published>
-    <updated>2026-11-19T18:15:05-07:00</updated>
-    <author><name>@mattpocockuk</name></author>
-    <category term="edition-2026-11-19"/>
-    <summary>• Constrain your tools with harsh lint rules (/constrain): Experiment idea: if too much choice hurts agents, make extremely constrained versions of the tools you like, e.g. React allowed but all state must live in Zustand/useReducer, enforced by very strict lint rules, to strip out nuance and make the right path the only path. (Source: https://x.com/mattpocockuk/status/2122659341685694586)</summary>
-  </entry>
-  <entry>
-    <title>Prompting › Prompt templates: A prompt to evaluate any new technology against your codebase</title>
-    <link rel="alternate" type="text/html" href="https://cfmayer.github.io/ai-tips-watch/#s-x-2122618527840354327"/>
-    <link rel="related" href="https://x.com/mattpocockuk/status/2122618527840354327"/>
-    <id>https://cfmayer.github.io/ai-tips-watch/#s-x-2122618527840354327</id>
-    <published>2026-11-17T09:11:08.039000Z</published>
-    <updated>2026-11-19T18:15:05-07:00</updated>
-    <author><name>@mattpocockuk</name></author>
-    <category term="edition-2026-11-19"/>
-    <summary>• A prompt to evaluate any new technology against your codebase: Prompt of the day (using the XState v6 beta): 1) research what it does and the problem it solves; 2) find the gnarliest problem in our app it might help with; 3) build a proof of concept in a draft PR; 4) fully verify the results; 5) grade it on API nuance (more is worse; agents do better with fewer choices), type safety, testability, added cyclomatic complexity, docs quality, and deployment changes; 6) give an overall recommendation. Swap in any technology. (Source: https://x.com/mattpocockuk/status/2122618527840354327)</summary>
   </entry>
 </feed>

@@ -6,7 +6,7 @@
   "scope_short": "Grok Bot, Cursor, agent skills, prompting and AI coding workflows",
   "scope_about": "Grok Bot and other AI tools (coding agents, Cursor, Claude Code, Codex, agent skills, prompting and workflows)"
  },
- "last_run": "2026-11-23T05:11:31-07:00",
+ "last_run": "2026-11-24T05:12:10-07:00",
  "window": {
   "start": "2026-11-12",
   "end": "2026-11-19"
@@ -75,6 +75,14 @@
    "window": "2026-11-22T12:01Z/2026-11-23T12:10Z",
    "tips_added": 10,
    "sources_added": 7,
+   "source_summaries_updated": 0
+  },
+  {
+   "at": "2026-11-24T05:12:10-07:00",
+   "edition": "2026-11-24",
+   "window": "2026-11-23T12:00Z/2026-11-24T12:10Z",
+   "tips_added": 22,
+   "sources_added": 8,
    "source_summaries_updated": 0
   }
  ],
@@ -3307,6 +3315,456 @@
    "tip": "Run \"Use /poteto-mode on this repo\", then have it find the mistakes agents and humans keep repeating (git log, past bug fixes, review comments) and make each impossible: architecture first, then types, then a lint whose error names the fix, then a test. Delete comments that restate code (/no-comments), write formal models that replay past concurrency/retry/state-machine bugs (/create-formal-verification-skill) and run them in CI, replace implementation-pinning unit tests with those models plus real DB and e2e tests (keeping security and legal tests), and ship one verifiable PR per step.",
    "credit": "Quoting @RayFernando1337",
    "edition": "2026-11-23"
+  },
+  {
+   "id": "yt--NFMsM2y0Vk-360",
+   "source_id": "yt--NFMsM2y0Vk",
+   "date": "2026-11-23",
+   "posted_at": "2026-11-23T21:44:47Z",
+   "author": "dexhorthy",
+   "topic": "Software factories",
+   "subcategory": "Architecture & orchestration",
+   "title": "Loops = forward pressure + backpressure",
+   "tags": [
+    "loops",
+    "factories",
+    "video"
+   ],
+   "source_type": "video",
+   "video_timestamp": "6:00",
+   "source_url": "https://www.youtube.com/watch?v=-NFMsM2y0Vk&t=360",
+   "added_at": "2026-11-24T05:20:00-07:00",
+   "tip": "Design factory loops with both forward pressure (work starts on its own) and backpressure (agents keep iterating against quality checks) so output reaches a high bar before a human reviews it.",
+   "edition": "2026-11-24"
+  },
+  {
+   "id": "yt--NFMsM2y0Vk-567",
+   "source_id": "yt--NFMsM2y0Vk",
+   "date": "2026-11-23",
+   "posted_at": "2026-11-23T21:44:47Z",
+   "author": "dexhorthy",
+   "topic": "Workflows",
+   "subcategory": "Planning & process",
+   "title": "Plan before agents build",
+   "tags": [
+    "planning",
+    "video"
+   ],
+   "source_type": "video",
+   "video_timestamp": "9:27",
+   "source_url": "https://www.youtube.com/watch?v=-NFMsM2y0Vk&t=567",
+   "added_at": "2026-11-24T05:20:00-07:00",
+   "tip": "Bring back architecture reviews and sprint-style planning before agents write code: about 30 minutes of alignment up front can save hours of review and rework later.",
+   "edition": "2026-11-24"
+  },
+  {
+   "id": "yt--NFMsM2y0Vk-607",
+   "source_id": "yt--NFMsM2y0Vk",
+   "date": "2026-11-23",
+   "posted_at": "2026-11-23T21:44:47Z",
+   "author": "dexhorthy",
+   "topic": "Workflows",
+   "subcategory": "Planning & process",
+   "title": "Size planning by expected pain",
+   "tags": [
+    "planning",
+    "leverage",
+    "video"
+   ],
+   "source_type": "video",
+   "video_timestamp": "10:07",
+   "source_url": "https://www.youtube.com/watch?v=-NFMsM2y0Vk&t=607",
+   "added_at": "2026-11-24T05:20:00-07:00",
+   "tip": "Don't over-plan. Weigh expected pain (chance you'll have to redo it × how painful the change is): a two-sentence prompt is fine for low-stakes work, while core database changes deserve detailed schemas up front.",
+   "edition": "2026-11-24"
+  },
+  {
+   "id": "yt--NFMsM2y0Vk-660",
+   "source_id": "yt--NFMsM2y0Vk",
+   "date": "2026-11-23",
+   "posted_at": "2026-11-23T21:44:47Z",
+   "author": "dexhorthy",
+   "topic": "Workflows",
+   "subcategory": "Planning & process",
+   "title": "Align visually, not with walls of text",
+   "tags": [
+    "visual alignment",
+    "review",
+    "video"
+   ],
+   "source_type": "video",
+   "video_timestamp": "11:00",
+   "source_url": "https://www.youtube.com/watch?v=-NFMsM2y0Vk&t=660",
+   "added_at": "2026-11-24T05:20:00-07:00",
+   "tip": "Have agents produce visual artifacts such as HTML mockups, charts or tables instead of long text, so humans can quickly understand and agree on a design, before the build or after.",
+   "edition": "2026-11-24"
+  },
+  {
+   "id": "yt--NFMsM2y0Vk-684",
+   "source_id": "yt--NFMsM2y0Vk",
+   "date": "2026-11-23",
+   "posted_at": "2026-11-23T21:44:47Z",
+   "author": "dexhorthy",
+   "topic": "Testing & verification",
+   "subcategory": "Runtime & end-to-end checks",
+   "title": "Give agents a way to test their own work",
+   "tags": [
+    "self-verification",
+    "screenshots",
+    "video"
+   ],
+   "source_type": "video",
+   "video_timestamp": "11:24",
+   "source_url": "https://www.youtube.com/watch?v=-NFMsM2y0Vk&t=684",
+   "added_at": "2026-11-24T05:20:00-07:00",
+   "tip": "Let agents run the app where it actually lives and check the result with screenshots, a browser, video or cURL. For a mobile app, give them a sandbox where they can build, run and see what happened.",
+   "edition": "2026-11-24"
+  },
+  {
+   "id": "yt--NFMsM2y0Vk-698",
+   "source_id": "yt--NFMsM2y0Vk",
+   "date": "2026-11-23",
+   "posted_at": "2026-11-23T21:44:47Z",
+   "author": "dexhorthy",
+   "topic": "Code quality",
+   "subcategory": "Lint rules & bans",
+   "title": "Fight slop with deterministic tools",
+   "tags": [
+    "lint",
+    "types",
+    "slop",
+    "video"
+   ],
+   "source_type": "video",
+   "video_timestamp": "11:38",
+   "source_url": "https://www.youtube.com/watch?v=-NFMsM2y0Vk&t=698",
+   "added_at": "2026-11-24T05:20:00-07:00",
+   "tip": "Don't rely only on AI reviewing AI. Strict linters, type checkers and custom lint rules stop agents from merging known-bad patterns every time.",
+   "edition": "2026-11-24"
+  },
+  {
+   "id": "yt--NFMsM2y0Vk-729",
+   "source_id": "yt--NFMsM2y0Vk",
+   "date": "2026-11-23",
+   "posted_at": "2026-11-23T21:44:47Z",
+   "author": "dexhorthy",
+   "topic": "Code quality",
+   "subcategory": "Review & judgment",
+   "title": "Slop is a tool",
+   "tags": [
+    "slop",
+    "prototyping",
+    "video"
+   ],
+   "source_type": "video",
+   "video_timestamp": "12:09",
+   "source_url": "https://www.youtube.com/watch?v=-NFMsM2y0Vk&t=729",
+   "added_at": "2026-11-24T05:20:00-07:00",
+   "tip": "Unreviewed, imperfect output is fine where stakes are low: quick prototypes, side projects, or experiments kept behind feature flags.",
+   "edition": "2026-11-24"
+  },
+  {
+   "id": "yt--NFMsM2y0Vk-744",
+   "source_id": "yt--NFMsM2y0Vk",
+   "date": "2026-11-23",
+   "posted_at": "2026-11-23T21:44:47Z",
+   "author": "dexhorthy",
+   "topic": "Software factories",
+   "subcategory": "Measurement & improvement",
+   "title": "Let models run experiments",
+   "tags": [
+    "experiments",
+    "feature flags",
+    "video"
+   ],
+   "source_type": "video",
+   "video_timestamp": "12:24",
+   "source_url": "https://www.youtube.com/watch?v=-NFMsM2y0Vk&t=744",
+   "added_at": "2026-11-24T05:20:00-07:00",
+   "tip": "Connect agents to your feature-flag and A/B testing tools (the slide names PostHog and Statsig) so they can try variations and let real metrics pick the winner.",
+   "edition": "2026-11-24"
+  },
+  {
+   "id": "yt--NFMsM2y0Vk-756",
+   "source_id": "yt--NFMsM2y0Vk",
+   "date": "2026-11-23",
+   "posted_at": "2026-11-23T21:44:47Z",
+   "author": "dexhorthy",
+   "topic": "Software factories",
+   "subcategory": "Measurement & improvement",
+   "title": "Compound: eval everything, learn from past sessions",
+   "tags": [
+    "evals",
+    "memory",
+    "video"
+   ],
+   "source_type": "video",
+   "video_timestamp": "12:36",
+   "source_url": "https://www.youtube.com/watch?v=-NFMsM2y0Vk&t=756",
+   "added_at": "2026-11-24T05:20:00-07:00",
+   "tip": "Run evals on everything and feed lessons from past sessions back into the system so the factory gets better over time.",
+   "edition": "2026-11-24"
+  },
+  {
+   "id": "yt--NFMsM2y0Vk-760",
+   "source_id": "yt--NFMsM2y0Vk",
+   "date": "2026-11-23",
+   "posted_at": "2026-11-23T21:44:47Z",
+   "author": "dexhorthy",
+   "topic": "Software factories",
+   "subcategory": "Architecture & orchestration",
+   "title": "Unify your forge",
+   "tags": [
+    "context",
+    "docs",
+    "video"
+   ],
+   "source_type": "video",
+   "video_timestamp": "12:40",
+   "source_url": "https://www.youtube.com/watch?v=-NFMsM2y0Vk&t=760",
+   "added_at": "2026-11-24T05:20:00-07:00",
+   "tip": "Keep designs, decisions and docs in one source of truth (such as GitHub) instead of scattered Slack threads and docs, so humans and agents share the same context.",
+   "edition": "2026-11-24"
+  },
+  {
+   "id": "yt--NFMsM2y0Vk-805",
+   "source_id": "yt--NFMsM2y0Vk",
+   "date": "2026-11-23",
+   "posted_at": "2026-11-23T21:44:47Z",
+   "author": "dexhorthy",
+   "topic": "Software factories",
+   "subcategory": "Concepts & adoption",
+   "title": "You can't buy a factory",
+   "tags": [
+    "adoption",
+    "video"
+   ],
+   "source_type": "video",
+   "video_timestamp": "13:25",
+   "source_url": "https://www.youtube.com/watch?v=-NFMsM2y0Vk&t=805",
+   "added_at": "2026-11-24T05:20:00-07:00",
+   "tip": "A software factory is a way of working, not a product. You can buy infrastructure, but you still have to tune the rules and governance to your own codebase and team.",
+   "edition": "2026-11-24"
+  },
+  {
+   "id": "x-2124920941474193755-14",
+   "source_id": "x-2124920941474193755",
+   "date": "2026-11-23",
+   "posted_at": "2026-11-23T17:47:00Z",
+   "author": "EnoReyes",
+   "credit": "Video by @troymartig",
+   "topic": "Prompting",
+   "subcategory": "Prompt templates",
+   "title": "One prompt that specifies the whole job",
+   "tags": [
+    "end-to-end",
+    "automation",
+    "video"
+   ],
+   "source_type": "video",
+   "video_timestamp": "0:14",
+   "source_url": "https://x.com/troymartig/status/2124920941474193755",
+   "added_at": "2026-11-24T05:20:00-07:00",
+   "tip": "Spell out the whole job in one prompt: data source, business logic, output, schedule and notification. The demo prompt: \"Build us a compensation tracker. Pull our employees straight from the Rippling API, work out what each person is owed by month in their own currency, and tie it all out across our systems. Publish it as a web app, run it daily at 7am, and once the checks pass, Slack me what changed.\"",
+   "edition": "2026-11-24"
+  },
+  {
+   "id": "x-2124920941474193755-23",
+   "source_id": "x-2124920941474193755",
+   "date": "2026-11-23",
+   "posted_at": "2026-11-23T17:47:00Z",
+   "author": "EnoReyes",
+   "credit": "Video by @troymartig",
+   "topic": "Testing & verification",
+   "subcategory": "Runtime & end-to-end checks",
+   "title": "Make the agent tie out numbers against the source system",
+   "tags": [
+    "assertions",
+    "data checks",
+    "video"
+   ],
+   "source_type": "video",
+   "video_timestamp": "0:23",
+   "source_url": "https://x.com/troymartig/status/2124920941474193755",
+   "added_at": "2026-11-24T05:20:00-07:00",
+   "tip": "Ask the agent to \"tie out\" its results across systems. In the demo it writes a check like assert ledger.total() == rippling.total() so the generated numbers are verified against the source of truth instead of reviewed by hand.",
+   "edition": "2026-11-24"
+  },
+  {
+   "id": "x-2124920941474193755-54",
+   "source_id": "x-2124920941474193755",
+   "date": "2026-11-23",
+   "posted_at": "2026-11-23T17:47:00Z",
+   "author": "EnoReyes",
+   "credit": "Video by @troymartig",
+   "topic": "Workflows",
+   "subcategory": "Automation loops",
+   "title": "Automate the run, keep a one-click human approval",
+   "tags": [
+    "human in the loop",
+    "scheduling",
+    "video"
+   ],
+   "source_type": "video",
+   "video_timestamp": "0:54",
+   "source_url": "https://x.com/troymartig/status/2124920941474193755",
+   "added_at": "2026-11-24T05:20:00-07:00",
+   "tip": "Let the scheduled agent pull data, detect changes, run its checks and send a Slack summary, then stop at one human step: the pay run waits for an Approve click once every check has passed.",
+   "edition": "2026-11-24"
+  },
+  {
+   "id": "x-2125029185379008573",
+   "source_id": "x-2125029185379008573",
+   "date": "2026-11-24",
+   "posted_at": "2026-11-24T00:50:13Z",
+   "author": "poteto",
+   "topic": "Agent skills & setup",
+   "subcategory": "Skill packs & updates",
+   "title": "/reframe skill in pstack",
+   "tags": [
+    "pstack",
+    "skills",
+    "prompting"
+   ],
+   "source_type": "post",
+   "source_url": "https://x.com/poteto/status/2125029185379008573",
+   "added_at": "2026-11-24T05:20:00-07:00",
+   "tip": "\"You can only prompt what you can imagine.\" pstack has a new /reframe skill for when you know what you want but struggle to put it into words; it pairs well with /sharpen. Plugin page: https://x.ai/bot/plugin/9717366",
+   "edition": "2026-11-24"
+  },
+  {
+   "id": "x-2124909996634992677",
+   "source_id": "x-2124909996634992677",
+   "date": "2026-11-23",
+   "posted_at": "2026-11-23T16:56:00Z",
+   "author": "Baconbrix",
+   "topic": "Grok Bot",
+   "subcategory": "Personal admin & money",
+   "title": "Prompt: find and claim your unclaimed money",
+   "tags": [
+    "prompt",
+    "unclaimed property"
+   ],
+   "source_type": "post",
+   "source_url": "https://x.com/Baconbrix/status/2124909996634992677",
+   "added_at": "2026-11-24T05:20:00-07:00",
+   "tip": "Prompt Grok Bot: \"search for me in my state's official unclaimed money list, then every other state I've lived in. Show me what you find and submit a claim.\" It found $315.73 for him.",
+   "edition": "2026-11-24"
+  },
+  {
+   "id": "x-2124941358339178841",
+   "source_id": "x-2124941358339178841",
+   "date": "2026-11-23",
+   "posted_at": "2026-11-23T19:01:13Z",
+   "author": "ericzakariasson",
+   "topic": "Grok Bot",
+   "subcategory": "Directory & templates",
+   "title": "Edit your community listing on grok-bot.directory",
+   "tags": [
+    "directory",
+    "publishing"
+   ],
+   "source_type": "post",
+   "source_url": "https://x.com/ericzakariasson/status/2124941358339178841",
+   "added_at": "2026-11-24T05:20:00-07:00",
+   "tip": "Sign in to grok-bot.directory with GitHub (the account that submitted the app), open your submissions and hit Edit to change its name, description, logo and website. A new name or description reruns the security check, so the listing is hidden for a few minutes. If the app isn't in your list, claim it from its page first.",
+   "edition": "2026-11-24"
+  },
+  {
+   "id": "x-2124941360012636424",
+   "source_id": "x-2124941358339178841",
+   "date": "2026-11-23",
+   "posted_at": "2026-11-23T19:01:14Z",
+   "author": "ericzakariasson",
+   "topic": "Grok Bot",
+   "subcategory": "Directory & templates",
+   "title": "Refresh re-reads plugin.json; set displayName",
+   "tags": [
+    "directory",
+    "plugin.json"
+   ],
+   "source_type": "post",
+   "source_url": "https://x.com/ericzakariasson/status/2124941360012636424",
+   "added_at": "2026-11-24T05:20:00-07:00",
+   "tip": "The directory doesn't pull changes on its own: Refresh in your submissions re-reads your repo's plugin.json and follows renames and moves. To show a friendlier name (e.g. \"PR Genie\"), add displayName to plugin.json and hit Refresh.",
+   "edition": "2026-11-24"
+  },
+  {
+   "id": "x-2125079571976323183",
+   "source_id": "x-2124941358339178841",
+   "date": "2026-11-24",
+   "posted_at": "2026-11-24T04:10:26Z",
+   "author": "ericzakariasson",
+   "topic": "Grok Bot",
+   "subcategory": "Directory & templates",
+   "title": "Official apps: edit the marketplace's .cursor-plugin/plugin.json",
+   "tags": [
+    "directory",
+    "marketplace",
+    "plugin.json"
+   ],
+   "source_type": "post",
+   "source_url": "https://x.com/ericzakariasson/status/2125079571976323183",
+   "added_at": "2026-11-24T05:20:00-07:00",
+   "tip": "Official apps mirror the marketplace catalog and can't be claimed on the directory. The marketplace reads .cursor-plugin/plugin.json, not .grok-plugin/plugin.json, so change the description there; it syncs to the directory overnight.",
+   "edition": "2026-11-24"
+  },
+  {
+   "id": "x-2124986381470707937",
+   "source_id": "x-2124986381470707937",
+   "date": "2026-11-23",
+   "posted_at": "2026-11-23T22:00:08Z",
+   "author": "zachlloydtweets",
+   "topic": "Software factories",
+   "subcategory": "Architecture & orchestration",
+   "title": "Define your factory in shared code",
+   "tags": [
+    "factory as code",
+    "versioning"
+   ],
+   "source_type": "post",
+   "source_url": "https://x.com/zachlloydtweets/status/2124986381470707937",
+   "added_at": "2026-11-24T05:20:00-07:00",
+   "tip": "Don't keep coding-agent setup in someone's head or on one laptop. Define the agents, their roles, skills, triggers and workflow in shared code so the factory is versioned: test a change on a branch, see what changed, roll back if it gets worse. An agent can even spot a recurring failure and propose a change to the factory definition. Aim for a system you can improve, not a perfect day-one config.",
+   "edition": "2026-11-24"
+  },
+  {
+   "id": "x-2124880726877421813",
+   "source_id": "x-2124880726877421813",
+   "date": "2026-11-23",
+   "posted_at": "2026-11-23T15:00:18Z",
+   "author": "zachlloydtweets",
+   "topic": "Software factories",
+   "subcategory": "Concepts & adoption",
+   "title": "What counts as a software factory",
+   "tags": [
+    "definition",
+    "declarative"
+   ],
+   "source_type": "post",
+   "source_url": "https://x.com/zachlloydtweets/status/2124880726877421813",
+   "added_at": "2026-11-24T05:20:00-07:00",
+   "tip": "Agent swarms, shared skills and collections of automations can be useful, but a software factory is a code-defined, closed-loop system that runs coding agents, measures how they perform and improves them over time. Declarative beats imperative: define the system in code so you can test, measure and improve it.",
+   "edition": "2026-11-24"
+  },
+  {
+   "id": "x-2124903221621612762",
+   "source_id": "x-2124903221621612762",
+   "date": "2026-11-23",
+   "posted_at": "2026-11-23T16:29:41Z",
+   "author": "zachlloydtweets",
+   "topic": "Software factories",
+   "subcategory": "Concepts & adoption",
+   "title": "Treat agent deployment as an optimization problem",
+   "tags": [
+    "measurement",
+    "standardization"
+   ],
+   "source_type": "article",
+   "source_url": "https://x.com/zachlloydtweets/status/2124903221621612762",
+   "added_at": "2026-11-24T05:20:00-07:00",
+   "tip": "Frame the goal as securely deploying coding agents to maximize throughput and quality at minimum cost. That chain forces the design: optimizing needs measurement, measurement needs reliable standardized data, that needs centralization, so move agents to the cloud, define the factory in code, keep it open to try different models, harnesses and skills, and feed what you learn back in.",
+   "edition": "2026-11-24"
   }
  ],
  "sources": [
@@ -4383,6 +4841,101 @@
    "date": "2026-11-22",
    "added_at": "2026-11-23T05:11:31-07:00",
    "edition": "2026-11-23"
+  },
+  {
+   "id": "yt--NFMsM2y0Vk",
+   "type": "video",
+   "title": "12 Rules for a Software Factory That Doesn't Ship Slop — Dex Horthy (AI Engineer)",
+   "author": "dexhorthy",
+   "url": "https://www.youtube.com/watch?v=-NFMsM2y0Vk",
+   "posted_in": "https://x.com/dexhorthy/status/2124982519129141322",
+   "date": "2026-11-23",
+   "added_at": "2026-11-24T05:20:00-07:00",
+   "duration_s": 1224,
+   "summary": "20-minute AI Engineer Code Summit talk ('12-Factor Factories & The War on Slop'). Dex Horthy compares a 2022-style software factory with an agentic one, walks through twelve practices for factories that don't ship slop (planning, visual alignment, testing tools, deterministic lint rules, experiments, evals, a unified forge), and closes by reading the Anti-Slop Manifesto.",
+   "summary_status": "done",
+   "has_local_copy": true,
+   "has_transcript": false,
+   "edition": "2026-11-24"
+  },
+  {
+   "id": "x-2124920941474193755",
+   "type": "video",
+   "title": "Replacing an 18-tab compensation spreadsheet with a Droid-built app",
+   "author": "EnoReyes",
+   "url": "https://x.com/troymartig/status/2124920941474193755",
+   "posted_in": "https://x.com/EnoReyes/status/2124927060116488442",
+   "date": "2026-11-23",
+   "added_at": "2026-11-24T05:20:00-07:00",
+   "duration_s": 61,
+   "summary": "61-second demo by @troymartig, recommended by Eno Reyes: one prompt to Factory's Droid builds a compensation tracker from the Rippling API, checks its numbers against the source system, publishes a web app, runs daily at 7am and Slacks a summary, with a final human Approve step for the pay run.",
+   "summary_status": "done",
+   "has_local_copy": true,
+   "has_transcript": false,
+   "credit": "Video by @troymartig",
+   "edition": "2026-11-24"
+  },
+  {
+   "id": "x-2124941358339178841",
+   "type": "thread",
+   "title": "Editing and refreshing your grok-bot.directory listing",
+   "author": "ericzakariasson",
+   "url": "https://x.com/ericzakariasson/status/2124941358339178841",
+   "date": "2026-11-23",
+   "added_at": "2026-11-24T05:20:00-07:00",
+   "summary": "Replies from Eric Zakariasson explaining the new edit and refresh controls for community apps on grok-bot.directory, and how official apps differ.",
+   "edition": "2026-11-24"
+  },
+  {
+   "id": "x-2124903221621612762",
+   "type": "article",
+   "title": "Software factories vs. agent teams",
+   "author": "zachlloydtweets",
+   "url": "https://x.com/zachlloydtweets/status/2124903221621612762",
+   "date": "2026-11-23",
+   "added_at": "2026-11-24T05:20:00-07:00",
+   "summary": "Zach Lloyd contrasts two visions: software factories (code-defined, closed-loop systems that measure and improve cloud coding agents) and agent teams that individuals manage, and argues the factory approach fits the real problem better.",
+   "edition": "2026-11-24"
+  },
+  {
+   "id": "x-2125029185379008573",
+   "type": "post",
+   "title": null,
+   "author": "poteto",
+   "url": "https://x.com/poteto/status/2125029185379008573",
+   "date": "2026-11-24",
+   "added_at": "2026-11-24T05:12:10-07:00",
+   "edition": "2026-11-24"
+  },
+  {
+   "id": "x-2124909996634992677",
+   "type": "post",
+   "title": null,
+   "author": "Baconbrix",
+   "url": "https://x.com/Baconbrix/status/2124909996634992677",
+   "date": "2026-11-23",
+   "added_at": "2026-11-24T05:12:10-07:00",
+   "edition": "2026-11-24"
+  },
+  {
+   "id": "x-2124986381470707937",
+   "type": "post",
+   "title": null,
+   "author": "zachlloydtweets",
+   "url": "https://x.com/zachlloydtweets/status/2124986381470707937",
+   "date": "2026-11-23",
+   "added_at": "2026-11-24T05:12:10-07:00",
+   "edition": "2026-11-24"
+  },
+  {
+   "id": "x-2124880726877421813",
+   "type": "post",
+   "title": null,
+   "author": "zachlloydtweets",
+   "url": "https://x.com/zachlloydtweets/status/2124880726877421813",
+   "date": "2026-11-23",
+   "added_at": "2026-11-24T05:12:10-07:00",
+   "edition": "2026-11-24"
   }
  ],
  "schema_version": 2
