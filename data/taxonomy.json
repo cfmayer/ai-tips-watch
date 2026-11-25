@@ -226,6 +226,10 @@
     "slop",
     "diff"
    ]
+  },
+  {
+   "name": "Codebase structure",
+   "keywords": []
   }
  ],
  "Testing & verification": [
@@ -336,6 +340,10 @@
     "self-improvement",
     "branch"
    ]
+  },
+  {
+   "name": "Security & identity",
+   "keywords": []
   }
  ],
  "Models & evaluation": [
@@ -359,6 +367,10 @@
     "multi-step",
     "harness"
    ]
+  },
+  {
+   "name": "Model picks",
+   "keywords": []
   }
  ],
  "Mobile & app building": [

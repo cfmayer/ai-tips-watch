@@ -5,8 +5,148 @@
   <link rel="self" type="application/atom+xml" href="https://cfmayer.github.io/ai-tips-watch/feed.xml"/>
   <link rel="alternate" type="text/html" href="https://cfmayer.github.io/ai-tips-watch/"/>
   <id>https://cfmayer.github.io/ai-tips-watch/</id>
-  <updated>2026-11-24T05:12:10-07:00</updated>
+  <updated>2026-11-25T05:10:43-07:00</updated>
   <author><name>Grok Bot Tips Watch</name></author>
+  <entry>
+    <title>Software factories › Measurement &amp; improvement: Don&#x27;t sloptimize your CI</title>
+    <link rel="alternate" type="text/html" href="https://cfmayer.github.io/ai-tips-watch/#s-x-2125561070404428270"/>
+    <link rel="related" href="https://x.com/mattpocockuk/status/2125561070404428270"/>
+    <id>https://cfmayer.github.io/ai-tips-watch/#s-x-2125561070404428270</id>
+    <published>2026-11-25T12:03:44Z</published>
+    <updated>2026-11-25T05:15:00-07:00</updated>
+    <author><name>@mattpocockuk</name></author>
+    <category term="edition-2026-11-25"/>
+    <summary>• Don&#x27;t sloptimize your CI: Watch the speed of your automated checks: it&#x27;s easy to sloptimize them until CI slows down the whole factory. (Source: https://x.com/mattpocockuk/status/2125561070404428270)</summary>
+  </entry>
+  <entry>
+    <title>Code quality › Codebase structure: Study the cookout repo for code structure</title>
+    <link rel="alternate" type="text/html" href="https://cfmayer.github.io/ai-tips-watch/#s-x-2125540436483711074"/>
+    <link rel="related" href="https://x.com/mattpocockuk/status/2125540436483711074"/>
+    <id>https://cfmayer.github.io/ai-tips-watch/#s-x-2125540436483711074</id>
+    <published>2026-11-25T10:41:45Z</published>
+    <updated>2026-11-25T05:15:00-07:00</updated>
+    <author><name>@mattpocockuk</name></author>
+    <category term="edition-2026-11-25"/>
+    <summary>• Study the cookout repo for code structure: Browse github.com/mattpocock/cookout (2,000 commits, not ready yet) to see Matt Pocock&#x27;s current thinking on how code should be structured. (Source: https://x.com/mattpocockuk/status/2125540436483711074)</summary>
+  </entry>
+  <entry>
+    <title>Prompting › Prompt templates: Hunt for implicit state machines</title>
+    <link rel="alternate" type="text/html" href="https://cfmayer.github.io/ai-tips-watch/#s-x-2125524484857708594"/>
+    <link rel="related" href="https://x.com/ccheever/status/2125524484857708594"/>
+    <id>https://cfmayer.github.io/ai-tips-watch/#s-x-2125524484857708594</id>
+    <published>2026-11-25T09:38:22Z</published>
+    <updated>2026-11-25T05:15:00-07:00</updated>
+    <author><name>@ccheever</name></author>
+    <category term="edition-2026-11-25"/>
+    <summary>• Hunt for implicit state machines: Tell an agent to look for implicit state machines in your code and the bugs they cause. Charlie Cheever did this on Exact and it found (and fixed) 4 real bugs. (Source: https://x.com/ccheever/status/2125524484857708594)</summary>
+  </entry>
+  <entry>
+    <title>Software factories › Security &amp; identity: Don&#x27;t let agents act as you</title>
+    <link rel="alternate" type="text/html" href="https://cfmayer.github.io/ai-tips-watch/#s-x-2125433860460843443"/>
+    <link rel="related" href="https://x.com/zachlloydtweets/status/2125433860460843443"/>
+    <id>https://cfmayer.github.io/ai-tips-watch/#s-x-2125433860460843443</id>
+    <published>2026-11-25T03:38:15Z</published>
+    <updated>2026-11-25T05:15:00-07:00</updated>
+    <author><name>@zachlloydtweets</name></author>
+    <category term="edition-2026-11-25"/>
+    <summary>• Don&#x27;t let agents act as you: Agents that use your identity can send slop people think is yours, do things you didn&#x27;t want (his assistant answered a password-reset email he hadn&#x27;t requested), or get prompt-injected into leaking data from your other tools. For factories, sandbox agents and give them service accounts instead of human identities. (Source: https://x.com/zachlloydtweets/status/2125433860460843443)</summary>
+  </entry>
+  <entry>
+    <title>Workflows › Delegation &amp; agent teams: Agent teams vs. factories: engineer either one</title>
+    <link rel="alternate" type="text/html" href="https://cfmayer.github.io/ai-tips-watch/#s-x-2125427862065025030"/>
+    <link rel="related" href="https://x.com/zachlloydtweets/status/2125427862065025030"/>
+    <id>https://cfmayer.github.io/ai-tips-watch/#s-x-2125427862065025030</id>
+    <published>2026-11-25T03:14:25Z</published>
+    <updated>2026-11-25T05:15:00-07:00</updated>
+    <author><name>@zachlloydtweets</name></author>
+    <category term="edition-2026-11-25"/>
+    <summary>• Agent teams vs. factories: engineer either one: The metaphor matters less than the engineering: agent teams are fine if they&#x27;re defined in code with metrics, evals, self-improvement loops and benchmarking. Teams and factories can also hand work to each other. (Source: https://x.com/zachlloydtweets/status/2125427862065025030)</summary>
+  </entry>
+  <entry>
+    <title>Software factories › Architecture &amp; orchestration: How to build a software factory you&#x27;ll actually use</title>
+    <link rel="alternate" type="text/html" href="https://cfmayer.github.io/ai-tips-watch/#s-x-2125351601431089418"/>
+    <link rel="related" href="https://x.com/BHolmesDev/status/2125351601431089418"/>
+    <id>https://cfmayer.github.io/ai-tips-watch/#s-x-2125351601431089418</id>
+    <published>2026-11-24T22:11:23Z</published>
+    <updated>2026-11-25T05:15:00-07:00</updated>
+    <author><name>@zachlloydtweets</name></author>
+    <category term="edition-2026-11-25"/>
+    <summary>Article by @BHolmesDev, recommended by Zach Lloyd as the most comprehensive guide he&#x27;s seen on setting up a software factory from scratch. It grows a plain backlog agent into a factory with a structured blueprint, triage and spec gates for human judgment, computer-use verification, and merge-risk assessment.
+• Write the factory as a blueprint, not a markdown list: Turn the step list into a YAML blueprint: each stage has a prompt (kept in its own Markdown file), named inputs, structured outputs and a `to` field for where work goes next, and runs on a worker sandbox with its own context (e.g. a foreman that talks to the user and a builder that writes code). Every run returns the same shape of result, and the flow can be visualized.
+• Label-triggered backlog runs: Start a factory task whenever a GitHub issue gets a `factory` label. For small, well-defined fixes on a native desktop app, runs with an open-weight model cost under a dollar per issue; deeper feature work needed a second look.
+• Gate implementation with triage and spec stages: Put triage before implementation to route each request: straight to implementation if well defined, to a spec session if it has open product decisions, or just answer it if it&#x27;s a question. In the spec stage the agent asks its questions first, then writes the product behavior and technical approach; the spec&#x27;s validation section becomes the checklist for verifying the work.
+• A UI verification skill with visual proof: Give agents computer use and an app-specific verification skill (how to start the app, connect to DevTools, walk the requested flow, record proof, plus a &#x27;gotchas&#x27; list it grows over time). The PR then carries visual proof: the path walked, a recording, and before/after screenshots.
+• Merge-risk assessment skill: Have the agent score each PR on alignment (matches the issue, no drive-by changes), impact (blast radius, auth/permissions/schema), verification, rollback cost (two-way vs one-way door) and error detection, combined into low/medium/high risk. Ask the implementer to run it before opening the PR so it can fix gaps first. Warp&#x27;s skill: warp.dev/merge-risk. (Source: https://x.com/BHolmesDev/status/2125351601431089418)</summary>
+  </entry>
+  <entry>
+    <title>Models &amp; evaluation › Benchmarking &amp; evaluation: Pick models, harnesses and skills on evidence</title>
+    <link rel="alternate" type="text/html" href="https://cfmayer.github.io/ai-tips-watch/#s-x-2125348752814932162"/>
+    <link rel="related" href="https://x.com/zachlloydtweets/status/2125348752814932162"/>
+    <id>https://cfmayer.github.io/ai-tips-watch/#s-x-2125348752814932162</id>
+    <published>2026-11-24T22:00:04Z</published>
+    <updated>2026-11-25T05:15:00-07:00</updated>
+    <author><name>@zachlloydtweets</name></author>
+    <category term="edition-2026-11-25"/>
+    <summary>• Pick models, harnesses and skills on evidence: Don&#x27;t choose models, harnesses and skills on vibes or public benchmarks alone. Run the same kinds of tasks on your own codebase through different configurations, compare quality and cost, look at where each succeeds and fails, and keep testing as the tools change. (Source: https://x.com/zachlloydtweets/status/2125348752814932162)</summary>
+  </entry>
+  <entry>
+    <title>Software factories › Concepts &amp; adoption: Warp Learn: free software-factory course</title>
+    <link rel="alternate" type="text/html" href="https://cfmayer.github.io/ai-tips-watch/#s-x-2125346947997548846"/>
+    <link rel="related" href="https://x.com/zachlloydtweets/status/2125346947997548846"/>
+    <id>https://cfmayer.github.io/ai-tips-watch/#s-x-2125346947997548846</id>
+    <published>2026-11-24T21:52:54Z</published>
+    <updated>2026-11-25T05:15:00-07:00</updated>
+    <author><name>@zachlloydtweets</name></author>
+    <category term="edition-2026-11-25"/>
+    <summary>• Warp Learn: free software-factory course: Warp Learn (warp.dev/learn) is a free, hands-on course that builds from a backlog agent up to a multi-stage factory with specs, verification and risk assessment. (Source: https://x.com/zachlloydtweets/status/2125346947997548846)</summary>
+  </entry>
+  <entry>
+    <title>Models &amp; evaluation › Model picks: poteto&#x27;s current Cursor setup: Gemini Neon + Opus reviewer</title>
+    <link rel="alternate" type="text/html" href="https://cfmayer.github.io/ai-tips-watch/#s-x-2125340394938593344"/>
+    <link rel="related" href="https://x.com/poteto/status/2125340394938593344"/>
+    <id>https://cfmayer.github.io/ai-tips-watch/#s-x-2125340394938593344</id>
+    <published>2026-11-24T21:26:51Z</published>
+    <updated>2026-11-25T05:15:00-07:00</updated>
+    <author><name>@poteto</name></author>
+    <category term="edition-2026-11-25"/>
+    <summary>• poteto&#x27;s current Cursor setup: Gemini Neon + Opus reviewer: poteto now daily-drives Gemini Neon in Cursor, using it as both orchestrator and executor, with Opus as the reviewer. (Source: https://x.com/poteto/status/2125340394938593344)</summary>
+  </entry>
+  <entry>
+    <title>Grok Bot › Personal admin &amp; money: Grok Bot finds, files and gets approval for an unclaimed-money claim</title>
+    <link rel="alternate" type="text/html" href="https://cfmayer.github.io/ai-tips-watch/#s-x-2125272594828103712"/>
+    <link rel="related" href="https://x.com/Baconbrix/status/2125272594828103712"/>
+    <id>https://cfmayer.github.io/ai-tips-watch/#s-x-2125272594828103712</id>
+    <published>2026-11-24T16:57:26Z</published>
+    <updated>2026-11-25T05:15:00-07:00</updated>
+    <author><name>@Baconbrix</name></author>
+    <category term="edition-2026-11-25"/>
+    <summary>20-second recap video (made by Evan Bacon&#x27;s Motion Bot) of Grok Bot running his unclaimed-money prompt: it checks state lists, reports $315.73 across two properties in Texas, files the claim after he says &quot;Do it&quot;, and Texas approves it 21 minutes after the search started. The prompt itself is in an earlier card (Prompt: find and claim your unclaimed money).
+• Event-triggered recap videos: Evan Bacon&#x27;s Motion Bot made the recap video on its own: the claim approval arriving about 20 minutes after filing triggered it.
+• 0:03 Unclaimed money: review the matches, then say &quot;Do it&quot;: After the unclaimed-money prompt, Grok Bot checks each state&#x27;s list, then shows what it found before filing: here $315.73 across two Texas properties, plus how to claim (file with a photo ID). The claim only went in after the reply &quot;Do it&quot;.
+• 0:08 Have a photo ID ready for the filing step: Expect the filing step to need a photo ID upload. In this run Texas approved the claim the same day: 21 minutes from search to approval (8:39 to 9:00 AM). (Source: https://x.com/Baconbrix/status/2125272594828103712)</summary>
+  </entry>
+  <entry>
+    <title>Software factories › Architecture &amp; orchestration: PR attribution for agent work</title>
+    <link rel="alternate" type="text/html" href="https://cfmayer.github.io/ai-tips-watch/#s-x-2125264800175260039"/>
+    <link rel="related" href="https://x.com/zachlloydtweets/status/2125264800175260039"/>
+    <id>https://cfmayer.github.io/ai-tips-watch/#s-x-2125264800175260039</id>
+    <published>2026-11-24T16:26:28Z</published>
+    <updated>2026-11-25T05:15:00-07:00</updated>
+    <author><name>@zachlloydtweets</name></author>
+    <category term="edition-2026-11-25"/>
+    <summary>• PR attribution for agent work: Warp&#x27;s model: on human-initiated PRs the human is the author, the agent is the reviewer, and the human merges (agent-as-author broke tooling and removed human responsibility). Fully automated PRs have the agent as author. For PRs from a multi-person Slack or Jira thread, the original prompter is the author and commits are attributed across collaborators. Make it configurable. (Source: https://x.com/zachlloydtweets/status/2125264800175260039)</summary>
+  </entry>
+  <entry>
+    <title>Software factories › Measurement &amp; improvement: Measure whether agents make you better, not just busier</title>
+    <link rel="alternate" type="text/html" href="https://cfmayer.github.io/ai-tips-watch/#s-x-2125243114948599941"/>
+    <link rel="related" href="https://x.com/zachlloydtweets/status/2125243114948599941"/>
+    <id>https://cfmayer.github.io/ai-tips-watch/#s-x-2125243114948599941</id>
+    <published>2026-11-24T15:00:18Z</published>
+    <updated>2026-11-25T05:15:00-07:00</updated>
+    <author><name>@zachlloydtweets</name></author>
+    <category term="edition-2026-11-25"/>
+    <summary>• Measure whether agents make you better, not just busier: Look across the workflow: how long work takes, how much is automated, what a PR costs, how much business value it adds, and where agents spend time on work that doesn&#x27;t help. More PRs isn&#x27;t the goal; record agent runs and measure results so you can tune and improve them. (Source: https://x.com/zachlloydtweets/status/2125243114948599941)</summary>
+  </entry>
   <entry>
     <title>Grok Bot › Directory &amp; templates: Editing and refreshing your grok-bot.directory listing</title>
     <link rel="alternate" type="text/html" href="https://cfmayer.github.io/ai-tips-watch/#s-x-2124941358339178841"/>
@@ -646,146 +786,5 @@
 • 20:30 Verify end to end in a sandbox via Chrome DevTools Protocol: A &quot;Test Desktop App&quot; skill boots the Electron app in a container (factory.yaml: os linux, arch x86_64, dockerImage warpdotdev/dev-base:latest) and drives it through the Chrome DevTools Protocol.
 • 26:45 Have the agent record its test session as an MP4: Give reviewers a video of the agent&#x27;s verification run.
 • 28:35 Add a merge-risk skill to every PR: Score the PR on Alignment, Impact, Verification, Rollback cost and Error detection, and append a low/medium/high risk rating to the PR description. (Source: https://youtu.be/uPCH2axUpbc)</summary>
-  </entry>
-  <entry>
-    <title>Workflows › Delegation &amp; agent teams: the builder (2026): a short film made by Factory Droids</title>
-    <link rel="alternate" type="text/html" href="https://cfmayer.github.io/ai-tips-watch/#s-x-2123459506684543365"/>
-    <link rel="related" href="https://x.com/EnoReyes/status/2123459506684543365"/>
-    <id>https://cfmayer.github.io/ai-tips-watch/#s-x-2123459506684543365</id>
-    <published>2026-11-19T16:52:53.921000Z</published>
-    <updated>2026-11-19T18:15:05-07:00</updated>
-    <author><name>@EnoReyes</name></author>
-    <category term="edition-2026-11-19"/>
-    <summary>Narrative short film made with Factory Droids; no practical tips in the video itself (see @EnoReyes&#x27;s thread for how it was made).
-• Act as the studio exec: give agents outcomes and a budget: Eno made a 57-shot, 5,129-frame 3D short film with Factory&#x27;s Droids (an unreleased system): his role was giving outcomes and budget while the system designed sets, props, animation, QC, sound and rendering, running Blender on a Mac mini, renting GPUs on Modal and scoring with ElevenLabs. His takeaway: future work looks like one person who knows what they want plus intelligence assembled around goals. (Source: https://x.com/EnoReyes/status/2123459506684543365)</summary>
-  </entry>
-  <entry>
-    <title>Testing &amp; verification › Property-based, fuzzing &amp; formal: Bombadil 0.8.0: faster browser and TUI fuzzing</title>
-    <link rel="alternate" type="text/html" href="https://cfmayer.github.io/ai-tips-watch/#s-x-2123389608549343504"/>
-    <link rel="related" href="https://x.com/owickstrom/status/2123389608549343504"/>
-    <id>https://cfmayer.github.io/ai-tips-watch/#s-x-2123389608549343504</id>
-    <published>2026-11-19T12:15:08.006000Z</published>
-    <updated>2026-11-19T18:15:05-07:00</updated>
-    <author><name>@owickstrom</name></author>
-    <category term="edition-2026-11-19"/>
-    <summary>• Bombadil 0.8.0: faster browser and TUI fuzzing: Bombadil 0.8.0 (Antithesis&#x27;s open-source browser and TUI fuzzer) is up to 4x faster for browser fuzzing and 2x for TUIs, with binary compressed traces that cut disk use and IO. Try it with chrome-headless-shell (see the Bombadil docs). (Source: https://x.com/owickstrom/status/2123389608549343504)</summary>
-  </entry>
-  <entry>
-    <title>Models &amp; evaluation › Model releases: Gemini 4 Neon in Cursor: new cost-performance frontier</title>
-    <link rel="alternate" type="text/html" href="https://cfmayer.github.io/ai-tips-watch/#s-x-2123198346802450926"/>
-    <link rel="related" href="https://x.com/cursor_ai/status/2123198346802450926"/>
-    <id>https://cfmayer.github.io/ai-tips-watch/#s-x-2123198346802450926</id>
-    <published>2026-11-18T23:35:07.652000Z</published>
-    <updated>2026-11-19T18:15:05-07:00</updated>
-    <author><name>@cursor_ai</name></author>
-    <category term="edition-2026-11-19"/>
-    <summary>• Gemini 4 Neon in Cursor: new cost-performance frontier: Gemini 4 Neon is available in Cursor. At default effort it scores 63.7% on CursorBench 4.1 (vs 57.3% for Gemini 4 Hydrogen), priced at $3/M input and $15/M output tokens. Docs: cursor.com/docs/models/gemini-4-neon. (Source: https://x.com/cursor_ai/status/2123198346802450926)</summary>
-  </entry>
-  <entry>
-    <title>Grok Bot › Directory &amp; templates: grok-bot.directory profiles (demo)</title>
-    <link rel="alternate" type="text/html" href="https://cfmayer.github.io/ai-tips-watch/#s-x-2123192242965737807"/>
-    <link rel="related" href="https://x.com/ericzakariasson/status/2123192242965737807"/>
-    <id>https://cfmayer.github.io/ai-tips-watch/#s-x-2123192242965737807</id>
-    <published>2026-11-18T23:10:52.384000Z</published>
-    <updated>2026-11-19T18:15:05-07:00</updated>
-    <author><name>@ericzakariasson</name></author>
-    <category term="edition-2026-11-19"/>
-    <summary>Announcement: creator profile pages on grok-bot.directory list all of a creator&#x27;s bots, with a Copy link button for one shareable URL.
-• Share a profile page of everything you&#x27;ve published: grok-bot.directory now has profiles: one page listing all your published bots and apps, with a link you can share or pin. Find yours in the account menu. (Source: https://x.com/ericzakariasson/status/2123192242965737807)</summary>
-  </entry>
-  <entry>
-    <title>Grok Bot › Releases &amp; features: Choose how each tool runs (1.2.3)</title>
-    <link rel="alternate" type="text/html" href="https://cfmayer.github.io/ai-tips-watch/#s-x-2123178980010332646"/>
-    <link rel="related" href="https://x.com/ericzakariasson/status/2123178980010332646"/>
-    <id>https://cfmayer.github.io/ai-tips-watch/#s-x-2123178980010332646</id>
-    <published>2026-11-18T22:18:10.249000Z</published>
-    <updated>2026-11-19T18:15:05-07:00</updated>
-    <author><name>@ericzakariasson</name></author>
-    <category term="edition-2026-11-19"/>
-    <summary>• Choose how each tool runs (1.2.3): Grok Bot 1.2.3 lets you pick how each tool runs, reconnect accounts right from chat, and makes the bot reach for connectors before the browser. (Source: https://x.com/ericzakariasson/status/2123178980010332646)</summary>
-  </entry>
-  <entry>
-    <title>Testing &amp; verification › Runtime &amp; end-to-end checks: Lots of agent-written tests don&#x27;t prove the system works</title>
-    <link rel="alternate" type="text/html" href="https://cfmayer.github.io/ai-tips-watch/#s-x-2123162993550823688"/>
-    <link rel="related" href="https://x.com/dexhorthy/status/2123162993550823688"/>
-    <id>https://cfmayer.github.io/ai-tips-watch/#s-x-2123162993550823688</id>
-    <published>2026-11-18T21:14:38.780000Z</published>
-    <updated>2026-11-19T18:15:05-07:00</updated>
-    <author><name>@dexhorthy</name></author>
-    <category term="edition-2026-11-19"/>
-    <summary>• 21:44 Lots of agent-written tests don&#x27;t prove the system works: A large pile of agent-written lint rules, unit tests or e2e tests doesn&#x27;t mean the system is good. Agents are goal-seeking and can reward-hack or measure the wrong thing, so without real insight into what&#x27;s happening you can&#x27;t tell whether your verification is worth anything. (Source: https://x.com/dexhorthy/status/2123162993550823688)</summary>
-  </entry>
-  <entry>
-    <title>Grok Bot › Automation &amp; routines: Automate Anything with Grok Bot</title>
-    <link rel="alternate" type="text/html" href="https://cfmayer.github.io/ai-tips-watch/#s-x-2123159537016533493"/>
-    <link rel="related" href="https://x.com/poteto/status/2123159537016533493"/>
-    <id>https://cfmayer.github.io/ai-tips-watch/#s-x-2123159537016533493</id>
-    <published>2026-11-18T21:00:54.678000Z</published>
-    <updated>2026-11-19T18:15:05-07:00</updated>
-    <author><name>@poteto</name></author>
-    <category term="edition-2026-11-19"/>
-    <summary>How Lauren approaches automation: define the goal, describe the process, teach your judgment, give the bot feedback loops, and run it on routines. A reply adds the Dr Eggbot v2 template.
-• Automating anything: start with the goal, not the process: Automation is a goal plus a process. Don&#x27;t confuse steps (filling a form, sending an email) with the goal; ask what the work is for (revenue, cost) and tell a new bot the goal it&#x27;s responsible for. If you can&#x27;t phrase the goal, ask the bot to interview you until you have one you&#x27;re happy with.
-• Brain-dump the process, then make the bot restate it before acting: Voice-dictate everything about how you do the job: the usual steps, what you watch out for, the apps and tools used, how you check the work, where the inputs come from, and where feedback comes from. Then ask the bot to restate your goal and process in plain English and not start executing yet. Iterate a few times, then let it connect the tools it needs; optionally ask it to review the process against the goal for a better way.
-• Teach the bot your judgment with real examples, one question at a time: You make many decisions without noticing (which source to trust when two disagree, when a task is truly &#x27;done&#x27;). Feed the bot a few real examples, including ones that went wrong, and ask it to interview you about how you decide, where information lives, how you check work, and when to ask for help, one question at a time, before automating.
-• Let bots improve themselves by giving them access to feedback: Give the bot the apps and data it needs to find feedback itself (email, social, Google/Yelp reviews) so it can propose process improvements. The more of your business is logged digitally, the better; the bot can even build you a simple app to log events. Consistent unique IDs (customer email, order number, part number) across tools let it cross-reference data.
-• Use routines so the bot works without you asking: Without a routine, a bot only works when asked. Decide what should trigger the work (an incoming email, a Slack/Teams message, or a schedule) and ask the bot to set up the routine so you stop being the bottleneck.
-• Install the Dr Eggbot v2 template to design bots for you: Dr Eggbot is a bot designer that creates bots for you. A new v2 template ships with new skills for automating work and life; it differs from the old one, so install v2 fresh and ask the old Eggbot to transfer anything you want to keep. (Source: https://x.com/poteto/status/2123159537016533493)</summary>
-  </entry>
-  <entry>
-    <title>Grok Bot › Directory &amp; templates: grok-bot.directory launch (demo)</title>
-    <link rel="alternate" type="text/html" href="https://cfmayer.github.io/ai-tips-watch/#s-x-2123102642704675241"/>
-    <link rel="related" href="https://x.com/ericzakariasson/status/2123102642704675241"/>
-    <id>https://cfmayer.github.io/ai-tips-watch/#s-x-2123102642704675241</id>
-    <published>2026-11-18T17:14:50.017000Z</published>
-    <updated>2026-11-19T18:15:05-07:00</updated>
-    <author><name>@ericzakariasson</name></author>
-    <category term="edition-2026-11-19"/>
-    <summary>Announcement: grok-bot.directory lets you browse community-built bots by category and add them to your workspace, discover MCP servers/apps (e.g. Apify, Zapier, ElevenLabs), and submit your own bot or app via a share link or GitHub URL.
-• Browse and publish community bots at grok-bot.directory: grok-bot.directory is a community directory to browse and install bots and apps others have built, or publish your own (submit at grok-bot.directory/submit; submissions to the official marketplace that weren&#x27;t published are listed there too). One day in it had 1,200+ bots submitted and 7,000+ adds. (Source: https://x.com/ericzakariasson/status/2123102642704675241)</summary>
-  </entry>
-  <entry>
-    <title>Code quality › Review &amp; judgment: Step back before firing off many small agent changes</title>
-    <link rel="alternate" type="text/html" href="https://cfmayer.github.io/ai-tips-watch/#s-x-2122910519820681389"/>
-    <link rel="related" href="https://x.com/dexhorthy/status/2122910519820681389"/>
-    <id>https://cfmayer.github.io/ai-tips-watch/#s-x-2122910519820681389</id>
-    <published>2026-11-18T04:31:24.352000Z</published>
-    <updated>2026-11-19T18:15:05-07:00</updated>
-    <author><name>@dexhorthy</name></author>
-    <category term="edition-2026-11-19"/>
-    <summary>• Step back before firing off many small agent changes: It&#x27;s easy to run lots of small &#x27;move this button&#x27; changes in parallel, but if you never step back to think deeply about what you&#x27;re building, you get slop. Take a moment to work out the best path forward. (Source: https://x.com/dexhorthy/status/2122910519820681389)</summary>
-  </entry>
-  <entry>
-    <title>Models &amp; evaluation › Model releases: Astra as a workflow automation model</title>
-    <link rel="alternate" type="text/html" href="https://cfmayer.github.io/ai-tips-watch/#s-x-2122862646265520150"/>
-    <link rel="related" href="https://x.com/swyx/status/2122862646265520150"/>
-    <id>https://cfmayer.github.io/ai-tips-watch/#s-x-2122862646265520150</id>
-    <published>2026-11-18T01:21:10.407000Z</published>
-    <updated>2026-11-19T18:15:05-07:00</updated>
-    <author><name>@swyx</name></author>
-    <category term="edition-2026-11-19"/>
-    <summary>• Astra as a workflow automation model: swyx is daily-driving Astra and calls it the best workflow automation model he&#x27;s used: it no longer gets stuck in loops and learns efficiently through compactions and skill writing. It runs much of Latent Space and AI Engineer&#x27;s content publishing pipeline. (Source: https://x.com/swyx/status/2122862646265520150)</summary>
-  </entry>
-  <entry>
-    <title>Testing &amp; verification › Property-based, fuzzing &amp; formal: Custom DST stack finding bugs in Kafka-over-object-storage (via @dzibanisms)</title>
-    <link rel="alternate" type="text/html" href="https://cfmayer.github.io/ai-tips-watch/#s-x-2122973631370367160"/>
-    <link rel="related" href="https://x.com/dzibanisms/status/2122973631370367160"/>
-    <id>https://cfmayer.github.io/ai-tips-watch/#s-x-2122973631370367160</id>
-    <published>2026-11-18T00:00:00Z</published>
-    <updated>2026-11-19T18:15:05-07:00</updated>
-    <author><name>@GeoffreyHuntley</name></author>
-    <category term="edition-2026-11-19"/>
-    <summary>Demo only: a custom DST stack exploring a Kafka-over-object-storage system and finding bugs. (Source: https://x.com/dzibanisms/status/2122973631370367160)</summary>
-  </entry>
-  <entry>
-    <title>Testing &amp; verification › Property-based, fuzzing &amp; formal: Generate property-based tests from both the spec and the code</title>
-    <link rel="alternate" type="text/html" href="https://cfmayer.github.io/ai-tips-watch/#s-x-2122839807038816299"/>
-    <link rel="related" href="https://x.com/GeoffreyHuntley/status/2122839807038816299"/>
-    <id>https://cfmayer.github.io/ai-tips-watch/#s-x-2122839807038816299</id>
-    <published>2026-11-17T23:50:25.111000Z</published>
-    <updated>2026-11-19T18:15:05-07:00</updated>
-    <author><name>@GeoffreyHuntley</name></author>
-    <category term="edition-2026-11-19"/>
-    <summary>• Generate property-based tests from both the spec and the code: In a paper across 25 agent-built apps, spec-driven property-based tests found 56 bugs that code-driven ones missed, and code-driven found 43 that spec-driven missed (59% of bugs found by only one approach). Setup: an agent writes invariants in plain English from the requirements, then turns them into property tests by reading the code. Use both. (Source: https://x.com/GeoffreyHuntley/status/2122839807038816299)</summary>
   </entry>
 </feed>
