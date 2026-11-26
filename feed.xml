@@ -5,8 +5,109 @@
   <link rel="self" type="application/atom+xml" href="https://cfmayer.github.io/ai-tips-watch/feed.xml"/>
   <link rel="alternate" type="text/html" href="https://cfmayer.github.io/ai-tips-watch/"/>
   <id>https://cfmayer.github.io/ai-tips-watch/</id>
-  <updated>2026-11-25T05:10:43-07:00</updated>
+  <updated>2026-11-26T05:08:11-07:00</updated>
   <author><name>Grok Bot Tips Watch</name></author>
+  <entry>
+    <title>Prompting › Prompt templates: 15 other kinds of bugs you can tell an agent to look for</title>
+    <link rel="alternate" type="text/html" href="https://cfmayer.github.io/ai-tips-watch/#s-x-2125875800838902272"/>
+    <link rel="related" href="https://x.com/ccheever/status/2125875800838902272"/>
+    <id>https://cfmayer.github.io/ai-tips-watch/#s-x-2125875800838902272</id>
+    <published>2026-11-26T08:55:18Z</published>
+    <updated>2026-11-26T05:10:00-07:00</updated>
+    <author><name>@ccheever</name></author>
+    <category term="edition-2026-11-26"/>
+    <summary>Follow-up to Charlie Cheever&#x27;s implicit-state-machine bug hunt: a 15-post thread of bug classes he found in Exact by pointing an agent at them, each with real examples. Grouped below by theme; each tip names the numbered posts it covers.
+• Bug hunt: timing and ordering (1, 2, 13): Ask the agent to look for: mid-flight cancellation and teardown (async work cancelled, closed or unmounted before it finishes); out-of-order events (a late reply, retry or event clobbering newer state); and check-then-act (a precondition checked, then acted on after something underneath changed).
+• Bug hunt: safety bypasses (3, 6, 14): Ask the agent to look for: back doors (a secondary path that walks around your safety checks); trust boundaries (data from a file, URL, network or save state trusted without validation, e.g. javascript: URLs in hrefs, unvalidated refs passed to git fetch); and fail-open defaults (missing config, an unexpected exit code or unknown status silently treated as allowed or passed).
+• Bug hunt: state that drifts (4, 7, 8): Ask the agent to look for: two sources of truth (stored and cached copies that drift apart); halfway failure (a multi-step write that fails partway and leaves state half-mutated or wedged); and asymmetric pairs (encode/decode, export/import, validate/execute quietly drifting apart).
+• Bug hunt: input limits and encoding (5, 9, 12): Ask the agent to look for: quadratic work, stack depth and allocation (unbounded recursion, O(n^2) loops, giant allocations from nested or hostile input); boundaries (zero, empty, max-size or off-by-one inputs); and numeric narrowing, Unicode and escaping (silent integer truncation, unescaped raw text, coercion bugs at format seams).
+• Bug hunt: wiring gaps and tests that lie (10, 11, 15): Ask the agent to look for: copy-paste drift (a fix landed in one near-duplicate copy but not the other, e.g. macOS but not iOS); dropped plumbing (a flag, scope, kind or init hook left off when wiring a new path or target); and bypassed tests (a test that can silently skip its check or bail early). (Source: https://x.com/ccheever/status/2125875800838902272)</summary>
+  </entry>
+  <entry>
+    <title>Grok Bot › Shopping &amp; travel: Grok Bot holiday shopping: from a gift list to one Purchase tap</title>
+    <link rel="alternate" type="text/html" href="https://cfmayer.github.io/ai-tips-watch/#s-x-2125711676003766718"/>
+    <link rel="related" href="https://x.com/bot/status/2125711676003766718"/>
+    <id>https://cfmayer.github.io/ai-tips-watch/#s-x-2125711676003766718</id>
+    <published>2026-11-25T23:24:35Z</published>
+    <updated>2026-11-26T05:10:00-07:00</updated>
+    <author><name>@Baconbrix</name></author>
+    <category term="edition-2026-11-26"/>
+    <summary>27-second promo from @bot, shared by Evan Bacon (&quot;we&#x27;ve worked really hard over the last few months to build the best shopping agent in the world&quot;) and by @poteto. A parent sends one shopping request, Grok Bot searches Black Friday deals, returns one deal card per child, builds a holiday list with the total and savings, and the order goes through after a tap on Purchase. Music only, no narration.
+• 0:00 Holiday shopping: one request with who, ages and interests: Put everything in one message: who the gifts are for, their ages and what they&#x27;re into, plus the goal. The demo prompt: &quot;Help me with holiday shopping for my 3 boys: 8, 5 and 2. They&#x27;re into space, dinosaurs and trains. Find the best Black Friday deals.&quot;
+• 0:08 Review deal cards, build a list, approve with Purchase: Grok Bot answers with one deal card per person (sale price vs. original, Details and Add to list), then a Holiday list card with the total and what you save. Nothing is bought until you tap Purchase on that list card. (Source: https://x.com/bot/status/2125711676003766718)</summary>
+  </entry>
+  <entry>
+    <title>Grok Bot › Teams &amp; delegation: Grok Bot 1.3.0: smarter Slack Bots, restock alerts, org controls</title>
+    <link rel="alternate" type="text/html" href="https://cfmayer.github.io/ai-tips-watch/#s-x-2125675144173556124"/>
+    <link rel="related" href="https://x.com/ericzakariasson/status/2125675144173556124"/>
+    <id>https://cfmayer.github.io/ai-tips-watch/#s-x-2125675144173556124</id>
+    <published>2026-11-25T19:37:02Z</published>
+    <updated>2026-11-26T05:10:00-07:00</updated>
+    <author><name>@ericzakariasson</name></author>
+    <category term="edition-2026-11-26"/>
+    <summary>Eric Zakariasson announcing Grok Bot 1.3.0 (released Nov 24, 2026). Tips below are from the release post and the full changelog it links (https://x.ai/changelog/bot).
+• Restock alerts and Buy now on mobile (1.3.0): On a sold-out product card, tap Notify me and Grok Bot watches that seller and tells you when it&#x27;s back in stock. On iPhone and Android, a single-product card shows Buy now whenever the chat can buy it. On a multi-item order, clicking an item opens its product page with the options you ordered already selected.
+• Smarter Slack Bots (1.3.0): When one Bot hands work to another, the answer comes back in your Slack DM with a Connect button for anything that Bot still needs. Saying a Bot&#x27;s name in a Slack group DM wakes it like an @mention; you can ask for a thread reply to also be shown in the channel; whoever a post was written for can ask the Bot to delete it; and in a 1:1 DM it can answer in the main chat instead of a thread.
+• Org controls: domain-limited connections and invite approval (1.3.0): An organization can limit members to connecting accounts on its own domains. Team admins can require approval before someone who opens an invite link joins, and review those requests on the Requests tab of the Members page. Typing @ in chat also lists team Bots you can reach but haven&#x27;t added yet.
+• Ashby connector for recruiting questions (1.3.0): Connect Ashby and the Bot can answer recruiting questions about candidates, interviews, jobs and offers.
+• Bcc, signature removal and an X drafts carousel (1.3.0): Email drafts can carry a Bcc, on the draft card and in Mac Mail. An editable Gmail draft that shows a signature has a Remove signature control. Three or more X drafts in one message sit in one sideways carousel, and a sent draft reads Replied, Posted or Sent.
+• Voice calls and meetings: answers aloud, cards in chat (1.3.0): On a voice call, ask about a product and the Bot answers aloud while the product cards go to your chat. The Bot can also tell you who was in a meeting it joined. (Source: https://x.com/ericzakariasson/status/2125675144173556124)</summary>
+  </entry>
+  <entry>
+    <title>Workflows › Planning &amp; process: Keep resurfacing where human review is still the bottleneck</title>
+    <link rel="alternate" type="text/html" href="https://cfmayer.github.io/ai-tips-watch/#s-x-2125657724126138682"/>
+    <link rel="related" href="https://x.com/poteto/status/2125657724126138682"/>
+    <id>https://cfmayer.github.io/ai-tips-watch/#s-x-2125657724126138682</id>
+    <published>2026-11-25T18:27:48Z</published>
+    <updated>2026-11-26T05:10:00-07:00</updated>
+    <author><name>@poteto</name></author>
+    <category term="edition-2026-11-26"/>
+    <summary>• Keep resurfacing where human review is still the bottleneck: Periodically step back and find the bottleneck or limiting step in your coding workflow where human review is still required, then put in the work to let the agent (or code) drive that step. (Source: https://x.com/poteto/status/2125657724126138682)</summary>
+  </entry>
+  <entry>
+    <title>Grok Bot › Releases &amp; features: Coming next: Grok Bot on the iPhone lock screen</title>
+    <link rel="alternate" type="text/html" href="https://cfmayer.github.io/ai-tips-watch/#s-x-2125644530708054181"/>
+    <link rel="related" href="https://x.com/Baconbrix/status/2125644530708054181"/>
+    <id>https://cfmayer.github.io/ai-tips-watch/#s-x-2125644530708054181</id>
+    <published>2026-11-25T17:35:23Z</published>
+    <updated>2026-11-26T05:10:00-07:00</updated>
+    <author><name>@Baconbrix</name></author>
+    <category term="edition-2026-11-26"/>
+    <summary>• Coming next: Grok Bot on the iPhone lock screen: In the next version of Grok Bot you&#x27;ll be able to add your Bot to your iPhone lock screen. (Source: https://x.com/Baconbrix/status/2125644530708054181)</summary>
+  </entry>
+  <entry>
+    <title>Agent skills &amp; setup › Harnesses &amp; tools: Factory is free for solo devs who bring their own inference</title>
+    <link rel="alternate" type="text/html" href="https://cfmayer.github.io/ai-tips-watch/#s-x-2125643809803420074"/>
+    <link rel="related" href="https://x.com/EnoReyes/status/2125643809803420074"/>
+    <id>https://cfmayer.github.io/ai-tips-watch/#s-x-2125643809803420074</id>
+    <published>2026-11-25T17:32:31Z</published>
+    <updated>2026-11-26T05:10:00-07:00</updated>
+    <author><name>@EnoReyes</name></author>
+    <category term="edition-2026-11-26"/>
+    <summary>• Factory is free for solo devs who bring their own inference: Individual developers can use Factory for free with their own API key from a number of major providers: download the app from factory.com, add your key and start a task. For a limited time each account also gets free Droid Computer hours for background agents. (Source: https://x.com/EnoReyes/status/2125643809803420074)</summary>
+  </entry>
+  <entry>
+    <title>Software factories › Concepts &amp; adoption: Make coding-agent setup a team problem, not a personal one</title>
+    <link rel="alternate" type="text/html" href="https://cfmayer.github.io/ai-tips-watch/#s-x-2125635692122505312"/>
+    <link rel="related" href="https://x.com/zachlloydtweets/status/2125635692122505312"/>
+    <id>https://cfmayer.github.io/ai-tips-watch/#s-x-2125635692122505312</id>
+    <published>2026-11-25T17:00:16Z</published>
+    <updated>2026-11-26T05:10:00-07:00</updated>
+    <author><name>@zachlloydtweets</name></author>
+    <category term="edition-2026-11-26"/>
+    <summary>• Make coding-agent setup a team problem, not a personal one: Agentic coding systems belong to the team, not to each engineer configured a hundred different ways. Treat it as a shared engineering problem: set up the best shared infrastructure so everyone benefits from it and improves it together. Zach Lloyd calls this factory engineering. (Source: https://x.com/zachlloydtweets/status/2125635692122505312)</summary>
+  </entry>
+  <entry>
+    <title>Models &amp; evaluation › Benchmarking &amp; evaluation: Don&#x27;t trust cost-per-task charts alone</title>
+    <link rel="alternate" type="text/html" href="https://cfmayer.github.io/ai-tips-watch/#s-x-2125627281230205435"/>
+    <link rel="related" href="https://x.com/swyx/status/2125627281230205435"/>
+    <id>https://cfmayer.github.io/ai-tips-watch/#s-x-2125627281230205435</id>
+    <published>2026-11-25T16:26:50Z</published>
+    <updated>2026-11-26T05:10:00-07:00</updated>
+    <author><name>@swyx</name></author>
+    <category term="edition-2026-11-26"/>
+    <summary>• Don&#x27;t trust cost-per-task charts alone: &quot;Cost per task is a misleading metric; the scarce resource is human attention, not token cost.&quot; Beware Pareto-frontier charts that reduce every model to two numbers: they can hide awful reliability issues. (Source: https://x.com/swyx/status/2125627281230205435)</summary>
+  </entry>
   <entry>
     <title>Software factories › Measurement &amp; improvement: Don&#x27;t sloptimize your CI</title>
     <link rel="alternate" type="text/html" href="https://cfmayer.github.io/ai-tips-watch/#s-x-2125561070404428270"/>
@@ -674,117 +775,5 @@
     <summary>Demo: ask your bot in chat to join an in-progress Zoom or Google Meet call; it takes spoken requests and writes structured notes and action items into apps like Notion.
 • Bring your bot to meetings so it gathers its own context: Inviting a bot to meetings lets it collect context firsthand, which makes it smarter over time. It can also attend for you (e.g. when you&#x27;re on a flight without connectivity) and take notes. To set it up, just ask your bot.
 • 0:16 Ask the bot for things out loud during meetings: Once in a Zoom/Google Meet call (ask it in chat to join), the bot responds to spoken requests such as sending follow-ups, confirms with a chat reaction, and writes structured notes and action items into apps like Notion (00:18). (Source: https://x.com/bot/status/2121320089920430181)</summary>
-  </entry>
-  <entry>
-    <title>Grok Bot › Links &amp; docs: Ask Grok Bot questions in the docs (demo)</title>
-    <link rel="alternate" type="text/html" href="https://cfmayer.github.io/ai-tips-watch/#s-x-2121294195843629360"/>
-    <link rel="related" href="https://x.com/ericzakariasson/status/2121294195843629360"/>
-    <id>https://cfmayer.github.io/ai-tips-watch/#s-x-2121294195843629360</id>
-    <published>2026-11-13T17:28:42.686000Z</published>
-    <updated>2026-11-19T18:28:17-07:00</updated>
-    <author><name>@ericzakariasson</name></author>
-    <category term="edition-2026-11-19"/>
-    <summary>Demo of &#x27;Ask Grok Bot&#x27; on a docs page, answering a question about how Grok Bot handles a task with a step-by-step flowchart.
-• Ask Grok Bot questions inside the docs: The docs (docs.x.ai/grok-bot/overview) now have Grok Bot built in: it answers from the docs, links the pages it used, and can draw a diagram of how a task runs.
-• 0:00 Ask the docs for a diagram: On supported docs pages, &#x27;Ask Grok Bot&#x27; answers questions about the page; asking it to walk through how Grok Bot handles a task &#x27;with a diagram&#x27; returns a step-by-step flowchart. (Source: https://x.com/ericzakariasson/status/2121294195843629360)</summary>
-  </entry>
-  <entry>
-    <title>Agent skills &amp; setup › Review &amp; explainer skills: /animatic skill preview: videos instead of walls of markdown</title>
-    <link rel="alternate" type="text/html" href="https://cfmayer.github.io/ai-tips-watch/#s-x-2121211579098083668"/>
-    <link rel="related" href="https://x.com/mattpocockuk/status/2121211579098083668"/>
-    <id>https://cfmayer.github.io/ai-tips-watch/#s-x-2121211579098083668</id>
-    <published>2026-11-13T12:00:25.319000Z</published>
-    <updated>2026-11-19T18:28:17-07:00</updated>
-    <author><name>@mattpocockuk</name></author>
-    <category term="edition-2026-11-19"/>
-    <summary>Work-in-progress skill that turns a PR into a short narrated video so humans can review agent PRs faster.
-• Swap walls of markdown for an /animatic video: Matt is building two skills: /setup-animatic (picks the tooling and sets it up locally or on a remote machine) and /animatic (creates an upload-ready video). The goal: every important PR comes with a video showing how it works.
-• 0:14 How /animatic turns a PR into a narrated video: The agent writes a JSON storyboard, Playwright renders code frames from the PR diff, TTS reads each line and FFmpeg stitches an MP4. Voice engine (ElevenLabs, OpenAI, Edge-TTS), rendering style and stitcher are CLI options (00:56); the MP4 is posted as a PR comment via the GitHub/GitLab API or saved locally (01:25). (Source: https://x.com/mattpocockuk/status/2121211579098083668)</summary>
-  </entry>
-  <entry>
-    <title>Grok Bot › Links &amp; docs: Grok Bot: prefilled messages from links (demo)</title>
-    <link rel="alternate" type="text/html" href="https://cfmayer.github.io/ai-tips-watch/#s-x-2120959534537871653"/>
-    <link rel="related" href="https://x.com/ericzakariasson/status/2120959534537871653"/>
-    <id>https://cfmayer.github.io/ai-tips-watch/#s-x-2120959534537871653</id>
-    <published>2026-11-12T19:18:53.213000Z</published>
-    <updated>2026-11-19T18:28:17-07:00</updated>
-    <author><name>@ericzakariasson</name></author>
-    <category term="edition-2026-11-19"/>
-    <summary>Demo of shareable links that open Grok Bot with a prefilled prompt, in web and app-link forms.
-• Prefill bot messages from links and shortcuts: Grok Bot supports deep links that open your bot with a message already drafted. Put one in a shortcut, a note, or another app. Build your own with the deep-links docs at docs.x.ai/grok-bot/deep-links.
-• 0:00 Prefill links come in web and app forms: Shareable prefilled-prompt links work as a web link (https://cursor.com/grok-bot/link/v1/prompt?text=...) or an app link (grokbot://app/v1/prompt?text=...). (Source: https://x.com/ericzakariasson/status/2120959534537871653)</summary>
-  </entry>
-  <entry>
-    <title>Mobile &amp; app building › Cloud simulators: Introducing Expo Simulators: cloud simulators built for agents (via @expo)</title>
-    <link rel="alternate" type="text/html" href="https://cfmayer.github.io/ai-tips-watch/#s-x-2120924979898601506"/>
-    <link rel="related" href="https://x.com/expo/status/2120924979898601506"/>
-    <id>https://cfmayer.github.io/ai-tips-watch/#s-x-2120924979898601506</id>
-    <published>2026-11-12T18:02:10.593000Z</published>
-    <updated>2026-11-19T18:28:17-07:00</updated>
-    <author><name>@ccheever</name></author>
-    <category term="edition-2026-11-19"/>
-    <summary>Cloud Android/iOS simulators that let AI agents visually verify app changes, usable from local and cloud agents, with an optional pause for a human check before shipping.
-• Let agents verify mobile changes on cloud simulators: Expo Simulators are cloud simulators/emulators built for agents: the agent runs its change on one and brings back a recording before asking for your attention, which helps when agents write mobile code faster than a team can review.
-• 0:36 Let agents check UI across device types, with a human pause: Expo Simulators work from local and cloud agents (00:25), let agents test UI across iPhones, Androids, foldables and watches, and the workflow can pause for a human to check the simulator before the agent ships (00:50). (Source: https://x.com/expo/status/2120924979898601506)</summary>
-  </entry>
-  <entry>
-    <title>Grok Bot › Teams &amp; delegation: Introducing Grok Bot 1.0: AI teammates (via @bot)</title>
-    <link rel="alternate" type="text/html" href="https://cfmayer.github.io/ai-tips-watch/#s-x-2120582957782200586"/>
-    <link rel="related" href="https://x.com/bot/status/2120582957782200586"/>
-    <id>https://cfmayer.github.io/ai-tips-watch/#s-x-2120582957782200586</id>
-    <published>2026-11-12T16:55:56.257000Z</published>
-    <updated>2026-11-19T18:28:17-07:00</updated>
-    <author><name>@ericzakariasson</name></author>
-    <category term="edition-2026-11-19"/>
-    <summary>Grok Bot 1.0 as AI teammates: specialized bots (e.g. research, copy, deck) collaborate in chats, calls and design tools, hand work to each other, and flag risks before content is shared.
-• Delegate whole workstreams, not just personal errands: Grok Bot isn&#x27;t just a personal agent: treat it as a teammate you can hand full workstreams to and let it run them end to end. Grok Bot 1.0 added sharing bots, working with them in Slack and Teams, and inviting them to meetings.
-• 0:09 Pull a bot into a video call from chat: Invite a bot to a video call from text chat and it joins.
-• 0:35 Have bots tag each other to hand off work: Bots can tag one another in channels to pass work along (e.g. a research bot handing off to a copy bot).
-• 0:55 Use a bot as a safety net before sharing: Bots can warn you about sensitive content, e.g. confidential financials on slides, before a deck is shared externally. (Source: https://x.com/bot/status/2120582957782200586)</summary>
-  </entry>
-  <entry>
-    <title>Agent skills &amp; setup › Home Repo &amp; multi-repo: The Home Repo pattern: working with agents across multiple repos</title>
-    <link rel="alternate" type="text/html" href="https://cfmayer.github.io/ai-tips-watch/#s-x-2120847219788308872"/>
-    <link rel="related" href="https://x.com/mattpocockuk/status/2120847219788308872"/>
-    <id>https://cfmayer.github.io/ai-tips-watch/#s-x-2120847219788308872</id>
-    <published>2026-11-12T11:52:35.290000Z</published>
-    <updated>2026-11-19T18:28:17-07:00</updated>
-    <author><name>@mattpocockuk</name></author>
-    <category term="edition-2026-11-19"/>
-    <summary>Keep one central Home Repo holding all agent skills, tooling, docs and config, always run agent sessions from it, and let it reach into your other repos, so capabilities stay in sync across the team.
-• 2:54 Put private skills and shared settings in the Home Repo: Keep private skills (sensitive workflows) and version-controlled config like settings.json in the Home Repo so the whole team gets them.
-• 6:36 Keep custom CLI tooling in the Home Repo: E.g. one CLI wrapping Slack, Discord, GitHub and Google Calendar for your agents. The Home Repo can also hold an LLM wiki of markdown on audiences, business concepts and architecture (05:44). (Source: https://x.com/mattpocockuk/status/2120847219788308872)</summary>
-  </entry>
-  <entry>
-    <title>Models &amp; evaluation › Benchmarking &amp; evaluation: Benchmarking Gemini 4 Carbon in Warp Factories (via @warpdotdev)</title>
-    <link rel="alternate" type="text/html" href="https://cfmayer.github.io/ai-tips-watch/#s-x-2120702943003574441"/>
-    <link rel="related" href="https://x.com/warpdotdev/status/2120702943003574441"/>
-    <id>https://cfmayer.github.io/ai-tips-watch/#s-x-2120702943003574441</id>
-    <published>2026-11-12T02:21:27.925000Z</published>
-    <updated>2026-11-19T18:28:17-07:00</updated>
-    <author><name>@zachlloydtweets</name></author>
-    <category term="edition-2026-11-19"/>
-    <summary>Demo: running multiple model configurations (Gemini 4 Carbon vs Gemini 4 Argon) in one benchmark on the same harness.
-• Benchmark new models on your own past agent tasks: When a new model comes out, don&#x27;t rely on SOTA benchmark numbers: rerun it against your own previous agent tasks to compare cost and quality, and switch only if it measures up. That&#x27;s why factories should be measurable and model-agnostic.
-• 0:02 Benchmark several model configs in one run on the same harness: Put multiple model configurations (e.g. Gemini 4 Carbon vs Gemini 4 Argon) in a single benchmark run on the same harness. (Source: https://x.com/warpdotdev/status/2120702943003574441)</summary>
-  </entry>
-  <entry>
-    <title>Testing &amp; verification › Code review agents: How to fix the code review bottleneck (full walkthrough), @BHolmesDev</title>
-    <link rel="alternate" type="text/html" href="https://cfmayer.github.io/ai-tips-watch/#s-yt-uPCH2axUpbc"/>
-    <link rel="related" href="https://youtu.be/uPCH2axUpbc"/>
-    <id>https://cfmayer.github.io/ai-tips-watch/#s-yt-uPCH2axUpbc</id>
-    <published>2026-11-12T00:34:57.118000Z</published>
-    <updated>2026-11-19T18:28:17-07:00</updated>
-    <author><name>@zachlloydtweets</name></author>
-    <category term="edition-2026-11-19"/>
-    <summary>Ben Holmes (@BHolmesDev) fixes the code review bottleneck in three stages using Warp Factories: an isolated agent-to-agent review loop, end-to-end verification in a sandbox with recorded video, and an automated merge-risk assessment added to the PR description, so humans see polished, verified PRs with a risk summary. In a Warp benchmark shown, an independent reviewer averaged $12.02 and 71.1% correctness vs $4.82 and 68.6% for self-review.
-• 4:18 Build and own a custom review agent: Write a review agent that enforces your own architecture, PII handling and style rules rather than relying only on off-the-shelf reviewers.
-• 7:51 Review in a fresh context, not self-review: Hand the diff to a separate reviewer sub-agent in a fresh context window. In the Warp benchmark shown, an independent reviewer averaged 71.1% correctness at $12.02 vs 68.6% at $4.82 for self-review.
-• 9:07 Make the reviewer return structured JSON: Have the reviewer output a verdict (&quot;approved&quot; / &quot;needs changes&quot; / &quot;requires human input&quot;) plus findings with line/blocks, a suggestion and severity (&quot;nit&quot; / &quot;important&quot; / &quot;critical&quot;).
-• 11:50 Run the agent review loop before opening the PR: Keep implement/review iterations inside your agent platform so GitHub isn&#x27;t cluttered with bot comments.
-• 12:16 Cap implement/review rounds at about 3-5: Limit the agent implement-and-review loop to roughly 3-5 turns.
-• 20:30 Verify end to end in a sandbox via Chrome DevTools Protocol: A &quot;Test Desktop App&quot; skill boots the Electron app in a container (factory.yaml: os linux, arch x86_64, dockerImage warpdotdev/dev-base:latest) and drives it through the Chrome DevTools Protocol.
-• 26:45 Have the agent record its test session as an MP4: Give reviewers a video of the agent&#x27;s verification run.
-• 28:35 Add a merge-risk skill to every PR: Score the PR on Alignment, Impact, Verification, Rollback cost and Error detection, and append a low/medium/high risk rating to the PR description. (Source: https://youtu.be/uPCH2axUpbc)</summary>
   </entry>
 </feed>

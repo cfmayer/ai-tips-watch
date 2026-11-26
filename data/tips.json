@@ -6,7 +6,7 @@
   "scope_short": "Grok Bot, Cursor, agent skills, prompting and AI coding workflows",
   "scope_about": "Grok Bot and other AI tools (coding agents, Cursor, Claude Code, Codex, agent skills, prompting and workflows)"
  },
- "last_run": "2026-11-25T05:10:43-07:00",
+ "last_run": "2026-11-26T05:08:11-07:00",
  "window": {
   "start": "2026-11-12",
   "end": "2026-11-19"
@@ -91,6 +91,14 @@
    "window": "2026-11-24T12:12:10Z/2026-11-25T12:10:00Z",
    "tips_added": 18,
    "sources_added": 12,
+   "source_summaries_updated": 0
+  },
+  {
+   "at": "2026-11-26T05:08:11-07:00",
+   "edition": "2026-11-26",
+   "window": "2026-11-25T12:10:00Z/2026-11-26T12:10:00Z",
+   "tips_added": 18,
+   "sources_added": 8,
    "source_summaries_updated": 0
   }
  ],
@@ -4138,6 +4146,382 @@
    "credit": "Article by @BHolmesDev",
    "tip": "Have the agent score each PR on alignment (matches the issue, no drive-by changes), impact (blast radius, auth/permissions/schema), verification, rollback cost (two-way vs one-way door) and error detection, combined into low/medium/high risk. Ask the implementer to run it before opening the PR so it can fix gaps first. Warp's skill: warp.dev/merge-risk.",
    "edition": "2026-11-25"
+  },
+  {
+   "id": "x-2125711676003766718-0",
+   "source_id": "x-2125711676003766718",
+   "author": "Baconbrix",
+   "source_url": "https://x.com/Baconbrix/status/2125732410658799954",
+   "posted_at": "2026-11-25T23:24:35Z",
+   "date": "2026-11-25",
+   "added_at": "2026-11-26T05:10:00-07:00",
+   "source_type": "video",
+   "video_timestamp": "0:00",
+   "topic": "Grok Bot",
+   "subcategory": "Shopping & travel",
+   "title": "Holiday shopping: one request with who, ages and interests",
+   "tags": [
+    "shopping",
+    "black friday",
+    "prompt",
+    "video"
+   ],
+   "tip": "Put everything in one message: who the gifts are for, their ages and what they're into, plus the goal. The demo prompt: \"Help me with holiday shopping for my 3 boys: 8, 5 and 2. They're into space, dinosaurs and trains. Find the best Black Friday deals.\"",
+   "edition": "2026-11-26"
+  },
+  {
+   "id": "x-2125711676003766718-8",
+   "source_id": "x-2125711676003766718",
+   "author": "Baconbrix",
+   "source_url": "https://x.com/Baconbrix/status/2125732410658799954",
+   "posted_at": "2026-11-25T23:24:35Z",
+   "date": "2026-11-25",
+   "added_at": "2026-11-26T05:10:00-07:00",
+   "source_type": "video",
+   "video_timestamp": "0:08",
+   "topic": "Grok Bot",
+   "subcategory": "Shopping & travel",
+   "title": "Review deal cards, build a list, approve with Purchase",
+   "tags": [
+    "shopping",
+    "approval",
+    "list",
+    "video"
+   ],
+   "tip": "Grok Bot answers with one deal card per person (sale price vs. original, Details and Add to list), then a Holiday list card with the total and what you save. Nothing is bought until you tap Purchase on that list card.",
+   "edition": "2026-11-26"
+  },
+  {
+   "id": "x-2125675144173556124-restock",
+   "source_id": "x-2125675144173556124",
+   "author": "ericzakariasson",
+   "source_url": "https://x.com/ericzakariasson/status/2125675144173556124",
+   "posted_at": "2026-11-25T19:37:02Z",
+   "date": "2026-11-25",
+   "added_at": "2026-11-26T05:10:00-07:00",
+   "source_type": "post",
+   "topic": "Grok Bot",
+   "subcategory": "Shopping & travel",
+   "title": "Restock alerts and Buy now on mobile (1.3.0)",
+   "tags": [
+    "1.3.0",
+    "restock",
+    "notify me",
+    "buy now",
+    "mobile"
+   ],
+   "tip": "On a sold-out product card, tap Notify me and Grok Bot watches that seller and tells you when it's back in stock. On iPhone and Android, a single-product card shows Buy now whenever the chat can buy it. On a multi-item order, clicking an item opens its product page with the options you ordered already selected.",
+   "edition": "2026-11-26"
+  },
+  {
+   "id": "x-2125675144173556124-slack",
+   "source_id": "x-2125675144173556124",
+   "author": "ericzakariasson",
+   "source_url": "https://x.com/ericzakariasson/status/2125675144173556124",
+   "posted_at": "2026-11-25T19:37:02Z",
+   "date": "2026-11-25",
+   "added_at": "2026-11-26T05:10:00-07:00",
+   "source_type": "post",
+   "topic": "Grok Bot",
+   "subcategory": "Teams & delegation",
+   "title": "Smarter Slack Bots (1.3.0)",
+   "tags": [
+    "1.3.0",
+    "slack",
+    "handoff"
+   ],
+   "tip": "When one Bot hands work to another, the answer comes back in your Slack DM with a Connect button for anything that Bot still needs. Saying a Bot's name in a Slack group DM wakes it like an @mention; you can ask for a thread reply to also be shown in the channel; whoever a post was written for can ask the Bot to delete it; and in a 1:1 DM it can answer in the main chat instead of a thread.",
+   "edition": "2026-11-26"
+  },
+  {
+   "id": "x-2125675144173556124-org",
+   "source_id": "x-2125675144173556124",
+   "author": "ericzakariasson",
+   "source_url": "https://x.com/ericzakariasson/status/2125675144173556124",
+   "posted_at": "2026-11-25T19:37:02Z",
+   "date": "2026-11-25",
+   "added_at": "2026-11-26T05:10:00-07:00",
+   "source_type": "post",
+   "topic": "Grok Bot",
+   "subcategory": "Teams & delegation",
+   "title": "Org controls: domain-limited connections and invite approval (1.3.0)",
+   "tags": [
+    "1.3.0",
+    "teams",
+    "admin",
+    "org controls"
+   ],
+   "tip": "An organization can limit members to connecting accounts on its own domains. Team admins can require approval before someone who opens an invite link joins, and review those requests on the Requests tab of the Members page. Typing @ in chat also lists team Bots you can reach but haven't added yet.",
+   "edition": "2026-11-26"
+  },
+  {
+   "id": "x-2125675144173556124-ashby",
+   "source_id": "x-2125675144173556124",
+   "author": "ericzakariasson",
+   "source_url": "https://x.com/ericzakariasson/status/2125675144173556124",
+   "posted_at": "2026-11-25T19:37:02Z",
+   "date": "2026-11-25",
+   "added_at": "2026-11-26T05:10:00-07:00",
+   "source_type": "post",
+   "topic": "Grok Bot",
+   "subcategory": "Connectors & apps",
+   "title": "Ashby connector for recruiting questions (1.3.0)",
+   "tags": [
+    "1.3.0",
+    "ashby",
+    "recruiting",
+    "connector"
+   ],
+   "tip": "Connect Ashby and the Bot can answer recruiting questions about candidates, interviews, jobs and offers.",
+   "edition": "2026-11-26"
+  },
+  {
+   "id": "x-2125675144173556124-email",
+   "source_id": "x-2125675144173556124",
+   "author": "ericzakariasson",
+   "source_url": "https://x.com/ericzakariasson/status/2125675144173556124",
+   "posted_at": "2026-11-25T19:37:02Z",
+   "date": "2026-11-25",
+   "added_at": "2026-11-26T05:10:00-07:00",
+   "source_type": "post",
+   "topic": "Grok Bot",
+   "subcategory": "Releases & features",
+   "title": "Bcc, signature removal and an X drafts carousel (1.3.0)",
+   "tags": [
+    "1.3.0",
+    "email",
+    "drafts",
+    "x"
+   ],
+   "tip": "Email drafts can carry a Bcc, on the draft card and in Mac Mail. An editable Gmail draft that shows a signature has a Remove signature control. Three or more X drafts in one message sit in one sideways carousel, and a sent draft reads Replied, Posted or Sent.",
+   "edition": "2026-11-26"
+  },
+  {
+   "id": "x-2125675144173556124-voice",
+   "source_id": "x-2125675144173556124",
+   "author": "ericzakariasson",
+   "source_url": "https://x.com/ericzakariasson/status/2125675144173556124",
+   "posted_at": "2026-11-25T19:37:02Z",
+   "date": "2026-11-25",
+   "added_at": "2026-11-26T05:10:00-07:00",
+   "source_type": "post",
+   "topic": "Grok Bot",
+   "subcategory": "Meetings",
+   "title": "Voice calls and meetings: answers aloud, cards in chat (1.3.0)",
+   "tags": [
+    "1.3.0",
+    "voice",
+    "calls",
+    "meetings"
+   ],
+   "tip": "On a voice call, ask about a product and the Bot answers aloud while the product cards go to your chat. The Bot can also tell you who was in a meeting it joined.",
+   "edition": "2026-11-26"
+  },
+  {
+   "id": "x-2125644530708054181",
+   "source_id": "x-2125644530708054181",
+   "author": "Baconbrix",
+   "source_url": "https://x.com/Baconbrix/status/2125644530708054181",
+   "posted_at": "2026-11-25T17:35:23Z",
+   "date": "2026-11-25",
+   "added_at": "2026-11-26T05:10:00-07:00",
+   "source_type": "post",
+   "topic": "Grok Bot",
+   "subcategory": "Releases & features",
+   "title": "Coming next: Grok Bot on the iPhone lock screen",
+   "tags": [
+    "iphone",
+    "lock screen",
+    "widget",
+    "upcoming"
+   ],
+   "tip": "In the next version of Grok Bot you'll be able to add your Bot to your iPhone lock screen.",
+   "edition": "2026-11-26"
+  },
+  {
+   "id": "x-2125875800838902272-a",
+   "source_id": "x-2125875800838902272",
+   "author": "ccheever",
+   "source_url": "https://x.com/ccheever/status/2125876034549477392",
+   "posted_at": "2026-11-26T08:55:18Z",
+   "date": "2026-11-26",
+   "added_at": "2026-11-26T05:10:00-07:00",
+   "source_type": "thread",
+   "topic": "Prompting",
+   "subcategory": "Prompt templates",
+   "title": "Bug hunt: timing and ordering (1, 2, 13)",
+   "tags": [
+    "bug hunting",
+    "concurrency",
+    "races"
+   ],
+   "tip": "Ask the agent to look for: mid-flight cancellation and teardown (async work cancelled, closed or unmounted before it finishes); out-of-order events (a late reply, retry or event clobbering newer state); and check-then-act (a precondition checked, then acted on after something underneath changed).",
+   "edition": "2026-11-26"
+  },
+  {
+   "id": "x-2125875800838902272-b",
+   "source_id": "x-2125875800838902272",
+   "author": "ccheever",
+   "source_url": "https://x.com/ccheever/status/2125876570984153269",
+   "posted_at": "2026-11-26T08:57:26Z",
+   "date": "2026-11-26",
+   "added_at": "2026-11-26T05:10:00-07:00",
+   "source_type": "thread",
+   "topic": "Prompting",
+   "subcategory": "Prompt templates",
+   "title": "Bug hunt: safety bypasses (3, 6, 14)",
+   "tags": [
+    "bug hunting",
+    "security",
+    "validation"
+   ],
+   "tip": "Ask the agent to look for: back doors (a secondary path that walks around your safety checks); trust boundaries (data from a file, URL, network or save state trusted without validation, e.g. javascript: URLs in hrefs, unvalidated refs passed to git fetch); and fail-open defaults (missing config, an unexpected exit code or unknown status silently treated as allowed or passed).",
+   "edition": "2026-11-26"
+  },
+  {
+   "id": "x-2125875800838902272-c",
+   "source_id": "x-2125875800838902272",
+   "author": "ccheever",
+   "source_url": "https://x.com/ccheever/status/2125876792322134227",
+   "posted_at": "2026-11-26T08:58:18Z",
+   "date": "2026-11-26",
+   "added_at": "2026-11-26T05:10:00-07:00",
+   "source_type": "thread",
+   "topic": "Prompting",
+   "subcategory": "Prompt templates",
+   "title": "Bug hunt: state that drifts (4, 7, 8)",
+   "tags": [
+    "bug hunting",
+    "state",
+    "consistency"
+   ],
+   "tip": "Ask the agent to look for: two sources of truth (stored and cached copies that drift apart); halfway failure (a multi-step write that fails partway and leaves state half-mutated or wedged); and asymmetric pairs (encode/decode, export/import, validate/execute quietly drifting apart).",
+   "edition": "2026-11-26"
+  },
+  {
+   "id": "x-2125875800838902272-d",
+   "source_id": "x-2125875800838902272",
+   "author": "ccheever",
+   "source_url": "https://x.com/ccheever/status/2125877409522086326",
+   "posted_at": "2026-11-26T09:00:45Z",
+   "date": "2026-11-26",
+   "added_at": "2026-11-26T05:10:00-07:00",
+   "source_type": "thread",
+   "topic": "Prompting",
+   "subcategory": "Prompt templates",
+   "title": "Bug hunt: input limits and encoding (5, 9, 12)",
+   "tags": [
+    "bug hunting",
+    "boundaries",
+    "performance"
+   ],
+   "tip": "Ask the agent to look for: quadratic work, stack depth and allocation (unbounded recursion, O(n^2) loops, giant allocations from nested or hostile input); boundaries (zero, empty, max-size or off-by-one inputs); and numeric narrowing, Unicode and escaping (silent integer truncation, unescaped raw text, coercion bugs at format seams).",
+   "edition": "2026-11-26"
+  },
+  {
+   "id": "x-2125875800838902272-e",
+   "source_id": "x-2125875800838902272",
+   "author": "ccheever",
+   "source_url": "https://x.com/ccheever/status/2125879562727006579",
+   "posted_at": "2026-11-26T09:09:19Z",
+   "date": "2026-11-26",
+   "added_at": "2026-11-26T05:10:00-07:00",
+   "source_type": "thread",
+   "topic": "Prompting",
+   "subcategory": "Prompt templates",
+   "title": "Bug hunt: wiring gaps and tests that lie (10, 11, 15)",
+   "tags": [
+    "bug hunting",
+    "tests",
+    "copy-paste"
+   ],
+   "tip": "Ask the agent to look for: copy-paste drift (a fix landed in one near-duplicate copy but not the other, e.g. macOS but not iOS); dropped plumbing (a flag, scope, kind or init hook left off when wiring a new path or target); and bypassed tests (a test that can silently skip its check or bail early).",
+   "edition": "2026-11-26"
+  },
+  {
+   "id": "x-2125635692122505312",
+   "source_id": "x-2125635692122505312",
+   "author": "zachlloydtweets",
+   "source_url": "https://x.com/zachlloydtweets/status/2125635692122505312",
+   "posted_at": "2026-11-25T17:00:16Z",
+   "date": "2026-11-25",
+   "added_at": "2026-11-26T05:10:00-07:00",
+   "source_type": "post",
+   "topic": "Software factories",
+   "subcategory": "Concepts & adoption",
+   "title": "Make coding-agent setup a team problem, not a personal one",
+   "tags": [
+    "factory engineering",
+    "teams",
+    "shared infrastructure"
+   ],
+   "tip": "Agentic coding systems belong to the team, not to each engineer configured a hundred different ways. Treat it as a shared engineering problem: set up the best shared infrastructure so everyone benefits from it and improves it together. Zach Lloyd calls this factory engineering.",
+   "edition": "2026-11-26"
+  },
+  {
+   "id": "x-2125627281230205435",
+   "source_id": "x-2125627281230205435",
+   "author": "swyx",
+   "source_url": "https://x.com/swyx/status/2125627281230205435",
+   "posted_at": "2026-11-25T16:26:50Z",
+   "date": "2026-11-25",
+   "added_at": "2026-11-26T05:10:00-07:00",
+   "source_type": "post",
+   "topic": "Models & evaluation",
+   "subcategory": "Benchmarking & evaluation",
+   "title": "Don't trust cost-per-task charts alone",
+   "tags": [
+    "evals",
+    "benchmarks",
+    "reliability",
+    "cost"
+   ],
+   "credit": "Quoting @eugeneyan's breakdown of 12 public evals (https://eugeneyan.com/writing/public-evals); @dexhorthy: \"this guy @eugeneyan gets it\"",
+   "tip": "\"Cost per task is a misleading metric; the scarce resource is human attention, not token cost.\" Beware Pareto-frontier charts that reduce every model to two numbers: they can hide awful reliability issues.",
+   "edition": "2026-11-26"
+  },
+  {
+   "id": "x-2125657724126138682",
+   "source_id": "x-2125657724126138682",
+   "author": "poteto",
+   "source_url": "https://x.com/poteto/status/2125657724126138682",
+   "posted_at": "2026-11-25T18:27:48Z",
+   "date": "2026-11-25",
+   "added_at": "2026-11-26T05:10:00-07:00",
+   "source_type": "post",
+   "topic": "Workflows",
+   "subcategory": "Planning & process",
+   "title": "Keep resurfacing where human review is still the bottleneck",
+   "tags": [
+    "bottlenecks",
+    "review",
+    "throughput"
+   ],
+   "credit": "On @Lethain's \"Passing 100 PRs in a week\" (https://lethain.com/passing-100-prs-in-a-week/)",
+   "tip": "Periodically step back and find the bottleneck or limiting step in your coding workflow where human review is still required, then put in the work to let the agent (or code) drive that step.",
+   "edition": "2026-11-26"
+  },
+  {
+   "id": "x-2125643809803420074",
+   "source_id": "x-2125643809803420074",
+   "author": "EnoReyes",
+   "source_url": "https://x.com/EnoReyes/status/2125643809803420074",
+   "posted_at": "2026-11-25T17:32:31Z",
+   "date": "2026-11-25",
+   "added_at": "2026-11-26T05:10:00-07:00",
+   "source_type": "post",
+   "topic": "Agent skills & setup",
+   "subcategory": "Harnesses & tools",
+   "title": "Factory is free for solo devs who bring their own inference",
+   "tags": [
+    "factory",
+    "droid",
+    "byok",
+    "pricing"
+   ],
+   "credit": "Quoting @factory; @dexhorthy adds it \"goes great with workstreams / multiplayer\"",
+   "tip": "Individual developers can use Factory for free with their own API key from a number of major providers: download the app from factory.com, add your key and start a task. For a limited time each account also gets free Droid Computer hours for background agents.",
+   "edition": "2026-11-26"
   }
  ],
  "sources": [
@@ -5437,6 +5821,94 @@
    "date": "2026-11-24",
    "added_at": "2026-11-25T05:10:43-07:00",
    "edition": "2026-11-25"
+  },
+  {
+   "id": "x-2125711676003766718",
+   "type": "video",
+   "title": "Grok Bot holiday shopping: from a gift list to one Purchase tap",
+   "author": "Baconbrix",
+   "url": "https://x.com/bot/status/2125711676003766718",
+   "posted_in": "https://x.com/Baconbrix/status/2125732410658799954",
+   "date": "2026-11-25",
+   "added_at": "2026-11-26T05:10:00-07:00",
+   "duration_s": 28,
+   "summary": "27-second promo from @bot, shared by Evan Bacon (\"we've worked really hard over the last few months to build the best shopping agent in the world\") and by @poteto. A parent sends one shopping request, Grok Bot searches Black Friday deals, returns one deal card per child, builds a holiday list with the total and savings, and the order goes through after a tap on Purchase. Music only, no narration.",
+   "summary_status": "done",
+   "has_local_copy": true,
+   "has_transcript": false,
+   "edition": "2026-11-26"
+  },
+  {
+   "id": "x-2125675144173556124",
+   "type": "post",
+   "title": "Grok Bot 1.3.0: smarter Slack Bots, restock alerts, org controls",
+   "author": "ericzakariasson",
+   "url": "https://x.com/ericzakariasson/status/2125675144173556124",
+   "date": "2026-11-25",
+   "added_at": "2026-11-26T05:10:00-07:00",
+   "summary": "Eric Zakariasson announcing Grok Bot 1.3.0 (released Nov 24, 2026). Tips below are from the release post and the full changelog it links (https://x.ai/changelog/bot).",
+   "edition": "2026-11-26"
+  },
+  {
+   "id": "x-2125875800838902272",
+   "type": "thread",
+   "title": "15 other kinds of bugs you can tell an agent to look for",
+   "author": "ccheever",
+   "url": "https://x.com/ccheever/status/2125875800838902272",
+   "date": "2026-11-26",
+   "added_at": "2026-11-26T05:10:00-07:00",
+   "summary": "Follow-up to Charlie Cheever's implicit-state-machine bug hunt: a 15-post thread of bug classes he found in Exact by pointing an agent at them, each with real examples. Grouped below by theme; each tip names the numbered posts it covers.",
+   "edition": "2026-11-26"
+  },
+  {
+   "id": "x-2125644530708054181",
+   "type": "post",
+   "title": null,
+   "author": "Baconbrix",
+   "url": "https://x.com/Baconbrix/status/2125644530708054181",
+   "date": "2026-11-25",
+   "added_at": "2026-11-26T05:08:11-07:00",
+   "edition": "2026-11-26"
+  },
+  {
+   "id": "x-2125635692122505312",
+   "type": "post",
+   "title": null,
+   "author": "zachlloydtweets",
+   "url": "https://x.com/zachlloydtweets/status/2125635692122505312",
+   "date": "2026-11-25",
+   "added_at": "2026-11-26T05:08:11-07:00",
+   "edition": "2026-11-26"
+  },
+  {
+   "id": "x-2125627281230205435",
+   "type": "post",
+   "title": null,
+   "author": "swyx",
+   "url": "https://x.com/swyx/status/2125627281230205435",
+   "date": "2026-11-25",
+   "added_at": "2026-11-26T05:08:11-07:00",
+   "edition": "2026-11-26"
+  },
+  {
+   "id": "x-2125657724126138682",
+   "type": "post",
+   "title": null,
+   "author": "poteto",
+   "url": "https://x.com/poteto/status/2125657724126138682",
+   "date": "2026-11-25",
+   "added_at": "2026-11-26T05:08:11-07:00",
+   "edition": "2026-11-26"
+  },
+  {
+   "id": "x-2125643809803420074",
+   "type": "post",
+   "title": null,
+   "author": "EnoReyes",
+   "url": "https://x.com/EnoReyes/status/2125643809803420074",
+   "date": "2026-11-25",
+   "added_at": "2026-11-26T05:08:11-07:00",
+   "edition": "2026-11-26"
   }
  ],
  "schema_version": 2
