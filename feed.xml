@@ -5,8 +5,32 @@
   <link rel="self" type="application/atom+xml" href="https://cfmayer.github.io/ai-tips-watch/feed.xml"/>
   <link rel="alternate" type="text/html" href="https://cfmayer.github.io/ai-tips-watch/"/>
   <id>https://cfmayer.github.io/ai-tips-watch/</id>
-  <updated>2026-11-26T05:08:11-07:00</updated>
+  <updated>2026-11-27T05:02:02-07:00</updated>
   <author><name>Grok Bot Tips Watch</name></author>
+  <entry>
+    <title>Software factories › Security &amp; identity: AI security is alignment plus &quot;power&quot;: what tools and permissions agents get</title>
+    <link rel="alternate" type="text/html" href="https://cfmayer.github.io/ai-tips-watch/#s-x-2126122883743358991"/>
+    <link rel="related" href="https://x.com/zachlloydtweets/status/2126122883743358991"/>
+    <id>https://cfmayer.github.io/ai-tips-watch/#s-x-2126122883743358991</id>
+    <published>2026-11-27T01:16:11Z</published>
+    <updated>2026-11-27T05:10:00-07:00</updated>
+    <author><name>@zachlloydtweets</name></author>
+    <category term="edition-2026-11-27"/>
+    <summary>• Control an agent&#x27;s power, not just its alignment: Treat an agent&#x27;s toolset and permissions as the other half of AI security: open internet access and file read/write widen what it can do, and delegated account access (letting it &quot;act as&quot; a human) raises the risk most. Beyond sandboxing, decide how agents are granted digital power, trace their actions, choose what identities they assume, and plan how to shut them down. (Source: https://x.com/zachlloydtweets/status/2126122883743358991)</summary>
+  </entry>
+  <entry>
+    <title>Grok Bot › Releases &amp; features: Grok Bot plans: 11% more usage, up to 50% more for routines</title>
+    <link rel="alternate" type="text/html" href="https://cfmayer.github.io/ai-tips-watch/#s-x-2126074761717645609"/>
+    <link rel="related" href="https://x.com/Baconbrix/status/2126074761717645609"/>
+    <id>https://cfmayer.github.io/ai-tips-watch/#s-x-2126074761717645609</id>
+    <published>2026-11-26T22:04:58Z</published>
+    <updated>2026-11-27T05:10:00-07:00</updated>
+    <author><name>@Baconbrix</name></author>
+    <category term="edition-2026-11-27"/>
+    <summary>Evan Bacon&#x27;s Thanksgiving list of Grok Bot news, quoting @SamSokolin&#x27;s announcement (https://x.com/samsokolin/status/2126027973568466949): more usage from every plan, cheaper routines, more efficient agent requests, and Black Friday shopping in 𝕏.
+• About 11% more usage out of your plan: Grok Bot plans now give about 11% more usage than before, from more efficient agent requests; no setting to change.
+• Routines now get up to 50% more usage: Routines get up to 50% more usage (&quot;half-off routines&quot;) because the routine harness now skips inference requests for simple, repetitive tasks, so recurring jobs cost less of your plan. (Source: https://x.com/Baconbrix/status/2126074761717645609)</summary>
+  </entry>
   <entry>
     <title>Prompting › Prompt templates: 15 other kinds of bugs you can tell an agent to look for</title>
     <link rel="alternate" type="text/html" href="https://cfmayer.github.io/ai-tips-watch/#s-x-2125875800838902272"/>
@@ -736,44 +760,5 @@
     <category term="edition-2026-11-19"/>
     <summary>Intra-turn, feedforward UX: the AI surfaces its assumptions as editable widgets before generating, so you can steer without extra chat turns.
 • 0:04 Surface assumptions as editable widgets before generating: Feedforward UX: the AI shows its assumptions (e.g. kids&#x27; ages, interests) as editable controls before writing the plan, offers preselected style/color dropdowns for creative assets (00:26), and &#x27;leaving blanks&#x27; templates for missing details like guest count or tone (00:41), so you steer without extra chat turns. (Source: https://x.com/liu_xingyu/status/2121015724374397183)</summary>
-  </entry>
-  <entry>
-    <title>Code quality › Lint rules &amp; bans: All Code Is Slop (Except Mine), Lauren Tan, SpaceXSI (AIE Code talk)</title>
-    <link rel="alternate" type="text/html" href="https://cfmayer.github.io/ai-tips-watch/#s-yt-O_zcc6Xl12g"/>
-    <link rel="related" href="https://www.youtube.com/watch?v=O_zcc6Xl12g"/>
-    <id>https://cfmayer.github.io/ai-tips-watch/#s-yt-O_zcc6Xl12g</id>
-    <published>2026-11-14T18:36:10.981000Z</published>
-    <updated>2026-11-19T18:28:17-07:00</updated>
-    <author><name>@poteto</name></author>
-    <category term="edition-2026-11-19"/>
-    <summary>Lauren Tan (@poteto) on scaling Grok Bot&#x27;s coding agents into a high-trust &quot;software factory&quot;. Agents learn from their environment, so remove bad patterns, ban nuanced APIs, and replace prose instructions and code comments with strict architectural boundaries and lint rules. Spend most agent effort on programmatic verification (custom app CLIs, formal proofs, property-based UI tests) so agents verify their own work before human review. Results shown: 10,926 PRs merged in October (of 23,310 total), 19 desktop releases a month with a median 23 hours between releases, a revert rate steady at 0.47%, and comments cut from 65,824 to 1,227 while lint rules grew to 169.
-• 2:02 Guide agents with an inverted pyramid: deterministic first, prose last: Rely most on deterministic codebase design and static analysis (API design, architecture, lint rules, types, tests), then verification, and least on prose instructions (rules, skills, AGENTS.md) and human review.
-• 3:09 Turn every agent correction into a deterministic check: When you correct an agent, or catch something in review, make the fix a lint rule or other deterministic check in the codebase rather than new text in an instructions markdown file. Agents copy the patterns they see, so keep bad patterns out of the code.
-• 4:57 Enforce architecture with directory-based import bans: Encode boundaries in the directory structure and ban imports across them, e.g. code in electron-renderer can&#x27;t import from electron-main.
-• 5:25 Design foolproof APIs; ban nuanced ones like useEffect: APIs that need nuance to use well lead to slop. Design foolproof APIs and ban nuanced ones, such as React&#x27;s useEffect in product code.
-• 6:55 Stop agents writing unsolicited markdown docs: Agents use markdown and docs they weren&#x27;t asked for to justify wrong implementations; stop them writing it.
-• 7:22 Ban imperative quick fixes like setTimeout and requestAnimationFrame: Quick fixes spread: in the example shown, one agent&#x27;s timer hack grew to 183 timers. Ban imperative timer-based patches such as setTimeout/requestAnimationFrame.
-• 8:19 Treat code comments as liabilities: Comments aren&#x27;t enforceable and agents use them to justify workarounds, so delete them. The team cut comments from 65,824 to 1,227 while growing to 169 lint rules.
-• 9:34 Give runtime-verification skills a feature map: Runtime-verification skills include a &#x27;feature map&#x27;: a user-facing site map of the app&#x27;s features, giving agents and humans shared vocabulary (so &#x27;the thingy in the left sidebar&#x27; is unambiguous), plus reusable custom CLIs/drivers that save tokens and are testable.
-• 10:01 Spend most agent tokens on verification, with an app CLI to drive the app: Put roughly 70% of agent token spend into verification. Give agents a CLI to drive and screenshot your app so they check their own work before human review, e.g. `app aria:click --accessible-name &quot;Settings&quot;`, `app snapshot`, `app screenshot proof.png`.
-• 10:49 Model state machines with TLA+ and prove algorithms with Lean: Add formal verification as another layer: TLA+ to model state machines and Lean to prove algorithms.
-• 11:34 Fuzz your UI with property-based testing (Bombadil): Use property-based UI testing to fuzz the UI; the Grok Bot team uses Bombadil (github.com/antithesishq/bombadil).
-• 12:54 Generate statecharts and other visual artifacts for reviewers: Have agents produce visual artifacts such as statecharts so reviewers can check behavior quickly. The statechart skill is part of pstack (github.com/cursor/plugins/tree/main/pstack).
-• 15:48 Don&#x27;t automate a low-trust loop: If your inner agent loop produces slop, automating it just produces more. Improve constraints and self-verification first.
-• 16:06 Once the loop is high-trust, add an outer loop on triggers: With a trusted inner loop, add an outer loop that kicks off agents from Linear tickets, Slack messages, cron schedules, or Datadog/Sentry alerts.
-• 16:15 Example outer loop: auto-fuzz every release with Grok Bot: On each new release, Grok Bot spins up a Cursor project that fuzzes the build like a real user, opens fix PRs for bugs it finds, and auto-merges them. (Source: https://www.youtube.com/watch?v=O_zcc6Xl12g)</summary>
-  </entry>
-  <entry>
-    <title>Grok Bot › Meetings: Grok Bot can now join meetings (via @bot; also quoted by @Baconbrix)</title>
-    <link rel="alternate" type="text/html" href="https://cfmayer.github.io/ai-tips-watch/#s-x-2121320089920430181"/>
-    <link rel="related" href="https://x.com/bot/status/2121320089920430181"/>
-    <id>https://cfmayer.github.io/ai-tips-watch/#s-x-2121320089920430181</id>
-    <published>2026-11-13T19:25:50.251000Z</published>
-    <updated>2026-11-19T18:28:17-07:00</updated>
-    <author><name>@poteto</name></author>
-    <category term="edition-2026-11-19"/>
-    <summary>Demo: ask your bot in chat to join an in-progress Zoom or Google Meet call; it takes spoken requests and writes structured notes and action items into apps like Notion.
-• Bring your bot to meetings so it gathers its own context: Inviting a bot to meetings lets it collect context firsthand, which makes it smarter over time. It can also attend for you (e.g. when you&#x27;re on a flight without connectivity) and take notes. To set it up, just ask your bot.
-• 0:16 Ask the bot for things out loud during meetings: Once in a Zoom/Google Meet call (ask it in chat to join), the bot responds to spoken requests such as sending follow-ups, confirms with a chat reaction, and writes structured notes and action items into apps like Notion (00:18). (Source: https://x.com/bot/status/2121320089920430181)</summary>
   </entry>
 </feed>

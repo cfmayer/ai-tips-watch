@@ -6,7 +6,7 @@
   "scope_short": "Grok Bot, Cursor, agent skills, prompting and AI coding workflows",
   "scope_about": "Grok Bot and other AI tools (coding agents, Cursor, Claude Code, Codex, agent skills, prompting and workflows)"
  },
- "last_run": "2026-11-26T05:08:11-07:00",
+ "last_run": "2026-11-27T05:02:02-07:00",
  "window": {
   "start": "2026-11-12",
   "end": "2026-11-19"
@@ -99,6 +99,14 @@
    "window": "2026-11-25T12:10:00Z/2026-11-26T12:10:00Z",
    "tips_added": 18,
    "sources_added": 8,
+   "source_summaries_updated": 0
+  },
+  {
+   "at": "2026-11-27T05:02:02-07:00",
+   "edition": "2026-11-27",
+   "window": "2026-11-26T12:10:00Z/2026-11-27T12:05:00Z",
+   "tips_added": 3,
+   "sources_added": 2,
    "source_summaries_updated": 0
   }
  ],
@@ -4522,6 +4530,69 @@
    "credit": "Quoting @factory; @dexhorthy adds it \"goes great with workstreams / multiplayer\"",
    "tip": "Individual developers can use Factory for free with their own API key from a number of major providers: download the app from factory.com, add your key and start a task. For a limited time each account also gets free Droid Computer hours for background agents.",
    "edition": "2026-11-26"
+  },
+  {
+   "id": "x-2126074761717645609-usage",
+   "source_id": "x-2126074761717645609",
+   "author": "Baconbrix",
+   "source_url": "https://x.com/Baconbrix/status/2126074761717645609",
+   "posted_at": "2026-11-26T22:04:58Z",
+   "date": "2026-11-26",
+   "added_at": "2026-11-27T05:10:00-07:00",
+   "source_type": "post",
+   "topic": "Grok Bot",
+   "subcategory": "Releases & features",
+   "title": "About 11% more usage out of your plan",
+   "tags": [
+    "usage",
+    "plans",
+    "limits"
+   ],
+   "credit": "Quoting @SamSokolin",
+   "tip": "Grok Bot plans now give about 11% more usage than before, from more efficient agent requests; no setting to change.",
+   "edition": "2026-11-27"
+  },
+  {
+   "id": "x-2126074761717645609-routines",
+   "source_id": "x-2126074761717645609",
+   "author": "Baconbrix",
+   "source_url": "https://x.com/Baconbrix/status/2126074761717645609",
+   "posted_at": "2026-11-26T22:04:58Z",
+   "date": "2026-11-26",
+   "added_at": "2026-11-27T05:10:00-07:00",
+   "source_type": "post",
+   "topic": "Grok Bot",
+   "subcategory": "Automation & routines",
+   "title": "Routines now get up to 50% more usage",
+   "tags": [
+    "routines",
+    "usage",
+    "harness"
+   ],
+   "credit": "Quoting @SamSokolin",
+   "tip": "Routines get up to 50% more usage (\"half-off routines\") because the routine harness now skips inference requests for simple, repetitive tasks, so recurring jobs cost less of your plan.",
+   "edition": "2026-11-27"
+  },
+  {
+   "id": "x-2126122883743358991-power",
+   "source_id": "x-2126122883743358991",
+   "author": "zachlloydtweets",
+   "source_url": "https://x.com/zachlloydtweets/status/2126122883743358991",
+   "posted_at": "2026-11-27T01:16:11Z",
+   "date": "2026-11-27",
+   "added_at": "2026-11-27T05:10:00-07:00",
+   "source_type": "post",
+   "topic": "Software factories",
+   "subcategory": "Security & identity",
+   "title": "Control an agent's power, not just its alignment",
+   "tags": [
+    "security",
+    "permissions",
+    "sandboxing",
+    "identity"
+   ],
+   "tip": "Treat an agent's toolset and permissions as the other half of AI security: open internet access and file read/write widen what it can do, and delegated account access (letting it \"act as\" a human) raises the risk most. Beyond sandboxing, decide how agents are granted digital power, trace their actions, choose what identities they assume, and plan how to shut them down.",
+   "edition": "2026-11-27"
   }
  ],
  "sources": [
@@ -5909,6 +5980,27 @@
    "date": "2026-11-25",
    "added_at": "2026-11-26T05:08:11-07:00",
    "edition": "2026-11-26"
+  },
+  {
+   "id": "x-2126074761717645609",
+   "type": "post",
+   "title": "Grok Bot plans: 11% more usage, up to 50% more for routines",
+   "author": "Baconbrix",
+   "url": "https://x.com/Baconbrix/status/2126074761717645609",
+   "date": "2026-11-26",
+   "added_at": "2026-11-27T05:10:00-07:00",
+   "summary": "Evan Bacon's Thanksgiving list of Grok Bot news, quoting @SamSokolin's announcement (https://x.com/samsokolin/status/2126027973568466949): more usage from every plan, cheaper routines, more efficient agent requests, and Black Friday shopping in 𝕏.",
+   "edition": "2026-11-27"
+  },
+  {
+   "id": "x-2126122883743358991",
+   "type": "post",
+   "title": "AI security is alignment plus \"power\": what tools and permissions agents get",
+   "author": "zachlloydtweets",
+   "url": "https://x.com/zachlloydtweets/status/2126122883743358991",
+   "date": "2026-11-27",
+   "added_at": "2026-11-27T05:10:00-07:00",
+   "edition": "2026-11-27"
   }
  ],
  "schema_version": 2
